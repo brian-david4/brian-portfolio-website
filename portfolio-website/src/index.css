@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Right Serif Mono Regular";
+  src: url("../fonts/PPRightSerifMono-Regular.otf");
+}
+@font-face {
+  font-family: "Right Serif Mono Dark";
+  src: url("../fonts/PPRightSerifMono-Dark.otf");
+}
+@font-face {
+  font-family: "Telegraf-Regular";
+  src: url("../fonts/PPTelegraf-Regular.otf");
+}
+@font-face {
+  font-family: "Pangram Sans Medium";
+  src: url("../fonts/PPPangramSans-CompressedMediumReclined.otf");
+}
+body {
+  margin: 0;
+  padding: 0;
+}
