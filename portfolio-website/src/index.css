@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --header-height: 50px;
+  --nav-menu-height: 400px;
+}
 @font-face {
   font-family: "Right Serif Mono Regular";
   src: url("../fonts/PPRightSerifMono-Regular.otf");

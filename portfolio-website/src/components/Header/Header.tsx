@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import styles from "./header.module.css";
+import HeaderNavMenu from "../HeaderNavMenu/HeaderNavMenu";
+import { AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -22,6 +24,9 @@ const Header = () => {
           <div className={styles.menu}>menu</div>
         </div>
       </div>
+      <AnimatePresence mode="wait">
+        {isMenuActive && <HeaderNavMenu />}
+      </AnimatePresence>
     </div>
   );
 };

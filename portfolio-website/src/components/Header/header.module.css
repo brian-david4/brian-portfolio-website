@@ -5,10 +5,11 @@
 }
 .navbar {
   width: 100vw;
-  height: 50px;
+  height: var(--header-height);
   background-color: bisque;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 .homeLogoLink {
   color: black;

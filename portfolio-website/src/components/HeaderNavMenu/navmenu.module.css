@@ -1,0 +1,18 @@
+.background {
+  position: absolute;
+  left: 0;
+  top: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: darkkhaki;
+  z-index: -2;
+}
+.navMenu {
+  min-height: var(--nav-menu-height);
+  position: absolute;
+  width: 100vw;
+  background-color: darksalmon;
+  top: calc(var(--nav-menu-height) * -1);
+  left: 0;
+  z-index: -1;
+}
