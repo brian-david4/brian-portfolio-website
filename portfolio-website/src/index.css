@@ -4,6 +4,10 @@
 :root {
   --header-height: 50px;
   --nav-menu-height: 400px;
+  /* colors */
+  --light-brown: rgb(231, 213, 193);
+  --vdark-blue: rgb(19, 33, 49);
+  --charcoal: rgb(66, 74, 83);
 }
 @font-face {
   font-family: "Right Serif Mono Regular";

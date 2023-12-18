@@ -1,0 +1,9 @@
+.homepage {
+  position: absolute;
+  left: 0;
+  top: var(--header-height);
+  height: calc(100vh - var(--header-height));
+  width: 100vw;
+  background-color: gainsboro;
+  z-index: -1;
+}

@@ -1,18 +1,48 @@
 .background {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 100vh;
   height: 100vh;
   width: 100vw;
-  background-color: darkkhaki;
-  z-index: -2;
+  background-color: var(--charcoal);
+  z-index: 40;
 }
 .navMenu {
   min-height: var(--nav-menu-height);
   position: absolute;
   width: 100vw;
-  background-color: darksalmon;
+  background-color: var(--light-brown);
+  border-radius: 0% 0% 25px 25px;
   top: calc(var(--nav-menu-height) * -1);
   left: 0;
-  z-index: -1;
+  z-index: 45;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.allLinks {
+  position: relative;
+  width: 100%;
+  height: var(--nav-menu-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.linkRow1,
+.linkRow2,
+.linkRow3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 30%;
+}
+.link {
+  font-family: "Right Serif Mono Regular";
+  text-transform: capitalize;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
 }
