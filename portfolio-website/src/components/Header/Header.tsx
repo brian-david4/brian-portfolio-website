@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import styles from "./header.module.css";
 import HeaderNavMenu from "../HeaderNavMenu/HeaderNavMenu";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { opacity } from "./anims";
 
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -12,6 +13,7 @@ const Header = () => {
         <Link to="/" className={styles.homeLogoLink}>
           <div className={styles.homeMenuLogo}>Brian David</div>
         </Link>
+
         <div
           onClick={() => setIsMenuActive(!isMenuActive)}
           className={styles.menuBurger}
@@ -21,9 +23,24 @@ const Header = () => {
               isMenuActive ? styles.burgerActive : ""
             }`}
           ></div>
-          <div className={styles.menu}>menu</div>
+
+          <div className={styles.menu}>
+            <motion.p
+              variants={opacity}
+              animate={isMenuActive ? "closed" : "open"}
+            >
+              menu
+            </motion.p>
+            <motion.p
+              animate={!isMenuActive ? "closed" : "open"}
+              variants={opacity}
+            >
+              close
+            </motion.p>
+          </div>
         </div>
       </div>
+
       <AnimatePresence mode="wait">
         {isMenuActive && <HeaderNavMenu />}
       </AnimatePresence>
