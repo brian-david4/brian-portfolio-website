@@ -16,10 +16,11 @@ const HeaderNavLink = ({ to, title }: HeaderNavLinkProps) => {
         <p>
           {title_chars.map((char, i) => (
             <motion.span
-              custom={i}
+              custom={[i * 0.02, (title.length - i) * 0.02]}
               variants={char_enter}
               initial="initial"
               animate="enter"
+              exit="exit"
               className={styles.titleChar}
               key={i}
             >

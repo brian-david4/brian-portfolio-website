@@ -20,6 +20,6 @@ export const navMenu = {
   },
   exit: {
     top: "-100vh",
-    transition: { duration: 0.5, ease: easeInOutQuart },
+    transition: { duration: 1.2, ease: easeInOutQuart },
   },
 };
