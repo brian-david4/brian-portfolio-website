@@ -16,7 +16,7 @@ export const background = {
 export const navMenu = {
   animate: {
     top: "var(--header-height)",
-    transition: { duration: 1, ease: easeInOutQuart },
+    transition: { duration: 0.8, ease: easeInOutQuart },
   },
   exit: {
     top: "-100vh",

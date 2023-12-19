@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import styles from "./navmenu.module.css";
 import { background, navMenu } from "./navmenuAnim";
 import { Link } from "react-router-dom";
+import HeaderNavLink from "../HeaderNavLink/HeaderNavLink";
 
 const HeaderNavMenu = () => {
   return (
@@ -14,27 +15,17 @@ const HeaderNavMenu = () => {
       >
         <div className={styles.allLinks}>
           <div className={styles.linkRow1}>
-            <Link to="/" className={styles.link}>
-              <h1>Home</h1>
-            </Link>
-            <Link to="/projects" className={styles.link}>
-              <h1>Projects</h1>
-            </Link>
+            <HeaderNavLink to="/" title="Home" />
+            <HeaderNavLink to="/projects" title="Projects" />
           </div>
 
           <div className={styles.linkRow2}>
-            <Link to="/about" className={styles.link}>
-              <h1>About</h1>
-            </Link>
+            <HeaderNavLink to="/about" title="About" />
           </div>
 
           <div className={styles.linkRow3}>
-            <Link to="/contact" className={styles.link}>
-              <h1>Contact</h1>
-            </Link>
-            <Link to="/link" className={styles.link}>
-              <h1>link</h1>
-            </Link>
+            <HeaderNavLink to="/contact" title="Contact" />
+            <HeaderNavLink to="/" title="Link" />
           </div>
         </div>
       </motion.div>

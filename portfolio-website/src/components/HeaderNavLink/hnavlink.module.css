@@ -1,0 +1,27 @@
+.link {
+  font-family: "Right Serif Mono Regular";
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  height: fit-content;
+}
+.link > p {
+  position: relative;
+  padding: 0;
+  max-height: 50px;
+  margin-block-end: 0em;
+  margin-block-start: 0em;
+  line-height: 1px;
+}
+.titleWrapper {
+  max-height: 70px;
+  display: flex;
+  width: fit-content;
+  overflow: hidden;
+}
+.titleChar {
+  margin-right: 1.1px;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
