@@ -4,6 +4,6 @@
   top: var(--header-height);
   height: calc(100vh - var(--header-height));
   width: 100vw;
-  background-color: gainsboro;
+  background-color: #dadada;
   z-index: -1;
 }

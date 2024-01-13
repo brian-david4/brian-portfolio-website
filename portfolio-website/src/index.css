@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 :root {
-  --header-height: 50px;
+  --header-height: 60px;
   --nav-menu-height: 400px;
   /* colors */
   --light-brown: rgb(231, 213, 193);

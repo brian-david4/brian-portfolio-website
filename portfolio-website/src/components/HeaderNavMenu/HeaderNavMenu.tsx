@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./navmenu.module.css";
 import { background, navMenu } from "./navmenuAnim";
-import { Link } from "react-router-dom";
 import HeaderNavLink from "../HeaderNavLink/HeaderNavLink";
 
 const HeaderNavMenu = () => {

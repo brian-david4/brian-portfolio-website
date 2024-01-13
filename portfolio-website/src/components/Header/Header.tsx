@@ -7,6 +7,7 @@ import { opacity } from "./anims";
 
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
+
   return (
     <div className={styles.header}>
       <div className={styles.navbar}>
