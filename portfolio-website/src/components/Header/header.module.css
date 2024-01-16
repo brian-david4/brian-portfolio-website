@@ -33,7 +33,7 @@
   right: 1.5vw;
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: 1vmin;
   font-family: "Telegraf-Regular";
   cursor: pointer;
 }
@@ -41,7 +41,7 @@
   pointer-events: none;
   width: 22.5px;
   position: relative;
-  top: 22px;
+  top: 8.5px;
 }
 .burger::after,
 .burger::before {
@@ -74,6 +74,9 @@
   display: flex;
   align-items: center;
   user-select: none;
+}
+.menu > p {
+  font-size: 1.2rem;
 }
 .menu > p:nth-of-type(2) {
   position: absolute;

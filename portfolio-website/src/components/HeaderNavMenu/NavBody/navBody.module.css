@@ -1,0 +1,20 @@
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+.body > a {
+  text-decoration: none;
+  color: black;
+  font-size: 42px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  /* background-color: aqua; */
+  font-family: "Telegraf-Regular";
+}
+p {
+  margin: 0px;
+  display: flex;
+  overflow: hidden;
+}

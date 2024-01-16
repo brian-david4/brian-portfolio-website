@@ -14,12 +14,15 @@ export const background = {
   },
 };
 export const navMenu = {
+  initial: {
+    height: 0,
+  },
   animate: {
-    top: "var(--header-height)",
+    height: "auto",
     transition: { duration: 0.8, ease: easeInOutQuart },
   },
   exit: {
-    top: "-100vh",
+    height: "0",
     transition: { duration: 1.2, ease: easeInOutQuart },
   },
 };

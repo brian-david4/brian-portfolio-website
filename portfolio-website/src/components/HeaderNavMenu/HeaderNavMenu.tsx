@@ -1,33 +1,33 @@
 import { motion } from "framer-motion";
 import styles from "./navmenu.module.css";
 import { background, navMenu } from "./navmenuAnim";
-import HeaderNavLink from "../HeaderNavLink/HeaderNavLink";
+import NavBody from "./NavBody/NavBody";
+import { NavLink } from "../../types";
 
 const HeaderNavMenu = () => {
+  const links: NavLink[] = [
+    { title: "Home", to: "/" },
+    { title: "Projects", to: "/projects" },
+    { title: "Contact", to: "/contact" },
+    { title: "About", to: "/about" },
+    { title: "Link", to: "/link" },
+  ];
   return (
     <>
       <motion.div
         className={styles.navMenu}
         variants={navMenu}
+        initial="initial"
         animate="animate"
         exit="exit"
       >
-        <div className={styles.allLinks}>
-          <div className={styles.linkRow1}>
-            <HeaderNavLink to="/" title="Home" />
-            <HeaderNavLink to="/projects" title="Projects" />
-          </div>
-
-          <div className={styles.linkRow2}>
-            <HeaderNavLink to="/about" title="About" />
-          </div>
-
-          <div className={styles.linkRow3}>
-            <HeaderNavLink to="/contact" title="Contact" />
-            <HeaderNavLink to="/" title="Link" />
+        <div className={styles.wrapper}>
+          <div className={styles.container}>
+            <NavBody links={links} />
           </div>
         </div>
       </motion.div>
+
       <motion.div
         className={styles.background}
         variants={background}

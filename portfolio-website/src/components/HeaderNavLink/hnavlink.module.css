@@ -1,6 +1,6 @@
 .link {
   font-family: "Right Serif Mono Regular";
-  font-size: 2rem;
+  font-size: 5vw;
   text-decoration: none;
   color: black;
   height: fit-content;
@@ -14,7 +14,7 @@
   line-height: 1px;
 }
 .titleWrapper {
-  max-height: 70px;
+  max-height: fit-content;
   display: flex;
   width: fit-content;
   overflow: hidden;
