@@ -1,34 +1,38 @@
 import { Link } from "react-router-dom";
-import styles from "./hnavlink.module.css";
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 import { char_enter } from "./anims";
+import styles from "./hnavlink.module.css";
 
 interface HeaderNavLinkProps {
   to: string;
   title: string;
+  key: string;
 }
 
-const HeaderNavLink = ({ to, title }: HeaderNavLinkProps) => {
-  const title_chars = title.split("");
+const HeaderNavLink = ({ to, title, key }: HeaderNavLinkProps) => {
+  const getChars = (word: string) => {
+    let chars: ReactNode[] = [];
+    word.split("").forEach((char, i) => {
+      chars.push(
+        <motion.span
+          key={char + i}
+          custom={[i * 0.02, (word.length - i) * 0.01]}
+          variants={char_enter}
+          initial="initial"
+          animate="enter"
+          exit="exit"
+        >
+          {char}
+        </motion.span>
+      );
+    });
+    return chars;
+  };
+
   return (
-    <Link to={to} className={styles.link}>
-      <div className={styles.titleWrapper}>
-        <p>
-          {title_chars.map((char, i) => (
-            <motion.span
-              custom={[i * 0.02, (title.length - i) * 0.02]}
-              variants={char_enter}
-              initial="initial"
-              animate="enter"
-              exit="exit"
-              className={styles.titleChar}
-              key={i}
-            >
-              {char}
-            </motion.span>
-          ))}
-        </p>
-      </div>
+    <Link className={styles.link} key={key} to={to}>
+      <motion.p className={styles.title}>{getChars(title)}</motion.p>
     </Link>
   );
 };
