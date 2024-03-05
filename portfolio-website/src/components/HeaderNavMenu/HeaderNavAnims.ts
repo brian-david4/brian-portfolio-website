@@ -1,11 +1,10 @@
 export const char_enter = {
   initial: {
-    y: "100%",
+    opacity: 0,
     x: "-100%",
   },
   enter: (i: number[]) => ({
-    y: 0,
-    x: 0,
+    opacity: 1,
     transition: {
       duration: 1,
       ease: [0.76, 0, 0.24, 1],
