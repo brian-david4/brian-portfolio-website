@@ -7,10 +7,10 @@ const MouseTrail = () => {
   return (
     <motion.div
       className={styles.mouseTrail}
-      animate={{ left: x - 50 / 2, top: y - 50 / 2 }}
+      animate={{ left: x - 10 / 2, top: y - 10 / 2 }}
       transition={{ type: "tween", ease: "easeOut" }}
     >
-      hello
+      <div className={styles.trailInner}></div>
     </motion.div>
   );
 };

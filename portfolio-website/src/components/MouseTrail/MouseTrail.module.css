@@ -1,9 +1,11 @@
 .mouseTrail {
   position: absolute;
-  height: 50px;
-  width: 50px;
+  height: 10px;
+  width: 10px;
   z-index: 100;
   pointer-events: none;
   display: grid;
   place-items: center;
+  background-color: black;
+  border-radius: 50%;
 }

@@ -12,6 +12,7 @@
   background-color: var(--light-brown);
   display: flex;
   align-items: center;
+  justify-content: center;
   z-index: 50;
 }
 .homeLogoLink {
@@ -19,21 +20,17 @@
   text-decoration: none;
   line-height: 0;
 }
-.homeMenuLogo,
+.homeMenuLogo {
+  font-family: "Telegraf-Regular";
+  font-size: 0.9rem;
+  letter-spacing: 0.8px;
+}
 .menuBurger {
   position: absolute;
-}
-.homeMenuLogo {
-  left: 1.5vw;
-  font-family: "Telegraf-Regular";
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
-.menuBurger {
-  right: 1.5vw;
+  right: 5vmin;
   display: flex;
   flex-direction: row;
-  gap: 1vmin;
+  gap: 0.5vmin;
   font-family: "Telegraf-Regular";
   cursor: pointer;
 }
