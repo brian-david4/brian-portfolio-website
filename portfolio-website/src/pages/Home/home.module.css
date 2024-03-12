@@ -19,16 +19,41 @@
 .title {
   font-family: "Editorial Old Regular";
   font-size: 70px;
-  letter-spacing: 2.5px;
   transition: font-size 200ms ease-in-out;
+  user-select: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: cadetblue; */
+}
+.wordWrapper {
+  margin-right: 1.7vmin;
+  height: fit-content;
+  /* background-color: aqua; */
+  padding: 0%;
+  overflow: hidden;
+}
+.word {
+  height: 100%;
+  width: 100%;
+  letter-spacing: 3px;
+  /* background-color: bisque; */
 }
 @media (max-width: 768px) {
   .title {
     font-size: 55px;
   }
+  .word {
+    letter-spacing: 2px;
+  }
 }
 @media (max-width: 478px) {
   .title {
     font-size: 36px;
+  }
+  .wordWrapper {
+    margin-right: 1.2vmin;
+  }
+  .word {
+    letter-spacing: 1px;
   }
 }
