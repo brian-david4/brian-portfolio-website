@@ -4,7 +4,7 @@
 :root {
   --header-height: 60px;
   --nav-menu-height: 400px;
-  /* colors */
+  /* colours */
   --light-brown: rgb(239, 215, 193);
   --vdark-blue: rgb(19, 33, 49);
   --charcoal: rgb(66, 74, 83);
@@ -27,7 +27,19 @@
 }
 @font-face {
   font-family: "Editorial Old Regular";
-  src: url("../fonts/PPEditorialOld-Regular.otf");
+  src: url("../fonts/EditorialOld/PPEditorialOld-Regular.otf");
+}
+@font-face {
+  font-family: "Editorial Old Ultralight";
+  src: url("../fonts/EditorialOld/PPEditorialOld-Ultralight.otf");
+}
+@font-face {
+  font-family: "Editorial Old Ultrabold";
+  src: url("../fonts/EditorialOld/PPEditorialOld-Ultrabold.otf");
+}
+@font-face {
+  font-family: "Editorial Old Ultrabold Italic";
+  src: url("../fonts/EditorialOld/PPEditorialOld-UltraboldItalic.otf");
 }
 body {
   margin: 0;
