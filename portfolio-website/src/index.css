@@ -25,6 +25,10 @@
   font-family: "Pangram Sans Medium";
   src: url("../fonts/PPPangramSans-CompressedMediumReclined.otf");
 }
+@font-face {
+  font-family: "Editorial Old Regular";
+  src: url("../fonts/PPEditorialOld-Regular.otf");
+}
 body {
   margin: 0;
   padding: 0;

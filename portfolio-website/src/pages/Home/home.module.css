@@ -4,6 +4,31 @@
   top: var(--header-height);
   height: calc(100vh - var(--header-height));
   width: 100vw;
-  background-color: #dadada;
+  background-color: var(--light-brown);
   z-index: -1;
+  display: flex;
+  flex-direction: column;
+}
+.titleWrapper {
+  position: relative;
+  left: 15vmin;
+  /* background-color: aqua; */
+  text-align: start;
+  width: 75vw;
+}
+.title {
+  font-family: "Editorial Old Regular";
+  font-size: 70px;
+  letter-spacing: 2.5px;
+  transition: font-size 200ms ease-in-out;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 55px;
+  }
+}
+@media (max-width: 478px) {
+  .title {
+    font-size: 36px;
+  }
 }
