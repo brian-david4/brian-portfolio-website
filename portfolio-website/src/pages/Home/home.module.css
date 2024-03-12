@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   top: var(--header-height);
-  height: calc(100vh - var(--header-height));
+  height: 200vh;
   width: 100vw;
   background-color: var(--light-brown);
   z-index: -1;
