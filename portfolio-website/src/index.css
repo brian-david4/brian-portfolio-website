@@ -41,6 +41,14 @@
   font-family: "Editorial Old Ultrabold Italic";
   src: url("../fonts/EditorialOld/PPEditorialOld-UltraboldItalic.otf");
 }
+@font-face {
+  font-family: "Acma Light";
+  src: url("../fonts/PPAcma-Light.otf");
+}
+@font-face {
+  font-family: "Neue Montreal Italic";
+  src: url("../fonts/PPNeueMontreal-Italic.otf");
+}
 body {
   margin: 0;
   padding: 0;
