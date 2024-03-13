@@ -60,6 +60,10 @@
   text-decoration: none;
   color: black;
   font-family: "Acma Light";
+  transition: transform 550ms ease-in-out;
+}
+.contactWrapper > a:hover {
+  transform: translateX(5px);
 }
 .hoveredItalic {
   font-family: "Neue Montreal Italic" !important;
@@ -71,15 +75,25 @@
   .word {
     letter-spacing: 2px;
   }
+  .contactWrapper {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20vh;
+    left: 15vmin;
+  }
 }
-@media (max-width: 478px) {
+@media (max-width: 500px) {
   .title {
-    font-size: 36px;
+    font-size: 42px;
   }
   .wordWrapper {
     margin-right: 1.2vmin;
   }
   .word {
     letter-spacing: 1px;
+  }
+
+  .contactWrapper {
+    top: 5vmax;
   }
 }

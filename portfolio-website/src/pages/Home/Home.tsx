@@ -20,22 +20,21 @@ const Home = () => {
     <>
       <div className={styles.homepage}>
         <div ref={ref} className={styles.titleWrapper}>
-          <p className={styles.title}>
+          <div className={styles.title}>
             {titleWords.map((word, idx) => (
-              <div className={styles.wordWrapper}>
+              <div key={`word_${idx}`} className={styles.wordWrapper}>
                 <motion.div
                   variants={titleWordsAnim}
                   initial="initial"
                   animate={inView ? "enter" : "exit"}
                   className={styles.word}
-                  key={idx}
                   custom={idx}
                 >
                   {word}
                 </motion.div>
               </div>
             ))}
-          </p>
+          </div>
         </div>
         <div className={styles.contactWrapper}>
           <div className={styles.contactTitle}>contact</div>
