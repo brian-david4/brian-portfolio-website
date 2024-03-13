@@ -13,3 +13,13 @@ export const titleWordsAnim = {
     transition: { duration: 0.3, delay: n * 0.05, ease: [0.76, 0, 0.24, 1] },
   }),
 };
+
+export const contactReveal = {
+  initial: {
+    scaleX: "100%",
+  },
+  enter: {
+    scaleX: "0%",
+    transition: { duration: 0.9, ease: [0.65, 0, 0.35, 1], delay: 0.9 },
+  },
+};

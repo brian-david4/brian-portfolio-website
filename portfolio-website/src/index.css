@@ -5,9 +5,10 @@
   --header-height: 60px;
   --nav-menu-height: 400px;
   /* colours */
-  --light-brown: rgb(239, 215, 193);
+  --light-brown: #efd7c1;
   --vdark-blue: rgb(19, 33, 49);
   --charcoal: rgb(66, 74, 83);
+  --coffee: #5f3a27;
 }
 @font-face {
   font-family: "Right Serif Mono Regular";

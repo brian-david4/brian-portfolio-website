@@ -45,15 +45,24 @@
 }
 .contactWrapper {
   position: relative;
-  left: 11vw;
+  width: fit-content;
+  left: 15vmin;
   margin-top: 30vh;
   display: flex;
   gap: 20vmin;
   user-select: none;
 }
+.reveal {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: var(--light-brown);
+  transform-origin: right;
+}
 .contactTitle {
-  font-family: "Right Serif Mono Regular";
-  font-size: 24px;
+  font-family: "Right Serif Mono Dark";
+  font-size: 25px;
+  color: var(--coffee);
 }
 .contactWrapper > a {
   font-size: 20px;
@@ -79,7 +88,6 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 20vh;
-    left: 15vmin;
   }
 }
 @media (max-width: 500px) {

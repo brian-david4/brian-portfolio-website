@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import styles from "./home.module.css";
-import { titleWordsAnim } from "./homeAnims";
+import { contactReveal, titleWordsAnim } from "./homeAnims";
 import { useState } from "react";
 
 const Home = () => {
@@ -37,6 +37,12 @@ const Home = () => {
           </div>
         </div>
         <div className={styles.contactWrapper}>
+          <motion.div
+            variants={contactReveal}
+            initial="initial"
+            animate="enter"
+            className={styles.reveal}
+          />
           <div className={styles.contactTitle}>contact</div>
           <a
             className={isEmailHovered ? styles.hoveredItalic : ""}
