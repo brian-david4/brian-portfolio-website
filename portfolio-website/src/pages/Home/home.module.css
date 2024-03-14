@@ -4,14 +4,15 @@
   top: var(--header-height);
   height: 200vh;
   width: 100vw;
-  background-color: var(--light-brown);
+  background-color: var(--main-theme);
   z-index: -1;
   display: flex;
   flex-direction: column;
   gap: 1vmin;
 }
-.menuOpen {
-  position: fixed !important;
+.pageOne {
+  height: calc(100vh - var(--header-height));
+  width: 100vw;
 }
 .titleWrapper {
   position: relative;
@@ -22,16 +23,18 @@
   width: 75vw;
 }
 .title {
-  font-family: "Editorial Old Regular";
+  font-family: "Editorial Old Ultralight";
   font-size: 70px;
   transition: font-size 200ms ease-in-out;
   user-select: none;
   display: flex;
   flex-wrap: wrap;
+  color: var(--text-cream);
   /* background-color: cadetblue; */
 }
 .wordWrapper {
   margin-right: 1.7vmin;
+  margin-bottom: 1vmin;
   height: fit-content;
   /* background-color: aqua; */
   padding: 0%;
@@ -42,6 +45,25 @@
   width: 100%;
   letter-spacing: 3px;
   /* background-color: bisque; */
+}
+.emphasis {
+  line-height: 0px;
+  margin-right: 0.5vmin;
+}
+.emphasis::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  transform: scaleX(1);
+  height: 2px;
+  bottom: 9px;
+  left: 12.5%;
+  background-color: var(--text-cream);
+  line-height: 0;
+  transition: 250ms transform ease-in-out;
+}
+.emphasis:hover::after {
+  transform: scaleX(0);
 }
 .contactWrapper {
   position: relative;
@@ -56,20 +78,21 @@
   width: 100%;
   position: absolute;
   height: 100%;
-  background-color: var(--light-brown);
+  background-color: var(--main-theme);
   transform-origin: right;
 }
 .contactTitle {
-  font-family: "Right Serif Mono Dark";
+  font-family: "Pangaia Medium";
   font-size: 25px;
+  letter-spacing: 1px;
   color: var(--coffee);
 }
 .contactWrapper > a {
   font-size: 20px;
   text-decoration: none;
-  color: black;
   font-family: "Acma Light";
   transition: transform 550ms ease-in-out;
+  color: var(--text-cream);
 }
 .contactWrapper > a:hover {
   transform: translateX(5px);
@@ -80,6 +103,7 @@
 @media (max-width: 768px) {
   .title {
     font-size: 55px;
+    font-family: "Editorial Old Regular";
   }
   .word {
     letter-spacing: 2px;

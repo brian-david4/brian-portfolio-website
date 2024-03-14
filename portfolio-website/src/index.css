@@ -5,10 +5,10 @@
   --header-height: 60px;
   --nav-menu-height: 400px;
   /* colours */
-  --light-brown: #efd7c1;
-  --vdark-blue: rgb(19, 33, 49);
-  --charcoal: rgb(66, 74, 83);
-  --coffee: #5f3a27;
+  --main-theme: #162737;
+  --text-cream: #e2decf;
+  --charcoal: rgb(255, 255, 230);
+  --coffee: #cbddf2;
 }
 @font-face {
   font-family: "Right Serif Mono Regular";
@@ -19,7 +19,7 @@
   src: url("../fonts/PPRightSerifMono-Dark.otf");
 }
 @font-face {
-  font-family: "Telegraf-Regular";
+  font-family: "Telegraf Regular";
   src: url("../fonts/PPTelegraf-Regular.otf");
 }
 @font-face {
@@ -35,20 +35,16 @@
   src: url("../fonts/EditorialOld/PPEditorialOld-Ultralight.otf");
 }
 @font-face {
-  font-family: "Editorial Old Ultrabold";
-  src: url("../fonts/EditorialOld/PPEditorialOld-Ultrabold.otf");
-}
-@font-face {
-  font-family: "Editorial Old Ultrabold Italic";
-  src: url("../fonts/EditorialOld/PPEditorialOld-UltraboldItalic.otf");
-}
-@font-face {
   font-family: "Acma Light";
   src: url("../fonts/PPAcma-Light.otf");
 }
 @font-face {
   font-family: "Neue Montreal Italic";
   src: url("../fonts/PPNeueMontreal-Italic.otf");
+}
+@font-face {
+  font-family: "Pangaia Medium";
+  src: url("../fonts/PPPangaia-Medium.otf");
 }
 body {
   margin: 0;

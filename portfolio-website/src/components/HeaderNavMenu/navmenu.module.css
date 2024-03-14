@@ -11,7 +11,7 @@
 .navMenu {
   position: relative;
   overflow: hidden;
-  background-color: var(--light-brown);
+  background-color: var(--main-theme);
   z-index: 45;
 }
 .wrapper {

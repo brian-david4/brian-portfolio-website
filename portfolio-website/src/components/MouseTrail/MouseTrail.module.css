@@ -6,6 +6,6 @@
   display: grid;
   pointer-events: none;
   place-items: center;
-  background-color: black;
+  background-color: var(--text-cream);
   border-radius: 50%;
 }
