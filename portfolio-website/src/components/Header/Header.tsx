@@ -4,6 +4,7 @@ import styles from "./header.module.css";
 import HeaderNavMenu from "../HeaderNavMenu/HeaderNavMenu";
 import { AnimatePresence, motion } from "framer-motion";
 import { opacity } from "./anims";
+import { fadeIn, fadeInMenu } from "./headerAnims";
 
 const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -12,10 +13,20 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.navbar}>
         <Link to="/" className={styles.homeLogoLink}>
-          <div className={styles.homeMenuLogo}>brian david</div>
+          <motion.div
+            variants={fadeIn}
+            initial="initial"
+            animate="enter"
+            className={styles.homeMenuLogo}
+          >
+            brian david
+          </motion.div>
         </Link>
 
-        <div
+        <motion.div
+          variants={fadeInMenu}
+          initial="initial"
+          animate="enter"
           onClick={() => setIsMenuActive(!isMenuActive)}
           className={styles.menuBurger}
         >
@@ -39,7 +50,7 @@ const Header = () => {
               close
             </motion.p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <AnimatePresence mode="wait">
