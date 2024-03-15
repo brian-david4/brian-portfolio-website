@@ -8,9 +8,10 @@ import { hoveredAnim } from "./navBodyAnim";
 
 interface NavBodyProps {
   links: NavLink[];
+  setMenuFalse: () => void;
 }
 
-const NavBody = ({ links }: NavBodyProps) => {
+const NavBody = ({ links, setMenuFalse }: NavBodyProps) => {
   const [hoveredLink, setHoveredLink] = useState({ isActive: false, index: 0 });
 
   const getChars = (word: string) => {
@@ -38,6 +39,7 @@ const NavBody = ({ links }: NavBodyProps) => {
         <Link
           onMouseEnter={() => setHoveredLink({ isActive: true, index: idx })}
           onMouseLeave={() => setHoveredLink({ isActive: false, index: idx })}
+          onClick={() => setMenuFalse()}
           className={styles.link}
           key={`l_${idx}`}
           to={link.to}

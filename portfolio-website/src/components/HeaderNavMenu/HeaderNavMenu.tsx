@@ -4,7 +4,11 @@ import { background, navMenu } from "./navmenuAnim";
 import NavBody from "./NavBody/NavBody";
 import { NavLink } from "../../types";
 
-const HeaderNavMenu = () => {
+interface HeaderNavMenuProps {
+  setMenuFalse: () => void;
+}
+
+const HeaderNavMenu = ({ setMenuFalse }: HeaderNavMenuProps) => {
   const links: NavLink[] = [
     { title: "Home", to: "/" },
     { title: "Projects", to: "/projects" },
@@ -23,7 +27,7 @@ const HeaderNavMenu = () => {
       >
         <div className={styles.wrapper}>
           <div className={styles.container}>
-            <NavBody links={links} />
+            <NavBody setMenuFalse={() => setMenuFalse()} links={links} />
           </div>
         </div>
       </motion.div>

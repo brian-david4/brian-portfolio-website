@@ -54,7 +54,9 @@ const Header = () => {
       </div>
 
       <AnimatePresence mode="wait">
-        {isMenuActive && <HeaderNavMenu />}
+        {isMenuActive && (
+          <HeaderNavMenu setMenuFalse={() => setIsMenuActive(false)} />
+        )}
       </AnimatePresence>
     </div>
   );
