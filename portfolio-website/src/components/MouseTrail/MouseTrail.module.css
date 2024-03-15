@@ -8,4 +8,8 @@
   place-items: center;
   background-color: var(--text-cream);
   border-radius: 50%;
+  transition: opacity 500ms ease-in-out;
+}
+.contactPage {
+  opacity: 0 !important;
 }
