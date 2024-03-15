@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./contact.module.css";
-import { enterRotateLeft, enterRotateRight } from "./contactAnims";
+import { enterRotateLeft, enterRotateRight, linkReveal } from "./contactAnims";
 
 const Contact = () => {
   return (
@@ -26,7 +26,15 @@ const Contact = () => {
         </div>
 
         <div className={styles.emailLink}>
-          <div className={styles.emailInner}>bdavid1530@gmail.com</div>
+          <motion.div
+            variants={linkReveal}
+            initial="initial"
+            animate="reveal"
+            className={styles.emailLinkReveal}
+          ></motion.div>
+          <a href="mailto:bdavid1530@gmail.com" className={styles.emailInner}>
+            bdavid1530@gmail.com
+          </a>
         </div>
       </div>
     </>

@@ -27,3 +27,12 @@ export const enterRotateRight = {
     transition: { duration: 0.6, ease: ease, delay: 0.4 },
   },
 };
+export const linkReveal = {
+  initial: {
+    scaleY: "100%",
+  },
+  reveal: {
+    scaleY: "0%",
+    transition: { duration: 0.6, ease: ease, delay: 0.5 },
+  },
+};
