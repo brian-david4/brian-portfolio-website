@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "./contact.module.css";
 import { titleAnim } from "./contactAnims";
+import MouseTrailContact from "../../components/MouseTrailContact/MouseTrailContact";
 
 const Contact = () => {
   const title = "Contact";
@@ -8,6 +9,7 @@ const Contact = () => {
   return (
     <>
       <div className={styles.contactPage}>
+        <MouseTrailContact />
         <div className={styles.contactTitle}>
           {titleLetters.map((ltr, idx) => (
             <div key={idx} className={styles.ltrWrapper}>
