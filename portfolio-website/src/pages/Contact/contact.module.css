@@ -11,3 +11,17 @@
   flex-direction: column;
   align-items: center;
 }
+.contactTitle {
+  position: relative;
+  color: var(--text-cream);
+  font-size: 244px;
+  font-family: "Fuji Bold";
+  display: flex;
+  flex-direction: row;
+}
+.ltrWrapper {
+  overflow: hidden;
+}
+.letter {
+  display: inline-block;
+}
