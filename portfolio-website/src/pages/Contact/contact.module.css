@@ -13,12 +13,13 @@
 }
 .contactTitle {
   position: relative;
-  color: var(--text-cream);
+  color: var(--bright-red);
   font-size: 244px;
   font-family: "Fuji Bold";
   display: flex;
   flex-direction: row;
   transition: font-size 250ms ease-out;
+  user-select: none;
 }
 .ltrWrapper {
   overflow: hidden;

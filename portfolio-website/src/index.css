@@ -9,6 +9,7 @@
   --text-cream: #3f81fc;
   --charcoal: rgb(255, 255, 230);
   --coffee: #aec4ed;
+  --bright-red: #a81b1b;
 }
 ::selection {
   color: var(--main-theme);

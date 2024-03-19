@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { phraseEnter } from "./anims";
 import styles from "./mouseTC.module.css";
 
-const MouseTrailContact = () => {
+const ContactHello = () => {
   const phrases = [
     "say hello",
     "dites bonjour",
@@ -53,4 +53,4 @@ const MouseTrailContact = () => {
   );
 };
 
-export default MouseTrailContact;
+export default ContactHello;
