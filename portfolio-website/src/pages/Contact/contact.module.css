@@ -18,10 +18,31 @@
   font-family: "Fuji Bold";
   display: flex;
   flex-direction: row;
+  transition: font-size 250ms ease-out;
 }
 .ltrWrapper {
   overflow: hidden;
 }
 .letter {
   display: inline-block;
+}
+@media (max-width: 874px) {
+  .contactTitle {
+    font-size: 184px;
+  }
+}
+@media (max-width: 654px) {
+  .contactTitle {
+    font-size: 144px;
+  }
+}
+@media (max-width: 520px) {
+  .contactTitle {
+    font-size: 98px;
+  }
+}
+@media (max-width: 354px) {
+  .contactTitle {
+    font-size: 25vw;
+  }
 }

@@ -38,7 +38,7 @@ const MouseTrailContact = () => {
   }, [globalIndex]);
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       {phrases.map((phrase, idx) => (
         <motion.span
           className={styles.phrase}

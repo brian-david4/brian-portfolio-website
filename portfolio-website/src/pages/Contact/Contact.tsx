@@ -6,6 +6,7 @@ import MouseTrailContact from "../../components/MouseTrailContact/MouseTrailCont
 const Contact = () => {
   const title = "Contact";
   const titleLetters = title.split("");
+
   return (
     <>
       <div className={styles.contactPage}>
