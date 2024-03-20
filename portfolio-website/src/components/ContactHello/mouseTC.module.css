@@ -1,5 +1,7 @@
 .wrapper {
   white-space: nowrap;
+  z-index: 20;
+  color: var(--text-cream);
 }
 .phrase {
   font-family: "Telegraf Regular";
