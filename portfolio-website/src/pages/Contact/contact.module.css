@@ -27,6 +27,21 @@
 .letter {
   display: inline-block;
 }
+.emailWrapper {
+  position: relative;
+  top: 15vmin;
+  display: flex;
+  gap: 20vw;
+  /* background-color: aqua; */
+}
+.emailTitle {
+  font-family: "Neue Montreal Italic";
+}
+.emailLink {
+  text-decoration: none;
+  color: black;
+  font-family: "Neue Montreal Book";
+}
 @media (max-width: 874px) {
   .contactTitle {
     font-size: 184px;

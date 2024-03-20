@@ -34,6 +34,12 @@ const Contact = () => {
             </div>
           ))}
         </div>
+        <div className={styles.emailWrapper}>
+          <div className={styles.emailTitle}>email</div>
+          <a className={styles.emailLink} href="mailto:bdavid1530@gmail.com">
+            bdavid1530@gmail.com
+          </a>
+        </div>
       </div>
     </>
   );
