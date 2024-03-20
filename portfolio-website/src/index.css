@@ -48,16 +48,20 @@
   src: url("../fonts/PPAcma-Light.otf");
 }
 @font-face {
-  font-family: "Neue Montreal Italic";
-  src: url("../fonts/PPNeueMontreal-Italic.otf");
-}
-@font-face {
   font-family: "Pangaia Medium";
   src: url("../fonts/PPPangaia-Medium.otf");
 }
 @font-face {
   font-family: "Fuji Bold";
   src: url("../fonts/PPFuji-Bold.otf");
+}
+@font-face {
+  font-family: "Neue Montreal Italic";
+  src: url("../fonts/NeueMontreal/PPNeueMontreal-Italic.otf");
+}
+@font-face {
+  font-family: "Neue Montreal Book";
+  src: url("../fonts/NeueMontreal/PPNeueMontreal-Book.otf");
 }
 body {
   margin: 0;
