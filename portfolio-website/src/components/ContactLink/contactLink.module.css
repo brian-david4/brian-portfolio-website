@@ -1,16 +1,35 @@
 .emailWrapper {
   position: relative;
-
   display: flex;
   gap: 20vw;
   overflow: hidden;
+  padding: 6px;
 }
 .emailTitle {
   font-family: "Neue Montreal Italic";
   color: black;
+  font-size: 1.5rem;
 }
 .emailLink {
   text-decoration: none;
   font-family: "Neue Montreal Book";
-  color: var(--text-cream);
+  color: black;
+  font-size: 1.2rem;
+  transition: transform 350ms ease-out;
+}
+.emailLink:hover {
+  transform: translateX(5px);
+}
+div.emailLink {
+  user-select: none;
+}
+.emailWrapper::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  background-color: var(--bright-red);
+  display: inline-block;
+  height: 2px;
 }

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import styles from "./contactLink.module.css";
 import { contactLinkEnter } from "./anims";
+import styles from "./contactLink.module.css";
 
 interface ContactLinkProps {
   title: string;

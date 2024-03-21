@@ -30,6 +30,9 @@
 .linksWrapper {
   position: relative;
   top: 15vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
 }
 @media (max-width: 874px) {
   .contactTitle {

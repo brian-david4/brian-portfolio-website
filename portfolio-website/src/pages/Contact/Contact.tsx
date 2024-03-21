@@ -39,6 +39,7 @@ const Contact = () => {
         </div>
         <div className={styles.linksWrapper}>
           <ContactLink title={emailTitle} link={emailLink} />
+          <ContactLink title="phone" link="07838358167" />
         </div>
       </div>
     </>
