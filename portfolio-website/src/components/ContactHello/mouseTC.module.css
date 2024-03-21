@@ -6,6 +6,7 @@
 .phrase {
   font-family: "Telegraf Regular";
   font-size: 1.2rem;
+  opacity: 0;
 }
 @media (max-width: 748px) {
   .phrase {

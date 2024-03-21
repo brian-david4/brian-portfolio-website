@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./contact.module.css";
-import { titleAnim } from "./contactAnims";
+import { emailAnim, titleAnim } from "./contactAnims";
 import ContactHello from "../../components/ContactHello/ContactHello";
 import ContactMouseEffect from "../../components/ContactMouseEffect/ContactMouseEffect";
 import { useState } from "react";
@@ -9,6 +9,8 @@ const Contact = () => {
   const [isTitleHovered, setTitleHovered] = useState(false);
   const title = "Contact";
   const titleLetters = title.split("");
+  const emailTitle = "email";
+  const emailLink = "bdavid1530@gmail.com";
 
   return (
     <>
@@ -35,9 +37,33 @@ const Contact = () => {
           ))}
         </div>
         <div className={styles.emailWrapper}>
-          <div className={styles.emailTitle}>email</div>
+          <div className={styles.emailTitle}>
+            {emailTitle.split("").map((ltr, idx) => (
+              <motion.span
+                custom={idx}
+                className={styles.letter}
+                variants={emailAnim}
+                initial="initial"
+                animate="enter"
+                key={`eTitle_ltr${idx}`}
+              >
+                {ltr}
+              </motion.span>
+            ))}
+          </div>
           <a className={styles.emailLink} href="mailto:bdavid1530@gmail.com">
-            bdavid1530@gmail.com
+            {emailLink.split("").map((ltr, idx) => (
+              <motion.span
+                custom={idx}
+                className={styles.letter}
+                variants={emailAnim}
+                initial="initial"
+                animate="enter"
+                key={idx}
+              >
+                {ltr}
+              </motion.span>
+            ))}
           </a>
         </div>
       </div>
