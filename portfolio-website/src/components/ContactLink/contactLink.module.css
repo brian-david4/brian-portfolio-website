@@ -17,6 +17,9 @@
   font-size: 1.2rem;
   transition: transform 350ms ease-out;
 }
+.letter {
+  display: inline-block;
+}
 .emailLink:hover {
   transform: translateX(5px);
 }
