@@ -15,6 +15,7 @@ const ContactMouseEffect = ({ isTitleHovered }: ContactMouseEffectProps) => {
     <>
       {colours.map((colour, idx) => (
         <motion.div
+          key={`cursor_${idx}`}
           animate={{ opacity: isTitleHovered ? 1 : 0, left: x, top: y }}
           transition={{ type: "tween", ease: "easeOut", delay: idx * 0.002 }}
           style={{

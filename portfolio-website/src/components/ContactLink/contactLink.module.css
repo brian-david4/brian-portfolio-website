@@ -1,0 +1,16 @@
+.emailWrapper {
+  position: relative;
+
+  display: flex;
+  gap: 20vw;
+  overflow: hidden;
+}
+.emailTitle {
+  font-family: "Neue Montreal Italic";
+  color: black;
+}
+.emailLink {
+  text-decoration: none;
+  font-family: "Neue Montreal Book";
+  color: var(--text-cream);
+}
