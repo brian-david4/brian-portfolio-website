@@ -37,6 +37,12 @@ const Contact = () => {
             </div>
           ))}
         </div>
+        <div className={styles.bio}>
+          <div className={styles.bioMessage}>
+            I want to hear from you, send me a message!
+          </div>
+          <div className={styles.bioHover}></div>
+        </div>
         <div className={styles.linksWrapper}>
           <ContactLink title={emailTitle} link={emailLink} />
           <ContactLink title="phone" link="07838358167" />

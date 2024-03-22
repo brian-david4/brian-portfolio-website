@@ -13,7 +13,7 @@
 }
 .contactTitle {
   position: relative;
-  color: var(--bright-red);
+  color: var(--text-cream);
   font-size: 244px;
   font-family: "Fuji Bold";
   display: flex;
@@ -26,6 +26,30 @@
 }
 .letter {
   display: inline-block;
+}
+.bio {
+  position: relative;
+  margin-top: 5vh;
+  font-family: "Editorial Old Regular";
+  font-size: 2rem;
+}
+.bioMessage {
+  color: var(--bright-red);
+}
+.bioHover {
+  width: 100%;
+  background-color: var(--main-theme-shadow);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 500ms ease-out;
+}
+.bio:hover > .bioHover {
+  transform: scaleX(1);
 }
 .linksWrapper {
   position: relative;
