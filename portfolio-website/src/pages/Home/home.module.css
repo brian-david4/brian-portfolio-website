@@ -98,25 +98,16 @@
 
 /* page 2 */
 .pageTwo {
-  height: 100vh;
+  height: 300vh;
   width: 100vw;
   background-color: var(--main-theme);
 }
 .projects {
-  width: 100vw;
+  width: 150vw;
   height: fit-content;
-  background-color: chocolate;
+  /* background-color: chocolate; */
   display: flex;
   flex-direction: column;
-}
-.project {
-  height: 35vh;
-  width: 100%;
-  background-color: cornflowerblue;
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 @media (max-width: 768px) {
   .title {

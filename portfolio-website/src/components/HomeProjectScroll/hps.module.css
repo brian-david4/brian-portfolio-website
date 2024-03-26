@@ -1,0 +1,23 @@
+.project {
+  height: 37vh;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--orange);
+}
+.titlesContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.6s ease-out;
+}
+.title {
+  font-family: "Fuji Bold";
+  font-size: 164px;
+  transition: font-size 250ms ease-out;
+}
