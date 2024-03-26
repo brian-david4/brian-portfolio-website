@@ -21,3 +21,23 @@
   font-size: 164px;
   transition: font-size 250ms ease-out;
 }
+@media (max-width: 1278px) {
+  .title {
+    font-size: 134px;
+  }
+}
+@media (max-width: 1096px) {
+  .title {
+    font-size: 98px;
+  }
+}
+@media (max-width: 784px) {
+  .title {
+    font-size: 72px;
+  }
+}
+@media (max-width: 596px) {
+  .title {
+    font-size: 11vmin;
+  }
+}
