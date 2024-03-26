@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import styles from "./home.module.css";
 import { contactReveal, titleWordsAnim } from "./homeAnims";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
@@ -15,6 +15,14 @@ const Home = () => {
     threshold: 0.2,
     triggerOnce: false,
   });
+
+  // for project animation
+  const projectRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: projectRef,
+    offset: ["start end", "start start"],
+  });
+  const position = useTransform(scrollYProgress, [0, 1], ["-500%", "500%"]);
 
   return (
     <>
@@ -61,6 +69,32 @@ const Home = () => {
             >
               bdavid1530@gmail.com
             </a>
+          </div>
+        </div>
+        <div className={styles.pageTwo}>
+          <h1>Projects</h1>
+
+          <div className={styles.projects}>
+            <div ref={projectRef} className={styles.project}>
+              <motion.div
+                style={{ x: position }}
+                className={styles.projectTitle}
+              >
+                Project 1
+              </motion.div>
+              <motion.div
+                style={{ x: position }}
+                className={styles.projectTitle}
+              >
+                Project 1
+              </motion.div>
+              <motion.div
+                style={{ x: position }}
+                className={styles.projectTitle}
+              >
+                Project 1
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>
