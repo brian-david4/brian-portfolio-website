@@ -38,7 +38,7 @@
 }
 .bioHover {
   width: 100%;
-  background-color: var(--main-theme-shadow);
+  background-color: #e8a2a9;
   height: 100%;
   position: absolute;
   left: 0;

@@ -14,7 +14,7 @@ const Home = () => {
 
   const { ref, inView } = useInView({
     threshold: 0.2,
-    triggerOnce: false,
+    triggerOnce: true,
   });
 
   // for project animation
@@ -70,9 +70,9 @@ const Home = () => {
           <h1>Projects</h1>
 
           <div className={styles.projects}>
-            <HomeProjectScroll title="Project 1" />
-            <HomeProjectScroll title="Project 1" />
-            <HomeProjectScroll title="Project 1" />
+            <HomeProjectScroll title="Kurosawa's Story -" />
+            <HomeProjectScroll title="Furniture Store / " />
+            <HomeProjectScroll title="Game Search Engine. * " />
           </div>
         </div>
       </div>

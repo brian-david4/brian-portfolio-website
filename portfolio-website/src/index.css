@@ -6,13 +6,14 @@
   --nav-menu-height: 400px;
   /* colours */
   --main-theme: #e9f5ff;
-  --main-theme-shadow: #f8efc6;
   --text-cream: #3f81fc;
   --charcoal: rgb(255, 255, 230);
   --coffee: #a3c0f5;
-  --bright-red: #ce1a1a;
-  --orange: #f9d4bb;
-  --blue: #344660;
+  --bright-red: #9a2026;
+  /* --orange: #f9d4bb;
+  --blue: #344660; */
+  --blue: #dff0f8;
+  --orange: #fcb301;
 }
 ::selection {
   color: var(--main-theme);

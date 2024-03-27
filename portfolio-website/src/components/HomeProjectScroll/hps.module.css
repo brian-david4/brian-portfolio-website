@@ -1,25 +1,31 @@
 .project {
-  height: 37vh;
+  height: 37vmin;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--blue);
-  color: var(--orange);
+  background-color: var(--text-cream);
+  /* color: var(--main-theme); */
+  background-color: #e8a2a9;
+  color: #9a2026 !important;
 }
 .titlesContainer {
   height: 100%;
-  width: 100%;
+  width: 150vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: transform 0.6s ease-out;
+  /* background-color: aqua; */
 }
 .title {
   font-family: "Fuji Bold";
+  letter-spacing: 0.4rem;
   font-size: 164px;
   transition: font-size 250ms ease-out;
+  white-space: nowrap;
+  margin-right: 20px;
 }
 @media (max-width: 1278px) {
   .title {
