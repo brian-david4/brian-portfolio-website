@@ -10,10 +10,9 @@
   --charcoal: rgb(255, 255, 230);
   --coffee: #a3c0f5;
   --bright-red: #9a2026;
-  /* --orange: #f9d4bb;
-  --blue: #344660; */
-  --blue: #dff0f8;
-  --orange: #fcb301;
+  --dark-green: #09312b;
+  --orange: #fca001;
+  --pink: #e8a2a9;
 }
 ::selection {
   color: var(--main-theme);
