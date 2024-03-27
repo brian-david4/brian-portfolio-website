@@ -1,7 +1,6 @@
 .homepage {
   position: absolute;
   left: 0;
-  top: var(--header-height);
   height: fit-content;
   width: 100vw;
   background-color: var(--main-theme);
@@ -10,13 +9,13 @@
   flex-direction: column;
 }
 .pageOne {
-  height: calc(100vh - var(--header-height));
+  height: 100vh;
   width: 100vw;
   background-color: var(--main-theme);
 }
 .titleWrapper {
   position: relative;
-  top: 10vh;
+  top: calc(10vh + var(--header-height));
   left: 15vmin;
   text-align: start;
   width: 75vw;
@@ -63,6 +62,7 @@
 }
 .contactWrapper {
   position: relative;
+  top: var(--header-height);
   width: fit-content;
   left: 15vmin;
   margin-top: 30vh;

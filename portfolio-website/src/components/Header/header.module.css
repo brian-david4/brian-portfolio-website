@@ -9,7 +9,6 @@
   left: 0;
   width: 100vw;
   height: var(--header-height);
-  background-color: var(--main-theme);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +25,7 @@
   letter-spacing: 0.8px;
   user-select: none;
   color: var(--text-cream);
+  background-color: var(--main-theme);
 }
 .menuBurger {
   position: absolute;

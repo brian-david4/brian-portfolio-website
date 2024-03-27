@@ -17,7 +17,10 @@ const Contact = () => {
     <>
       <div className={styles.contactPage}>
         <ContactMouseEffect isTitleHovered={isTitleHovered} />
-        <ContactHello />
+
+        <div className={styles.phrasesPosition}>
+          <ContactHello />
+        </div>
         <div
           onMouseEnter={() => setTitleHovered(true)}
           onMouseLeave={() => setTitleHovered(false)}

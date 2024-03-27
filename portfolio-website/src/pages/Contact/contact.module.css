@@ -1,8 +1,7 @@
 .contactPage {
   position: absolute;
-  top: var(--header-height);
+  height: 100vh;
   left: 0;
-  height: calc(100vh - var(--header-height));
   width: 100%;
   background-color: var(--main-theme);
   z-index: -1;
@@ -10,6 +9,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.phrasesPosition {
+  position: absolute;
+  bottom: 5vmin;
 }
 .contactTitle {
   position: relative;
