@@ -13,6 +13,7 @@
   overflow: hidden;
   background-color: var(--main-theme);
   z-index: 45;
+  bottom: var(--header-height);
 }
 .wrapper {
   display: flex;

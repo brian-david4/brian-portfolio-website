@@ -1,7 +1,7 @@
 .body {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 55px;
+  margin-top: 15vh;
   padding-left: 5px;
 }
 .link {
