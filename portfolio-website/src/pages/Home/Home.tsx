@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useState } from "react";
 import styles from "./home.module.css";
 import { contactReveal, titleWordsAnim } from "./homeAnims";
-import { useState } from "react";
 import HomeProjectScroll from "../../components/HomeProjectScroll/HomeProjectScroll";
+import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
 
 const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
@@ -67,12 +68,14 @@ const Home = () => {
           </div>
         </div>
         <div className={styles.pageTwo}>
-          <h1>Projects</h1>
+          <div className={styles.projHeadingPos}>
+            <ProjectHeading title="Projects" />
+          </div>
 
           <div className={styles.projects}>
             <HomeProjectScroll title="Kurosawa's Story -" />
             <HomeProjectScroll title="Furniture Store / " />
-            <HomeProjectScroll title="Game Search Engine. * " />
+            <HomeProjectScroll title="Game Search Engine * " />
           </div>
         </div>
       </div>

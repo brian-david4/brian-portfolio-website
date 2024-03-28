@@ -102,13 +102,17 @@
   width: 100vw;
   background-color: var(--main-theme);
 }
+.projHeadingPos {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
 .projects {
   width: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
   border-top: solid 3px black;
-  /* border-bottom: solid 3px black; */
 }
 @media (max-width: 768px) {
   .title {
