@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 .title {
-  font-size: 164px;
+  font-size: 25vmin;
   display: flex;
   flex-wrap: wrap;
   transition: transform 800ms cubic-bezier(0.16, 1, 0.3, 1),
@@ -29,23 +29,8 @@
   transform: translateY(0%) !important;
   opacity: 1;
 }
-@media (max-width: 1278px) {
-  .title {
-    font-size: 134px;
-  }
-}
-@media (max-width: 1096px) {
-  .title {
-    font-size: 98px;
-  }
-}
-@media (max-width: 784px) {
-  .title {
-    font-size: 72px;
-  }
-}
 @media (max-width: 596px) {
   .title {
-    font-size: 11vmin;
+    font-size: 17vmin;
   }
 }
