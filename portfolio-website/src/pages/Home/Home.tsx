@@ -13,6 +13,12 @@ const Home = () => {
     "React developer fashioning creative web enviroments that are candid yet elegant.";
   const titleWords = title.split(" ");
 
+  const projects = [
+    { title: "Kurosawa's Story -", link: "kurosawa-gray.vercel.app" },
+    { title: "Furniture Store /", link: "furniture-shop-drab.vercel.app" },
+    { title: "Game Hub Search *", link: "game-hib-eosin-chi.vercel.app" },
+  ];
+
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -73,9 +79,9 @@ const Home = () => {
           </div>
 
           <div className={styles.projects}>
-            <HomeProjectScroll title="Kurosawa's Story -" />
-            <HomeProjectScroll title="Furniture Store / " />
-            <HomeProjectScroll title="Game Search Engine * " />
+            {projects.map((project, idx) => (
+              <HomeProjectScroll title={project.title} key={`pjt_${idx}`} />
+            ))}
           </div>
         </div>
       </div>
