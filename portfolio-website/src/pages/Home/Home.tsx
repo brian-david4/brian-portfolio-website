@@ -14,9 +14,15 @@ const Home = () => {
   const titleWords = title.split(" ");
 
   const projects = [
-    { title: "Kurosawa's Story -", link: "kurosawa-gray.vercel.app" },
-    { title: "Furniture Store /", link: "furniture-shop-drab.vercel.app" },
-    { title: "Game Hub Search *", link: "game-hib-eosin-chi.vercel.app" },
+    { title: "Kurosawa's Story -", link: "https://kurosawa-gray.vercel.app" },
+    {
+      title: "Furniture Store /",
+      link: "https://furniture-shop-drab.vercel.app",
+    },
+    {
+      title: "Game Hub Search *",
+      link: "https://game-hub-eosin-chi.vercel.app",
+    },
   ];
 
   const { ref, inView } = useInView({
@@ -80,7 +86,11 @@ const Home = () => {
 
           <div className={styles.projects}>
             {projects.map((project, idx) => (
-              <HomeProjectScroll title={project.title} key={`pjt_${idx}`} />
+              <HomeProjectScroll
+                link={project.link}
+                title={project.title}
+                key={`pjt_${idx}`}
+              />
             ))}
           </div>
         </div>

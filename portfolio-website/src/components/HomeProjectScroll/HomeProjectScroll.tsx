@@ -5,9 +5,10 @@ import ProjectScrollTitle from "../ProjectScrollTitle/ProjectScrollTitle";
 
 interface HomeProjectScroll {
   title: string;
+  link: string;
 }
 
-const HomeProjectScroll = ({ title }: HomeProjectScroll) => {
+const HomeProjectScroll = ({ title, link }: HomeProjectScroll) => {
   const projectRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: projectRef,
@@ -17,13 +18,18 @@ const HomeProjectScroll = ({ title }: HomeProjectScroll) => {
 
   return (
     <>
-      <div ref={projectRef} className={styles.project}>
-        <motion.div style={{ x: position }} className={styles.titlesContainer}>
-          <ProjectScrollTitle title={title} />
-          <ProjectScrollTitle title={title} />
-          <ProjectScrollTitle title={title} />
-        </motion.div>
-      </div>
+      <a target="_blank" className={styles.projectLink} href={link}>
+        <div ref={projectRef} className={styles.project}>
+          <motion.div
+            style={{ x: position }}
+            className={styles.titlesContainer}
+          >
+            <ProjectScrollTitle title={title} />
+            <ProjectScrollTitle title={title} />
+            <ProjectScrollTitle title={title} />
+          </motion.div>
+        </div>
+      </a>
     </>
   );
 };
