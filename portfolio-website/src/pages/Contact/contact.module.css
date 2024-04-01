@@ -32,6 +32,10 @@
   display: grid;
   place-items: center;
 }
+.word {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
 .textInner {
   font-size: 5vw;
   font-family: "Neue Montreal Book";
