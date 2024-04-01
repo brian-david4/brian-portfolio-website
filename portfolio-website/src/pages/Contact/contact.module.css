@@ -3,7 +3,7 @@
   height: 100vh;
   left: 0;
   width: 100%;
-  background-color: var(--main-theme);
+  background-color: #f3f9f9;
   z-index: -1;
   overflow: hidden;
   display: flex;
@@ -14,70 +14,53 @@
   position: absolute;
   bottom: 5vmin;
 }
-.contactTitle {
-  position: relative;
-  color: var(--text-cream);
-  font-size: 244px;
-  font-family: "Fuji Bold";
-  display: flex;
-  flex-direction: row;
-  transition: font-size 250ms ease-out;
-  user-select: none;
-}
-.ltrWrapper {
-  overflow: hidden;
-}
-.letter {
-  display: inline-block;
-}
-.bio {
-  position: relative;
-  margin-top: 5vh;
-  font-family: "Editorial Old Regular";
-  font-size: 2rem;
-}
-.bioMessage {
-  color: var(--bright-red);
-}
-.bioHover {
-  width: 100%;
-  background-color: #e8a2a9;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: transform 500ms ease-out;
-}
-.bio:hover > .bioHover {
-  transform: scaleX(1);
-}
-.linksWrapper {
-  position: relative;
-  top: 15vmin;
+.textFlex {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  gap: 2.5vh;
+  align-items: center;
+  justify-content: center;
 }
-@media (max-width: 874px) {
-  .contactTitle {
-    font-size: 184px;
-  }
+.text1Wrapper {
+  width: 45vw;
+  left: 25vw;
+  bottom: 15vh;
 }
-@media (max-width: 654px) {
-  .contactTitle {
-    font-size: 144px;
-  }
+.textWrapper {
+  position: relative;
+  display: grid;
+  place-items: center;
 }
-@media (max-width: 520px) {
-  .contactTitle {
-    font-size: 98px;
-  }
+.textInner {
+  font-size: 5vw;
+  font-family: "Neue Montreal Book";
+  text-decoration: none;
+  color: var(--dark-green);
+  letter-spacing: -0.1rem;
 }
-@media (max-width: 354px) {
-  .contactTitle {
-    font-size: 25vw;
-  }
+.text2Wrapper {
+  top: 5vh;
+  right: 12vw;
+}
+.email {
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  white-space: nowrap;
+}
+.email:hover::after {
+  transform: scaleX(1);
+}
+.email::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: scaleX(0);
+  width: 80%;
+  height: 2px;
+  background-color: black;
+  transition: 250ms transform cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.email:hover {
+  transform: scale(1.05);
 }
