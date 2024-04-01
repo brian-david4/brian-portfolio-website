@@ -5,6 +5,7 @@ import styles from "./home.module.css";
 import { contactReveal, titleWordsAnim } from "./homeAnims";
 import HomeProjectScroll from "../../components/HomeProjectScroll/HomeProjectScroll";
 import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
+import SkillsComponent from "../../components/SkillsComponent/SkillsComponent";
 
 const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
@@ -92,6 +93,25 @@ const Home = () => {
                 key={`pjt_${idx}`}
               />
             ))}
+          </div>
+
+          <div className={styles.toolsPosition}>
+            <SkillsComponent
+              body={["woo!", "woo2!", "woo3!"]}
+              heading="Skills"
+            />
+            <SkillsComponent
+              body={["woo!", "woo2!", "woo3!"]}
+              heading="Skills"
+            />
+            <SkillsComponent
+              body={["woo!", "woo2!", "woo3!"]}
+              heading="Skills"
+            />
+            <SkillsComponent
+              body={["woo!", "woo2!", "woo3!"]}
+              heading="Skills"
+            />
           </div>
         </div>
       </div>

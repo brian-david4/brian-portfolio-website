@@ -114,6 +114,14 @@
   flex-direction: column;
   border-top: solid 3px black;
 }
+.toolsPosition {
+  width: 100%;
+  height: fit-content;
+  margin-top: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 768px) {
   .title {
     font-size: 55px;
