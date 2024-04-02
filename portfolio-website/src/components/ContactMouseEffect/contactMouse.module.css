@@ -6,3 +6,8 @@
   mix-blend-mode: difference;
   pointer-events: none;
 }
+@media (max-width: 924px) {
+  .cursor {
+    opacity: 0 !important;
+  }
+}
