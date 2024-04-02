@@ -26,6 +26,25 @@ const Home = () => {
     },
   ];
 
+  const skills = [
+    {
+      body: ["React", "CSS modules", "TypeScript", "JavaScript"],
+      heading: "Tools",
+    },
+    {
+      body: ["GSAP", "Framer Motion", "React Router", "Axios"],
+      heading: "Libraries",
+    },
+    {
+      body: ["Vite", "Figma", "Evernote", "Git"],
+      heading: "Skills",
+    },
+    {
+      body: ["Photoshop", "CodePen", "Chrome DevTools"],
+      heading: "Extra",
+    },
+  ];
+
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -96,22 +115,13 @@ const Home = () => {
           </div>
 
           <div className={styles.toolsPosition}>
-            <SkillsComponent
-              body={["woo!", "woo2!", "woo3!"]}
-              heading="Skills"
-            />
-            <SkillsComponent
-              body={["woo!", "woo2!", "woo3!"]}
-              heading="Skills"
-            />
-            <SkillsComponent
-              body={["woo!", "woo2!", "woo3!"]}
-              heading="Skills"
-            />
-            <SkillsComponent
-              body={["woo!", "woo2!", "woo3!"]}
-              heading="Skills"
-            />
+            {skills.map((skill, idx) => (
+              <SkillsComponent
+                body={skill.body}
+                heading={skill.heading}
+                key={`sk_${idx}`}
+              />
+            ))}
           </div>
         </div>
       </div>
