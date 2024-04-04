@@ -16,3 +16,8 @@
   margin-right: 1vmin;
   display: inline-block;
 }
+@media (max-width: 924px) {
+  .textWrapper {
+    width: 75vw;
+  }
+}

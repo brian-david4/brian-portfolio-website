@@ -10,7 +10,7 @@ interface TextComponentProps {
 const TextComponent = ({ children }: TextComponentProps) => {
   const words = children.split(" ");
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.25 });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.6 });
 
   return (
     <p ref={ref} className={styles.textWrapper}>
