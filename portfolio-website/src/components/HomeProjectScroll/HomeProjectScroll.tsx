@@ -14,7 +14,7 @@ const HomeProjectScroll = ({ title, link }: HomeProjectScroll) => {
     target: projectRef,
     offset: ["start 0.95", "start -0.1"],
   });
-  const position = useTransform(scrollYProgress, [0, 1], ["-40%", "-35%"]);
+  const position = useTransform(scrollYProgress, [0, 1], ["-40%", "-10%"]);
 
   return (
     <>

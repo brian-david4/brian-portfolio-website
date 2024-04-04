@@ -99,7 +99,7 @@
 
 /* page 2 */
 .pageTwo {
-  height: 300vh;
+  height: fit-content;
   width: 100vw;
   background-color: var(--main-theme);
 }
@@ -118,10 +118,25 @@
 .toolsPosition {
   width: 100%;
   height: fit-content;
-  margin-top: 15vh;
+  margin-top: 25vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.textPos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35vh;
+}
+.posRight {
+  position: relative;
+  left: 20vw;
+}
+.posLeft {
+  position: relative;
+  right: 20vw;
 }
 @media (max-width: 768px) {
   .title {

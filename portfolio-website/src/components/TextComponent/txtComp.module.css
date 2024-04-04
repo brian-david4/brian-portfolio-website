@@ -1,0 +1,18 @@
+.textWrapper {
+  width: 30vw;
+  height: fit-content;
+  letter-spacing: 0.05rem;
+  font-family: "Neue Montreal Book";
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: aqua; */
+}
+.wordWrapper {
+  overflow: hidden;
+}
+.word {
+  margin-right: 1vmin;
+  display: inline-block;
+}

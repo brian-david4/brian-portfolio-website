@@ -6,6 +6,7 @@ import { contactReveal, titleWordsAnim } from "./homeAnims";
 import HomeProjectScroll from "../../components/HomeProjectScroll/HomeProjectScroll";
 import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
 import SkillsComponent from "../../components/SkillsComponent/SkillsComponent";
+import TextComponent from "../../components/TextComponent/TextComponent";
 
 const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
@@ -122,6 +123,31 @@ const Home = () => {
                 key={`sk_${idx}`}
               />
             ))}
+          </div>
+
+          <div className={styles.textPos}>
+            <div className={styles.posRight}>
+              <TextComponent>
+                I am always listening to music, if not i'm probably playing
+                some. Cinema is just as essential, spanning countries and
+                decades.
+              </TextComponent>
+            </div>
+            <div className={styles.posLeft}>
+              <TextComponent>
+                I enjoy the challenge of materialising an idea into a fully
+                formed experience, I love being creative.
+              </TextComponent>
+            </div>
+            <div className={styles.posLeft}>
+              <TextComponent>What Next?</TextComponent>
+            </div>
+            <div className={styles.posRight}>
+              <TextComponent>
+                I am working towards learning Three.js and WebGL, whilst
+                constantly improving on the fundamentals.
+              </TextComponent>
+            </div>
           </div>
         </div>
       </div>
