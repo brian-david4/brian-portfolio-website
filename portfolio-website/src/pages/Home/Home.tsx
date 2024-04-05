@@ -8,6 +8,7 @@ import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
 import SkillsComponent from "../../components/SkillsComponent/SkillsComponent";
 import TextComponent from "../../components/TextComponent/TextComponent";
 import TextComponentBold from "../../components/TextComponentBold/TextComponentBold";
+import { TextHoverType } from "../../types";
 
 const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
@@ -47,12 +48,18 @@ const Home = () => {
     },
   ];
 
+  // for project animation
   const { ref, inView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
 
-  // for project animation
+  // for text comp
+
+  const textEffectWords: TextHoverType = {
+    selectedWords: ["music,", "Cinema"],
+    images: ["/mirror.jpg"],
+  };
 
   return (
     <>
@@ -118,7 +125,7 @@ const Home = () => {
 
           <div className={styles.textPos}>
             <div className={styles.posRight}>
-              <TextComponent hoverWords={["music,", "Cinema"]}>
+              <TextComponent hoverWords={textEffectWords}>
                 I am always listening to music, if not i'm probably playing
                 some. Cinema is just as essential, spanning countries and
                 decades.
