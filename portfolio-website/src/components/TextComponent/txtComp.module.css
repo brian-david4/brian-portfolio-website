@@ -16,6 +16,9 @@
   display: inline-block;
   color: var(--dark-green);
 }
+.hoverWord {
+  font-family: "Pangaia Medium" !important;
+}
 @media (max-width: 924px) {
   .textWrapper {
     width: 75vw;

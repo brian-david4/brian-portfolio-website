@@ -118,7 +118,7 @@ const Home = () => {
 
           <div className={styles.textPos}>
             <div className={styles.posRight}>
-              <TextComponent>
+              <TextComponent hoverWords={["music,", "Cinema"]}>
                 I am always listening to music, if not i'm probably playing
                 some. Cinema is just as essential, spanning countries and
                 decades.

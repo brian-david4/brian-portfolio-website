@@ -15,8 +15,8 @@
   --pink: #e8a2a9;
 }
 ::selection {
-  color: var(--main-theme);
-  background-color: var(--text-cream);
+  color: var(--charcoal);
+  background-color: black;
 }
 @font-face {
   font-family: "Right Serif Mono Regular";
