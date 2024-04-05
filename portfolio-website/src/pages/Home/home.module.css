@@ -128,16 +128,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 35vh;
+  margin-top: 15vh;
   gap: 10vh;
 }
 .posRight {
   position: relative;
-  left: 20vw;
+  left: 10vw;
 }
 .posLeft {
   position: relative;
-  right: 20vw;
+  right: 10vw;
 }
 @media (max-width: 924px) {
   .posRight {

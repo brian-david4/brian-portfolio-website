@@ -7,6 +7,7 @@ import HomeProjectScroll from "../../components/HomeProjectScroll/HomeProjectScr
 import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
 import SkillsComponent from "../../components/SkillsComponent/SkillsComponent";
 import TextComponent from "../../components/TextComponent/TextComponent";
+import TextComponentBold from "../../components/TextComponentBold/TextComponentBold";
 
 const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
@@ -115,16 +116,6 @@ const Home = () => {
             ))}
           </div>
 
-          <div className={styles.toolsPosition}>
-            {skills.map((skill, idx) => (
-              <SkillsComponent
-                body={skill.body}
-                heading={skill.heading}
-                key={`sk_${idx}`}
-              />
-            ))}
-          </div>
-
           <div className={styles.textPos}>
             <div className={styles.posRight}>
               <TextComponent>
@@ -140,7 +131,7 @@ const Home = () => {
               </TextComponent>
             </div>
             <div className={styles.posLeft}>
-              <TextComponent>What Next?</TextComponent>
+              <TextComponentBold>What Next?</TextComponentBold>
             </div>
             <div className={styles.posRight}>
               <TextComponent>
@@ -148,6 +139,16 @@ const Home = () => {
                 constantly improving on the fundamentals.
               </TextComponent>
             </div>
+          </div>
+
+          <div className={styles.toolsPosition}>
+            {skills.map((skill, idx) => (
+              <SkillsComponent
+                body={skill.body}
+                heading={skill.heading}
+                key={`sk_${idx}`}
+              />
+            ))}
           </div>
         </div>
       </div>
