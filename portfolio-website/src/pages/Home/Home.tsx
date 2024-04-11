@@ -59,8 +59,12 @@ const Home = () => {
   const textEffectWords: TextHoverType = {
     selectedWords: ["music,", "Cinema"],
     images: [
-      ["/remains.jpg", "/theloniusmonk.jpg"],
-      ["/mirror.jpg", "/remains.jpg", "/theloniusmonk.jpg"],
+      ["/album/manAlive.jpg", "/album/slowthai.jpg", "/album/skepta.webp"],
+      [
+        "/cinema/goodfellas.jpg",
+        "/cinema/kurosawa.jpg",
+        "/cinema/bandBrothers.jpg",
+      ],
     ],
   };
 
