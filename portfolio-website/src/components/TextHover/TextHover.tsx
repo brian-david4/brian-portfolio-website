@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import styles from "./txtHov.module.css";
 import { useState } from "react";
 import { textHoverImage } from "./anims";
@@ -22,20 +22,23 @@ const TextHover = ({ children, images, arrayIndex }: TextHoverProps) => {
         {children}
       </span>
 
-      {isHovered &&
-        images[arrayIndex].map((src, idx) => (
-          <Portal key={`txtImg_${idx}`} target={PortalTarget.PORTAL}>
-            <motion.div
-              custom={idx}
-              variants={textHoverImage}
-              initial="initial"
-              animate="enter"
-              className={styles.imgWrapper}
-            >
-              <img src={src} alt="image" />
-            </motion.div>
-          </Portal>
-        ))}
+      <AnimatePresence mode="wait">
+        {isHovered &&
+          images[arrayIndex].map((src, idx) => (
+            <Portal key={`txtImg_${idx}`} target={PortalTarget.PORTAL}>
+              <motion.div
+                custom={idx}
+                variants={textHoverImage}
+                initial="initial"
+                animate="enter"
+                exit="exit"
+                className={styles.imgWrapper}
+              >
+                <img src={src} alt="image" />
+              </motion.div>
+            </Portal>
+          ))}
+      </AnimatePresence>
     </>
   );
 };
