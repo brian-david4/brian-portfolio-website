@@ -1,0 +1,17 @@
+.word {
+  margin-right: 1vmin;
+  display: inline-block;
+  color: var(--dark-green);
+  font-family: "Acma Light";
+}
+.imgWrapper {
+  position: fixed;
+  pointer-events: none;
+  height: 20vw;
+  width: 20vh;
+}
+.imgWrapper > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
