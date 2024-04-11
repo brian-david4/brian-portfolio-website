@@ -14,35 +14,39 @@ const TextComponent = ({ children, hoverWords }: TextComponentProps) => {
   const words = children.split(" ");
   const defaultHoverWords: TextHoverType = {
     selectedWords: [""],
-    images: [""],
+    images: [[""]],
   };
   const hoverWordsNotUndefined = hoverWords ? hoverWords : defaultHoverWords;
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.6 });
 
   return (
-    <p ref={ref} className={styles.textWrapper}>
+    <div ref={ref} className={styles.textWrapper}>
       {words.map((word, idx) =>
         hoverWordsNotUndefined.selectedWords.includes(word) ? (
-          <span className={styles.wordWrapper}>
-            <TextHover images={hoverWordsNotUndefined.images}>{word}</TextHover>
+          <span key={`txt_wrd${idx}`} className={styles.wordWrapper}>
+            <TextHover
+              arrayIndex={hoverWordsNotUndefined.selectedWords.indexOf(word)}
+              images={hoverWordsNotUndefined.images}
+            >
+              {word}
+            </TextHover>
           </span>
         ) : (
-          <span className={styles.wordWrapper}>
+          <span key={`txt_wrd${idx}`} className={styles.wordWrapper}>
             <motion.span
               variants={textEnter}
               custom={idx}
               initial="initial"
               animate={inView ? "enter" : ""}
               className={styles.word}
-              key={`txt_wrd${idx}`}
             >
               {word}
             </motion.span>
           </span>
         )
       )}
-    </p>
+    </div>
   );
 };
 

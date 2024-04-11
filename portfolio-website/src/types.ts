@@ -4,5 +4,5 @@ export interface NavLink {
 }
 export interface TextHoverType {
   selectedWords: string[];
-  images: string[];
+  images: Array<string[]>;
 }
