@@ -27,6 +27,9 @@ const TextHover = ({ children, images, arrayIndex }: TextHoverProps) => {
           <Portal key={`txtImg_${idx}`} target={PortalTarget.PORTAL}>
             <motion.div
               custom={idx}
+              variants={textHoverImage}
+              initial="initial"
+              animate="enter"
               className={styles.imgWrapper}
             >
               <img src={src} alt="image" />
