@@ -1,9 +1,11 @@
 .page {
   height: 100vh;
+  position: relative;
   width: 100vw;
   background-color: var(--bright-red);
   display: grid;
   place-items: center;
+  z-index: -1;
 }
 .mainTitle {
   font-family: "Neue Montreal Book";
