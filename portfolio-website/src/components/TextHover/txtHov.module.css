@@ -7,8 +7,11 @@
 .imgWrapper {
   position: fixed;
   pointer-events: none;
-  height: 20vw;
-  width: 20vw;
+  height: 22vw;
+  width: 22vw;
+  border: 0.5vw solid var(--coffee);
+  border-radius: 10px;
+  overflow: hidden;
   mix-blend-mode: luminosity;
   user-select: none;
 }
