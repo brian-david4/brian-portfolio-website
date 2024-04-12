@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
 import MouseTrail from "./components/MouseTrail/MouseTrail";
 import Contact from "./pages/Contact/Contact";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route index element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
