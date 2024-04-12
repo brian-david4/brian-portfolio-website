@@ -1,9 +1,12 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useMousePosition } from "../../hooks/useMousePosition";
 import styles from "./notFound.module.css";
 
 const NotFound = () => {
   const { y } = useMousePosition();
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const keys = [
     "notFound1",
@@ -18,6 +21,15 @@ const NotFound = () => {
     "notFound10",
   ];
 
+  useEffect(() => {
+    window.addEventListener("resize", () => setScreenWidth(window.innerWidth));
+
+    return () =>
+      window.removeEventListener("resize", () =>
+        setScreenWidth(window.innerWidth)
+      );
+  }, []);
+
   return (
     <div className={styles.page}>
       <h1 className={styles.mainTitle}>404</h1>
@@ -26,7 +38,7 @@ const NotFound = () => {
         <motion.div
           key={key}
           custom={idx}
-          animate={{ top: y - 50 }}
+          animate={screenWidth > 670 ? { top: y - 50 } : ""}
           style={{
             opacity: `${80 - idx * 10}%`,
             filter: `blur(${idx * 0.12}px)`,

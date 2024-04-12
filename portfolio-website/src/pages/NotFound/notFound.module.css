@@ -23,4 +23,14 @@
   user-select: none;
   z-index: 1;
   color: var(--charcoal);
+  transition: font-size 500ms ease-out;
+}
+
+@media (max-width: 670px) {
+  .mainTitle {
+    bottom: 10vh;
+  }
+  .mouseTitle {
+    font-size: 10vw;
+  }
 }
