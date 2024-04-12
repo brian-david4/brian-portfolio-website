@@ -15,6 +15,9 @@
   letter-spacing: 8vw;
   color: var(--charcoal);
 }
+.mainTitle > span {
+  display: inline-block;
+}
 .mouseTitle {
   font-family: "Neue Montreal Book";
   font-size: 100px;

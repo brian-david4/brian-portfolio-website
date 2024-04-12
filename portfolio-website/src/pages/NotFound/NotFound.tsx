@@ -21,6 +21,8 @@ const NotFound = () => {
     "notFound10",
   ];
 
+  const message = "404";
+
   useEffect(() => {
     window.addEventListener("resize", () => setScreenWidth(window.innerWidth));
 
@@ -32,7 +34,22 @@ const NotFound = () => {
 
   return (
     <div className={styles.page}>
-      <h1 className={styles.mainTitle}>404</h1>
+      <h1 className={styles.mainTitle}>
+        {message.split("").map((ltr, idx) => (
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1.4,
+              ease: [0.65, 0, 0.35, 1],
+              delay: 0.5 + idx * 0.5,
+            }}
+            key={`404l_${idx}`}
+          >
+            {ltr}
+          </motion.span>
+        ))}
+      </h1>
 
       {keys.map((key, idx) => (
         <motion.div
