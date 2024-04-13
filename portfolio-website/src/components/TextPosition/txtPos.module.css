@@ -1,0 +1,16 @@
+.posRight {
+  position: relative;
+  left: 10vw;
+}
+.posLeft {
+  position: relative;
+  right: 10vw;
+}
+@media (max-width: 924px) {
+  .posRight {
+    left: 5vmin;
+  }
+  .posLeft {
+    right: 5vmin;
+  }
+}

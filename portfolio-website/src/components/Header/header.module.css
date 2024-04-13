@@ -62,8 +62,7 @@
   background-color: var(--text-cream);
   position: relative;
   transform-origin: center;
-  transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1),
-    background-color 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+  transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1);
 }
 .burger::after {
   top: -4px;

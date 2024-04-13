@@ -9,6 +9,7 @@ import SkillsComponent from "../../components/SkillsComponent/SkillsComponent";
 import TextComponent from "../../components/TextComponent/TextComponent";
 import TextComponentBold from "../../components/TextComponentBold/TextComponentBold";
 import { TextHoverType } from "../../types";
+import TextPosition from "../../components/TextPosition/TextPosition";
 
 const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
@@ -131,28 +132,31 @@ const Home = () => {
           </div>
 
           <div className={styles.textPos}>
-            <div className={styles.posRight}>
+            <TextPosition right>
               <TextComponent hoverWords={textEffectWords}>
                 I am always listening to music, if not i'm probably playing
                 some. Cinema is just as essential, spanning countries and
                 decades.
               </TextComponent>
-            </div>
-            <div className={styles.posLeft}>
+            </TextPosition>
+
+            <TextPosition>
               <TextComponent>
                 I enjoy the challenge of materialising an idea into a fully
                 formed experience, I love being creative.
               </TextComponent>
-            </div>
-            <div className={styles.posLeft}>
+            </TextPosition>
+
+            <TextPosition>
               <TextComponentBold>What Next?</TextComponentBold>
-            </div>
-            <div className={styles.posRight}>
+            </TextPosition>
+
+            <TextPosition right>
               <TextComponent>
                 I am working towards learning Three.js and WebGL, whilst
                 constantly improving on the fundamentals.
               </TextComponent>
-            </div>
+            </TextPosition>
           </div>
 
           <div className={styles.toolsPosition}>
