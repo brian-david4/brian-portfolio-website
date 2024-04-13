@@ -22,7 +22,7 @@ const TextHover = ({ children, images, arrayIndex }: TextHoverProps) => {
         {children}
       </span>
 
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {isHovered &&
           images[arrayIndex].map((src, idx) => (
             <Portal key={`txtImg_${idx}`} target={PortalTarget.PORTAL}>
