@@ -6,7 +6,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { opacity } from "./anims";
 import { fadeIn, fadeInMenu } from "./headerAnims";
 
-const Header = () => {
+interface HeaderProps {
+  on404Page: boolean;
+}
+
+const Header = ({ on404Page }: HeaderProps) => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   return (
@@ -17,7 +21,9 @@ const Header = () => {
             variants={fadeIn}
             initial="initial"
             animate="enter"
-            className={styles.homeMenuLogo}
+            className={`${styles.homeMenuLogo} ${
+              on404Page ? styles.on404 : ""
+            }`}
           >
             brian david
           </motion.div>
@@ -28,7 +34,7 @@ const Header = () => {
           initial="initial"
           animate="enter"
           onClick={() => setIsMenuActive(!isMenuActive)}
-          className={styles.menuBurger}
+          className={`${styles.menuBurger} ${on404Page ? styles.on404 : ""}`}
         >
           <div
             className={`${styles.burger} ${

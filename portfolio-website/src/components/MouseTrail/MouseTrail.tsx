@@ -5,28 +5,23 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 interface MouseTrailProps {
-  paths: string[];
+  on404Page: boolean;
 }
 
-const MouseTrail = ({ paths }: MouseTrailProps) => {
+const MouseTrail = ({ on404Page }: MouseTrailProps) => {
   const { pathname } = useLocation();
   const [onContactPage, setOnContactPage] = useState(false);
-  const [on404Page, setOn404Page] = useState(false);
 
   useEffect(() => {
-    if (!paths.includes(pathname)) {
-      setOn404Page(true);
-    } else {
-      setOn404Page(false);
-    }
-
     if (pathname === "/contact") {
       setOnContactPage(true);
     } else {
       setOnContactPage(false);
     }
   }, [pathname]);
+
   const { x, y } = useMousePosition();
+
   return (
     <motion.div
       className={`${styles.mouseTrail} 
