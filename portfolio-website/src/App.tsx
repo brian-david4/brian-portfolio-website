@@ -22,9 +22,11 @@ function App() {
     requestAnimationFrame(raf);
   }, []);
 
+  const paths = ["/", "/contact"];
+
   return (
     <>
-      <MouseTrail />
+      <MouseTrail paths={paths} />
       <Header />
       <Routes location={location} key={location.pathname}>
         <Route index element={<Home />} />
