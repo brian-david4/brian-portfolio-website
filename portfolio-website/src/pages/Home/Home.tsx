@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./home.module.css";
 import { contactReveal, titleWordsAnim } from "./homeAnims";
 import HomeProjectScroll from "../../components/HomeProjectScroll/HomeProjectScroll";
@@ -17,6 +17,14 @@ const Home = () => {
   const title =
     "React developer fashioning creative web enviroments that are candid yet elegant.";
   const titleWords = title.split(" ");
+
+  useEffect(() => {
+    document.body.style.overflowY = "scroll";
+
+    return () => {
+      document.body.style.overflowY = "scroll";
+    };
+  }, []);
 
   const projects = [
     { title: "Kurosawa's Story -", link: "https://kurosawa-gray.vercel.app" },
