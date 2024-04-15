@@ -13,7 +13,7 @@ const MouseTrail = ({ on404Page }: MouseTrailProps) => {
   const [onContactPage, setOnContactPage] = useState(false);
 
   useEffect(() => {
-    if (pathname === "/contact") {
+    if (pathname === "/contact" || pathname === "/about") {
       setOnContactPage(true);
     } else {
       setOnContactPage(false);
