@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Lenis from "@studio-freight/lenis";
 
-import Home from "./pages/Home/Home";
+// components
 import Header from "./components/Header/Header";
 import MouseTrail from "./components/MouseTrail/MouseTrail";
+// pages
+import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
+import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
@@ -16,7 +19,7 @@ function App() {
 
   // smooth scroll
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({ lerp: 0.035, wheelMultiplier: 0.65 });
 
     function raf(time: number) {
       lenis.raf(time);
