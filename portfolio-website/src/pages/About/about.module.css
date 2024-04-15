@@ -27,3 +27,8 @@
   color: var(--dark-green);
   mix-blend-mode: luminosity;
 }
+.footerPosition {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

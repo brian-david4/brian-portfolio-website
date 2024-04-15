@@ -1,0 +1,25 @@
+.footer {
+  width: 100vw;
+  height: var(--header-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.links {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.link {
+  text-decoration: none;
+  color: var(--dark-green);
+  font-size: 0.9rem;
+  font-weight: bolder;
+  letter-spacing: 0.03rem;
+  transition: transform 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.link:hover {
+  font-family: "Neue Montreal Italic" !important;
+  transform: translateX(5px) scale(1.01);
+}

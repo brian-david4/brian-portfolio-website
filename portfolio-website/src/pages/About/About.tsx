@@ -3,6 +3,7 @@ import styles from "./about.module.css";
 import { useInView } from "react-intersection-observer";
 import ContactMouseEffect from "../../components/ContactMouseEffect/ContactMouseEffect";
 import { useState } from "react";
+import AboutFooter from "../../components/AboutFooter/AboutFooter";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -37,6 +38,10 @@ const About = () => {
           >
             bdavid1530@gmail.com
           </a>
+
+          <div className={styles.footerPosition}>
+            <AboutFooter />
+          </div>
         </div>
       </motion.div>
     </>
