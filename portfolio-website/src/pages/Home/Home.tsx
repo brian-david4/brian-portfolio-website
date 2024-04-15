@@ -149,13 +149,6 @@ const Home = () => {
             </TextPosition>
 
             <TextPosition>
-              <TextComponent>
-                I enjoy the challenge of materialising an idea into a fully
-                formed experience, I love being creative.
-              </TextComponent>
-            </TextPosition>
-
-            <TextPosition>
               <TextComponentBold>What Next?</TextComponentBold>
             </TextPosition>
 

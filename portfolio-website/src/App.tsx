@@ -29,7 +29,7 @@ function App() {
     requestAnimationFrame(raf);
   }, []);
 
-  const paths = ["/", "/contact"];
+  const paths = ["/", "/contact", "/about"];
 
   // checking for 404page
   useEffect(() => {
@@ -47,6 +47,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route index element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

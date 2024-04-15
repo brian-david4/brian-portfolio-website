@@ -1,0 +1,25 @@
+.pageWrapper {
+  position: relative;
+  z-index: -1;
+  height: fit-content;
+  width: 100vw;
+  background-color: var(--light-blue);
+  overflow-y: scroll;
+  /* display: grid;
+  place-items: center; */
+  font-family: "Neue Montreal Book";
+  letter-spacing: 0.03rem;
+}
+.page1,
+.page2 {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.page2 {
+  height: 90vh;
+}
+.page1 {
+  height: 95vh;
+  border-bottom: 1px solid black;
+}
