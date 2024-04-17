@@ -24,10 +24,16 @@ const About = () => {
       >
         <ContactMouseEffect isTitleHovered={isHovered} />
         <div className={styles.page1}>
-          <p>
-            I enjoy the challenge of materialising an idea into a fully formed
-            experience, I love being creative.
-          </p>
+          <div className={styles.page1Layout}>
+            <div
+              className={`${styles.page1SectionContainer} ${styles.leftContainer}`}
+            >
+              <div className={styles.sectionHalf}></div>
+              <div className={styles.sectionHalf}></div>
+            </div>
+
+            <div className={styles.page1SectionContainer}></div>
+          </div>
         </div>
         <div ref={ref} className={styles.page2}>
           <a
