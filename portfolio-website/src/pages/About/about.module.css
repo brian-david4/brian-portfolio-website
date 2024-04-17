@@ -1,7 +1,7 @@
 .pageWrapper {
   position: absolute;
   z-index: -1;
-  height: fit-content;
+  min-height: 185vh;
   width: 100vw;
   background-color: var(--light-blue);
   font-family: "Neue Montreal Book";

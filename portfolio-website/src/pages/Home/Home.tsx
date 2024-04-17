@@ -10,6 +10,7 @@ import TextComponent from "../../components/TextComponent/TextComponent";
 import TextComponentBold from "../../components/TextComponentBold/TextComponentBold";
 import { TextHoverType } from "../../types";
 import TextPosition from "../../components/TextPosition/TextPosition";
+import Lenis from "@studio-freight/lenis";
 
 const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
@@ -22,7 +23,7 @@ const Home = () => {
     document.body.style.overflowY = "scroll";
 
     return () => {
-      document.body.style.overflowY = "scroll";
+      document.body.style.overflowY = "auto";
     };
   }, []);
 
@@ -77,6 +78,16 @@ const Home = () => {
     ],
   };
 
+  useEffect(() => {
+    const lenis = new Lenis({ lerp: 0.035, wheelMultiplier: 0.65 });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <>
       <div className={styles.homepage}>

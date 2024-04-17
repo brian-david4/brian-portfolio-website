@@ -8,7 +8,7 @@ import AboutFooter from "../../components/AboutFooter/AboutFooter";
 const About = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.8,
+    threshold: 0.9,
   });
 
   const color2 = "#ffe600";
@@ -40,7 +40,7 @@ const About = () => {
           </a>
 
           <div className={styles.footerPosition}>
-            <AboutFooter />
+            <AboutFooter inView={inView} />
           </div>
         </div>
       </motion.div>
