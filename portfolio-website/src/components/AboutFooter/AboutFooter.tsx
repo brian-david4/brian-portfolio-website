@@ -25,6 +25,7 @@ const AboutFooter = ({ inView }: AboutFooterProps) => {
               animate={inView ? "enter" : "initial"}
               className={styles.link}
               href={link.href}
+              key={`ftLk_${idx}`}
             >
               {link.title}
             </motion.a>

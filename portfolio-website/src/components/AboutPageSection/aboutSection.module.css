@@ -1,0 +1,12 @@
+.sectionWrapper {
+  height: 100%;
+  width: 100%;
+  background-color: azure;
+}
+.blur {
+  filter: blur(10px);
+  transition: filter 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.blur:hover {
+  filter: blur(0px);
+}

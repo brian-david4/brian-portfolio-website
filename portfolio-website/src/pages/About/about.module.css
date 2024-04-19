@@ -24,10 +24,10 @@
 .page1Layout {
   height: 100%;
   width: 100%;
-  background-color: aqua;
   display: flex;
 }
 .page1SectionContainer {
+  position: relative;
   width: 50%;
   height: 100%;
   border: black 1px solid;
@@ -38,8 +38,11 @@
   flex-direction: column;
 }
 .sectionHalf {
+  position: relative;
   height: 50%;
   width: 100%;
+  display: grid;
+  place-items: center;
   background-color: burlywood;
   border-bottom: 1px solid black;
 }

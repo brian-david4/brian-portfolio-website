@@ -4,6 +4,8 @@ import { useInView } from "react-intersection-observer";
 import ContactMouseEffect from "../../components/ContactMouseEffect/ContactMouseEffect";
 import { useState } from "react";
 import AboutFooter from "../../components/AboutFooter/AboutFooter";
+import AboutPageSection from "../../components/AboutPageSection/AboutPageSection";
+import MouseFollowText from "../../components/MouseFollowText/MouseFollowText";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -28,11 +30,26 @@ const About = () => {
             <div
               className={`${styles.page1SectionContainer} ${styles.leftContainer}`}
             >
-              <div className={styles.sectionHalf}></div>
-              <div className={styles.sectionHalf}></div>
+              <div className={styles.sectionHalf}>
+                <AboutPageSection>
+                  <MouseFollowText>
+                    I love the challenge of materializing an idea into an
+                    interactive experience. I love being creative
+                  </MouseFollowText>
+                </AboutPageSection>
+              </div>
+              <div className={styles.sectionHalf}>
+                <AboutPageSection>
+                  <MouseFollowText>woooooo</MouseFollowText>
+                </AboutPageSection>
+              </div>
             </div>
 
-            <div className={styles.page1SectionContainer}></div>
+            <div className={styles.page1SectionContainer}>
+              <AboutPageSection>
+                <MouseFollowText>woooooooooooo</MouseFollowText>
+              </AboutPageSection>
+            </div>
           </div>
         </div>
         <div ref={ref} className={styles.page2}>
