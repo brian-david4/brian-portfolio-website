@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
 .on404 {
   color: var(--charcoal) !important;
@@ -25,6 +26,7 @@
   color: black;
   text-decoration: none;
   line-height: 0;
+  pointer-events: all;
 }
 .homeMenuLogo {
   font-family: Telegraf Regular;
@@ -34,6 +36,7 @@
   color: var(--text-cream);
   background-color: var(--main-theme);
   transition: color 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+  pointer-events: all;
 }
 .menuBurger {
   position: absolute;
@@ -45,6 +48,7 @@
   cursor: pointer;
   color: var(--text-cream);
   transition: color 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+  pointer-events: all;
 }
 .burger {
   pointer-events: none;

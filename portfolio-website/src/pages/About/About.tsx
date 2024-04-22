@@ -30,19 +30,12 @@ const About = () => {
             <div
               className={`${styles.page1SectionContainer} ${styles.leftContainer}`}
             >
-              <div className={styles.sectionHalf}>
-                <AboutPageSection title="title1">
-                  <MouseFollowText>
-                    I love the challenge of materializing an idea into an
-                    interactive experience. I love being creative
-                  </MouseFollowText>
-                </AboutPageSection>
-              </div>
-              <div className={styles.sectionHalf}>
-                <AboutPageSection title="title2">
-                  <MouseFollowText>woooooo</MouseFollowText>
-                </AboutPageSection>
-              </div>
+              <AboutPageSection title="title1">
+                <MouseFollowText>
+                  I love the challenge of materializing an idea into an
+                  interactive experience. I love being creative
+                </MouseFollowText>
+              </AboutPageSection>
             </div>
 
             <div className={styles.page1SectionContainer}>
