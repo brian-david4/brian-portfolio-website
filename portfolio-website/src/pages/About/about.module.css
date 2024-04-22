@@ -31,7 +31,6 @@
   width: 50%;
   height: 100%;
   border: black 1px solid;
-  background-color: blanchedalmond;
 }
 .leftContainer {
   display: flex;
@@ -43,8 +42,8 @@
   width: 100%;
   display: grid;
   place-items: center;
-  background-color: burlywood;
   border-bottom: 1px solid black;
+  overflow: hidden;
 }
 .mail {
   font-size: 5vw;

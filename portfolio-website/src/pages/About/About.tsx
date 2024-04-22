@@ -31,7 +31,7 @@ const About = () => {
               className={`${styles.page1SectionContainer} ${styles.leftContainer}`}
             >
               <div className={styles.sectionHalf}>
-                <AboutPageSection>
+                <AboutPageSection title="title1">
                   <MouseFollowText>
                     I love the challenge of materializing an idea into an
                     interactive experience. I love being creative
@@ -39,14 +39,14 @@ const About = () => {
                 </AboutPageSection>
               </div>
               <div className={styles.sectionHalf}>
-                <AboutPageSection>
+                <AboutPageSection title="title2">
                   <MouseFollowText>woooooo</MouseFollowText>
                 </AboutPageSection>
               </div>
             </div>
 
             <div className={styles.page1SectionContainer}>
-              <AboutPageSection>
+              <AboutPageSection title="title3">
                 <MouseFollowText>woooooooooooo</MouseFollowText>
               </AboutPageSection>
             </div>
