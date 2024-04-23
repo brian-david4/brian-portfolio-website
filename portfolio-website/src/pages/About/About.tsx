@@ -5,7 +5,7 @@ import ContactMouseEffect from "../../components/ContactMouseEffect/ContactMouse
 import { useState } from "react";
 import AboutFooter from "../../components/AboutFooter/AboutFooter";
 import AboutPageSection from "../../components/AboutPageSection/AboutPageSection";
-import MouseFollowText from "../../components/MouseFollowText/MouseFollowText";
+import Magnetic from "../../components/Magnetic/Magnetic";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -30,17 +30,19 @@ const About = () => {
             <div
               className={`${styles.page1SectionContainer} ${styles.leftContainer}`}
             >
-              <AboutPageSection title="title1">
-                <MouseFollowText>
-                  I love the challenge of materializing an idea into an
-                  interactive experience. I love being creative
-                </MouseFollowText>
+              <AboutPageSection title="hobbies">
+                <div className={styles.textPos}>
+                  <Magnetic></Magnetic>
+                </div>
               </AboutPageSection>
             </div>
 
             <div className={styles.page1SectionContainer}>
               <AboutPageSection title="title3">
-                <MouseFollowText>woooooooooooo</MouseFollowText>
+                <Magnetic>
+                  I love the challenge of materializing an idea into an
+                  interactive experience. I love being creative
+                </Magnetic>
               </AboutPageSection>
             </div>
           </div>
