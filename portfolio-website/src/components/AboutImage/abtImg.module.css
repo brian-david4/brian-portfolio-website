@@ -1,0 +1,27 @@
+.imgWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.front {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.5s ease-in-out;
+  filter: grayscale(1);
+  opacity: 0.95;
+}
+.back {
+  transition: filter 0.08s ease-in-out;
+}
+.imgWrapper:hover > .front {
+  transform: translateX(2vh) translateY(-2vh) scale(1.03);
+  filter: grayscale(0.3);
+}
+.imgWrapper:hover > .back {
+  filter: blur(0.8px) grayscale(1);
+}

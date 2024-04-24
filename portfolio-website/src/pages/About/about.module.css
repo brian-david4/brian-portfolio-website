@@ -61,7 +61,9 @@
   position: absolute;
   left: 20%;
   bottom: 5%;
-  width: 50%;
-  height: 35%;
+  width: 10%;
+  height: 10%;
+  min-height: 200px;
+  min-width: 200px;
   /* background-color: aqua; */
 }

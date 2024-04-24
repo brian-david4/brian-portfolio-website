@@ -6,6 +6,7 @@ import { useState } from "react";
 import AboutFooter from "../../components/AboutFooter/AboutFooter";
 import AboutPageSection from "../../components/AboutPageSection/AboutPageSection";
 import Magnetic from "../../components/Magnetic/Magnetic";
+import AboutImage from "../../components/AboutImage/AboutImage";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -32,7 +33,9 @@ const About = () => {
             >
               <AboutPageSection title="hobbies">
                 <div className={styles.textPos}>
-                  <Magnetic></Magnetic>
+                  <Magnetic>
+                    <AboutImage src="/album/skepta.webp" />
+                  </Magnetic>
                 </div>
               </AboutPageSection>
             </div>

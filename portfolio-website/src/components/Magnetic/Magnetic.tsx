@@ -37,7 +37,7 @@ const Magnetic = ({ children }: MouseFollowTextProps) => {
       onMouseLeave={mouseLeave}
       onMouseEnter={mouseEnter}
       animate={isHovered ? { x: position.x, y: position.y } : {}}
-      transition={{ type: "spring", stiffness: 30, damping: 100 }}
+      transition={{ type: "spring", stiffness: 75, damping: 100 }}
     >
       {children}
     </motion.div>
