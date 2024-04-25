@@ -32,9 +32,30 @@ const About = () => {
               className={`${styles.page1SectionContainer} ${styles.leftContainer}`}
             >
               <AboutPageSection title="hobbies">
-                <div className={styles.textPos}>
+                <div className={styles.pos1}>
                   <Magnetic>
-                    <AboutImage src="/album/skepta.webp" />
+                    <AboutImage src="/aboutImages/spaceHeavy.webp" />
+                  </Magnetic>
+                </div>
+                <div className={styles.pos2}>
+                  <Magnetic>
+                    <AboutImage src="/aboutImages/lemans.webp" />
+                  </Magnetic>
+                </div>
+                <div className={styles.pos3}>
+                  <Magnetic>
+                    My favourite show ever is "Band Of Brothers"
+                  </Magnetic>
+                </div>
+                <div className={styles.pos4}>
+                  <Magnetic>
+                    I play football, and enjoy watching chelsea (not right now
+                    though...)!
+                  </Magnetic>
+                </div>
+                <div className={styles.pos5}>
+                  <Magnetic>
+                    <AboutImage src="/aboutImages/bandBrothers.jpg" />
                   </Magnetic>
                 </div>
               </AboutPageSection>

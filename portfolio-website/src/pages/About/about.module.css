@@ -57,13 +57,43 @@
   bottom: 0;
   width: 100%;
 }
-.textPos {
+.pos1 {
   position: absolute;
   left: 20%;
   bottom: 5%;
   width: 10%;
   height: 10%;
-  min-height: 200px;
-  min-width: 200px;
+  min-height: 100px;
+  min-width: 100px;
   /* background-color: aqua; */
+}
+.pos2 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  min-width: 100px;
+  min-height: 100px;
+  width: 10%;
+  height: 10%;
+}
+.pos3 {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  width: 25%;
+}
+.pos4 {
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  width: 25%;
+}
+.pos5 {
+  position: absolute;
+  right: 20%;
+  bottom: 15%;
+  min-width: 100px;
+  min-height: 100px;
+  width: 25%;
+  height: 10%;
 }
