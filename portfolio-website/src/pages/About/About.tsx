@@ -37,25 +37,39 @@ const About = () => {
                     <AboutImage src="/aboutImages/spaceHeavy.webp" />
                   </Magnetic>
                 </div>
+
                 <div className={styles.pos2}>
                   <Magnetic>
                     <AboutImage src="/aboutImages/lemans.webp" />
                   </Magnetic>
                 </div>
+
                 <div className={styles.pos3}>
                   <Magnetic>
                     My favourite show ever is "Band Of Brothers"
                   </Magnetic>
                 </div>
+
                 <div className={styles.pos4}>
                   <Magnetic>
                     I play football, and enjoy watching chelsea (not right now
                     though...)!
                   </Magnetic>
                 </div>
+
                 <div className={styles.pos5}>
                   <Magnetic>
                     <AboutImage src="/aboutImages/bandBrothers.jpg" />
+                  </Magnetic>
+                </div>
+
+                <div className={styles.pos6}>
+                  <Magnetic>I love being creative</Magnetic>
+                </div>
+
+                <div className={styles.pos7}>
+                  <Magnetic>
+                    <AboutImage src="/aboutImages/kagemusha.webp" />
                   </Magnetic>
                 </div>
               </AboutPageSection>
