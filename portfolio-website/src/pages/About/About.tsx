@@ -7,6 +7,7 @@ import AboutFooter from "../../components/AboutFooter/AboutFooter";
 import AboutPageSection from "../../components/AboutPageSection/AboutPageSection";
 import Magnetic from "../../components/Magnetic/Magnetic";
 import AboutImage from "../../components/AboutImage/AboutImage";
+import AboutPosition from "../../components/AboutPosition/AboutPosition";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -32,46 +33,70 @@ const About = () => {
               className={`${styles.page1SectionContainer} ${styles.leftContainer}`}
             >
               <AboutPageSection title="hobbies">
-                <div className={styles.pos1}>
+                <AboutPosition
+                  left={20}
+                  bottom={5}
+                  width={10}
+                  height={10}
+                  minimum
+                >
                   <Magnetic>
                     <AboutImage src="/aboutImages/spaceHeavy.webp" />
                   </Magnetic>
-                </div>
+                </AboutPosition>
 
-                <div className={styles.pos2}>
+                <AboutPosition
+                  left={10}
+                  top={10}
+                  width={10}
+                  height={10}
+                  minimum
+                >
                   <Magnetic>
                     <AboutImage src="/aboutImages/lemans.webp" />
                   </Magnetic>
-                </div>
+                </AboutPosition>
 
-                <div className={styles.pos3}>
+                <AboutPosition top={60} left={10} width={25}>
                   <Magnetic>
                     My favourite show ever is "Band Of Brothers"
                   </Magnetic>
-                </div>
+                </AboutPosition>
 
-                <div className={styles.pos4}>
+                <AboutPosition right={10} top={40} width={25}>
                   <Magnetic>
                     I play football, and enjoy watching chelsea (not right now
                     though...)!
                   </Magnetic>
-                </div>
+                </AboutPosition>
 
-                <div className={styles.pos5}>
+                <AboutPosition
+                  right={20}
+                  bottom={15}
+                  width={25}
+                  height={10}
+                  minimum
+                >
                   <Magnetic>
                     <AboutImage src="/aboutImages/bandBrothers.jpg" />
                   </Magnetic>
-                </div>
+                </AboutPosition>
 
-                <div className={styles.pos6}>
+                <AboutPosition right={10} top={12} width={25}>
                   <Magnetic>I love being creative</Magnetic>
-                </div>
+                </AboutPosition>
 
-                <div className={styles.pos7}>
+                <AboutPosition
+                  left={13}
+                  top={40}
+                  width={25}
+                  height={10}
+                  minimum
+                >
                   <Magnetic>
                     <AboutImage src="/aboutImages/kagemusha.webp" />
                   </Magnetic>
-                </div>
+                </AboutPosition>
               </AboutPageSection>
             </div>
 
