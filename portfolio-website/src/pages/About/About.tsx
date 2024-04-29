@@ -8,6 +8,7 @@ import AboutPageSection from "../../components/AboutPageSection/AboutPageSection
 import Magnetic from "../../components/Magnetic/Magnetic";
 import AboutImage from "../../components/AboutImage/AboutImage";
 import AboutPosition from "../../components/AboutPosition/AboutPosition";
+import WaveScene from "../../components/WaveEffect/WaveScene";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -118,6 +119,12 @@ const About = () => {
                 <AboutPosition left={25} top={50} width={24}>
                   <Magnetic>
                     I aim to be able to work freelance as a creative developer
+                  </Magnetic>
+                </AboutPosition>
+
+                <AboutPosition height={50} width={30} bottom={0} left={4}>
+                  <Magnetic>
+                    <WaveScene />
                   </Magnetic>
                 </AboutPosition>
               </AboutPageSection>
