@@ -101,11 +101,25 @@ const About = () => {
             </div>
 
             <div className={styles.page1SectionContainer}>
-              <AboutPageSection title="title3">
-                <Magnetic>
-                  I love the challenge of materializing an idea into an
-                  interactive experience. I love being creative
-                </Magnetic>
+              <AboutPageSection title="aspirations">
+                <AboutPosition left={10} top={8} width={25}>
+                  <Magnetic>
+                    I love the challenge of materializing an idea into an
+                    interactive experience.
+                  </Magnetic>
+                </AboutPosition>
+
+                <AboutPosition bottom={5} right={14} width={25}>
+                  <Magnetic>
+                    I am working towards learning Three.js and WebGL.
+                  </Magnetic>
+                </AboutPosition>
+
+                <AboutPosition left={25} top={50} width={24}>
+                  <Magnetic>
+                    I aim to be able to work freelance as a creative developer
+                  </Magnetic>
+                </AboutPosition>
               </AboutPageSection>
             </div>
           </div>

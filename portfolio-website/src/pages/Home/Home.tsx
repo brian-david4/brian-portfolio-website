@@ -7,7 +7,6 @@ import HomeProjectScroll from "../../components/HomeProjectScroll/HomeProjectScr
 import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
 import SkillsComponent from "../../components/SkillsComponent/SkillsComponent";
 import TextComponent from "../../components/TextComponent/TextComponent";
-import TextComponentBold from "../../components/TextComponentBold/TextComponentBold";
 import { TextHoverType } from "../../types";
 import TextPosition from "../../components/TextPosition/TextPosition";
 import Lenis from "@studio-freight/lenis";
@@ -156,17 +155,6 @@ const Home = () => {
                 I am always listening to music, if not i'm probably playing
                 some. Cinema is just as essential, spanning countries and
                 decades.
-              </TextComponent>
-            </TextPosition>
-
-            <TextPosition>
-              <TextComponentBold>What Next?</TextComponentBold>
-            </TextPosition>
-
-            <TextPosition right>
-              <TextComponent>
-                I am working towards learning Three.js and WebGL, whilst
-                constantly improving on the fundamentals.
               </TextComponent>
             </TextPosition>
           </div>
