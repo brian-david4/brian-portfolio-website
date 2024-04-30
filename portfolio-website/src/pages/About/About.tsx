@@ -110,21 +110,38 @@ const About = () => {
                   </Magnetic>
                 </AboutPosition>
 
-                <AboutPosition bottom={5} right={14} width={25}>
-                  <Magnetic>
-                    I am working towards learning Three.js and WebGL.
-                  </Magnetic>
+                <AboutPosition bottom={10} right={8} width={25}>
+                  <Magnetic>I am working towards learning Three.js</Magnetic>
                 </AboutPosition>
 
-                <AboutPosition left={25} top={50} width={24}>
+                <AboutPosition left={40} top={50} width={24}>
                   <Magnetic>
                     I aim to be able to work freelance as a creative developer
                   </Magnetic>
                 </AboutPosition>
 
-                <AboutPosition px height={200} width={200} bottom={0} left={4}>
+                <AboutPosition px height={250} width={250} bottom={0} left={4}>
                   <Magnetic>
-                    <WaveScene src="/aboutImages/lemans.webp" />
+                    <WaveScene src="/aboutImages/wanderer.webp" />
+                  </Magnetic>
+                </AboutPosition>
+
+                <AboutPosition px height={250} width={250} right={0} top={5}>
+                  <Magnetic>
+                    <WaveScene src="/aboutImages/self2.JPEG" />
+                  </Magnetic>
+                </AboutPosition>
+
+                <AboutPosition width={25} right={4} top={39}>
+                  <Magnetic>
+                    I find excitement in creating visually appealing yet
+                    practical websites
+                  </Magnetic>
+                </AboutPosition>
+
+                <AboutPosition px width={200} height={200} left={1} top={20}>
+                  <Magnetic>
+                    <WaveScene src="/aboutImages/selfPhoto.JPEG" />
                   </Magnetic>
                 </AboutPosition>
               </AboutPageSection>

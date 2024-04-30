@@ -26,7 +26,7 @@ const WaveModel = ({ src }: WaveModelProps) => {
     uTexture: { value: texture },
     uTime: { value: 0 },
     uWaveLength: { value: 2.7 },
-    uAmplitude: { value: 0.1 },
+    uAmplitude: { value: 0.12 },
   });
 
   useFrame(() => {
