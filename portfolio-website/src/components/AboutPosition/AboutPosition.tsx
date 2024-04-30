@@ -9,6 +9,7 @@ interface AboutPositionProps {
   width?: number;
   height?: number;
   minimum?: boolean;
+  px?: boolean;
 }
 
 const AboutPosition = ({
@@ -20,6 +21,7 @@ const AboutPosition = ({
   width,
   height,
   minimum,
+  px,
 }: AboutPositionProps) => {
   return (
     <div
@@ -28,8 +30,8 @@ const AboutPosition = ({
         left: `${left}%`,
         top: `${top}%`,
         bottom: `${bottom}%`,
-        height: `${height}%`,
-        width: `${width}%`,
+        height: `${px ? `${height}px` : `${height}%`}`,
+        width: `${px ? `${width}px` : `${width}%`}`,
       }}
       className={`${styles.position} ${minimum ? styles.min : ""}`}
     >

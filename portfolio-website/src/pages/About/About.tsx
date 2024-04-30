@@ -122,9 +122,9 @@ const About = () => {
                   </Magnetic>
                 </AboutPosition>
 
-                <AboutPosition height={50} width={30} bottom={0} left={4}>
+                <AboutPosition px height={200} width={200} bottom={0} left={4}>
                   <Magnetic>
-                    <WaveScene />
+                    <WaveScene src="/aboutImages/lemans.webp" />
                   </Magnetic>
                 </AboutPosition>
               </AboutPageSection>
