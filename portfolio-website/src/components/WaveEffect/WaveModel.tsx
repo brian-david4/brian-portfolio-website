@@ -4,14 +4,18 @@ import { useFrame } from "@react-three/fiber";
 import { useAspect, useTexture } from "@react-three/drei";
 import { Mesh } from "three";
 
-const WaveModel = () => {
+interface WaveModelProps {
+  src: string;
+}
+
+const WaveModel = ({ src }: WaveModelProps) => {
   const plane = useRef<Mesh>(null!);
 
-  const texture = useTexture("/aboutImages/lemans.webp");
+  const texture = useTexture(src);
 
   const { height, width } = texture.image;
 
-  const scale = useAspect(width, height, 0.1);
+  const scale = useAspect(width, height, 0.15);
 
   // const { amplitude, waveLength } = useControls({
   //   amplitude: { value: 0, min: 0, max: 3, step: 0.05 },

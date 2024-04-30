@@ -1,11 +1,15 @@
 import { Canvas } from "@react-three/fiber";
 import WaveModel from "./WaveModel";
 
-const WaveScene = () => {
+interface WaveSceneProps {
+  src: string;
+}
+
+const WaveScene = ({ src }: WaveSceneProps) => {
   return (
     <>
       <Canvas>
-        <WaveModel />
+        <WaveModel src={src} />
       </Canvas>
     </>
   );
