@@ -122,7 +122,10 @@ const About = () => {
 
                 <AboutPosition px height={250} width={250} bottom={0} left={4}>
                   <Magnetic>
-                    <WaveScene src="/aboutImages/wanderer.webp" />
+                    <WaveScene
+                      vertical={true}
+                      src="/aboutImages/wanderer.webp"
+                    />
                   </Magnetic>
                 </AboutPosition>
 

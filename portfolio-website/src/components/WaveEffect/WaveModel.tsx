@@ -1,4 +1,4 @@
-import { fragment, vertex } from "./shader";
+import { fragment, vertexHoz, vertexVert } from "./shader";
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useAspect, useTexture } from "@react-three/drei";
@@ -6,10 +6,12 @@ import { Mesh } from "three";
 
 interface WaveModelProps {
   src: string;
+  vertical?: boolean;
 }
 
-const WaveModel = ({ src }: WaveModelProps) => {
+const WaveModel = ({ src, vertical }: WaveModelProps) => {
   const plane = useRef<Mesh>(null!);
+  const vertex = vertical ? vertexVert : vertexHoz;
 
   const texture = useTexture(src);
 

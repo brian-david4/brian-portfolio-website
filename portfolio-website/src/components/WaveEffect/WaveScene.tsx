@@ -3,13 +3,14 @@ import WaveModel from "./WaveModel";
 
 interface WaveSceneProps {
   src: string;
+  vertical?: boolean;
 }
 
-const WaveScene = ({ src }: WaveSceneProps) => {
+const WaveScene = ({ src, vertical }: WaveSceneProps) => {
   return (
     <>
       <Canvas>
-        <WaveModel src={src} />
+        <WaveModel vertical={vertical} src={src} />
       </Canvas>
     </>
   );
