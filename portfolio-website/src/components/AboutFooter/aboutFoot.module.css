@@ -23,3 +23,14 @@
   font-family: "Neue Montreal Italic" !important;
   transform: translateX(5px) scale(1.01);
 }
+
+@media (max-width: 768px) {
+  .links {
+    position: relative;
+    left: 5vw;
+    gap: 8vw;
+  }
+  .link {
+    font-size: 1.3rem;
+  }
+}

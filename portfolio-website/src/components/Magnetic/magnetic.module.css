@@ -5,4 +5,6 @@
   display: grid;
   place-items: center;
   user-select: none;
+  font-family: "NikkeiMaru Light";
+  letter-spacing: 0.025rem;
 }

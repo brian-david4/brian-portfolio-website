@@ -27,3 +27,9 @@
 .imgWrapper:hover > .back {
   filter: blur(0.8px) grayscale(1);
 }
+
+@media (max-width: 768px) {
+  .front {
+    filter: grayscale(0.7);
+  }
+}
