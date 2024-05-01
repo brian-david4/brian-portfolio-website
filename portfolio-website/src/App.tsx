@@ -10,6 +10,7 @@ import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
+import Projects from "./pages/Projects/Projects";
 
 function App() {
   const location = useLocation();
@@ -29,7 +30,7 @@ function App() {
     requestAnimationFrame(raf);
   }, []);
 
-  const paths = ["/", "/contact", "/about"];
+  const paths = ["/", "/contact", "/about", "/projects"];
 
   // checking for 404page
   useEffect(() => {
@@ -48,6 +49,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
