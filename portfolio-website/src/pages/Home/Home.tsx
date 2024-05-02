@@ -1,15 +1,18 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import styles from "./home.module.css";
+import Lenis from "@studio-freight/lenis";
+
 import { contactReveal, titleWordsAnim } from "./homeAnims";
 import HomeProjectScroll from "../../components/HomeProjectScroll/HomeProjectScroll";
 import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
 import SkillsComponent from "../../components/SkillsComponent/SkillsComponent";
 import TextComponent from "../../components/TextComponent/TextComponent";
-import { TextHoverType } from "../../types";
 import TextPosition from "../../components/TextPosition/TextPosition";
-import Lenis from "@studio-freight/lenis";
+
+import { projects } from "../../data";
+import { TextHoverType } from "../../types";
+import styles from "./home.module.css";
 
 const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
@@ -26,17 +29,17 @@ const Home = () => {
     };
   }, []);
 
-  const projects = [
-    { title: "Kurosawa's Story -", link: "https://kurosawa-gray.vercel.app" },
-    {
-      title: "Furniture Store /",
-      link: "https://furniture-shop-drab.vercel.app",
-    },
-    {
-      title: "Game Hub Search *",
-      link: "https://game-hub-eosin-chi.vercel.app",
-    },
-  ];
+  // const projects = [
+  //   { title: "Kurosawa's Story -", link: "https://kurosawa-gray.vercel.app" },
+  //   {
+  //     title: "Furniture Store /",
+  //     link: "https://furniture-shop-drab.vercel.app",
+  //   },
+  //   {
+  //     title: "Game Hub Search *",
+  //     link: "https://game-hub-eosin-chi.vercel.app",
+  //   },
+  // ];
 
   const skills = [
     {
