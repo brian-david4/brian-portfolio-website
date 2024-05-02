@@ -4,7 +4,7 @@
   left: 0;
   z-index: -1;
   text-align: center;
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
   background-color: var(--charcoal);
   color: var(--bright-red);
@@ -14,4 +14,19 @@
   text-transform: capitalize;
   letter-spacing: 0.1ch;
   font-size: 3.5vw;
+  user-select: none;
+}
+
+/* pages */
+.pages {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+.page {
+  height: 90vh;
+  border-bottom: 1px solid black;
 }

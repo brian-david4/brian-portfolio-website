@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+
+import { projTitle } from "./anims";
+import { projects } from "../../data";
 import styles from "./projs.module.css";
 
 const Projects = () => {
@@ -7,20 +10,26 @@ const Projects = () => {
       <div className={styles.pageWrapper}>
         <motion.h1
           className={styles.projectTitle}
-          initial={{
-            y: 250,
-            scale: 4.5,
-            letterSpacing: "0.5ch",
-          }}
-          animate={{
-            y: "var(--header-height)",
-            scale: 2,
-            letterSpacing: "0.1ch",
-          }}
-          transition={{ duration: 1.2, ease: [0.65, 0, 0.2, 1], delay: 1 }}
+          variants={projTitle}
+          initial="initial"
+          animate="animate"
         >
           projects
         </motion.h1>
+
+        <div className={styles.pages}>
+          {projects.map((project, idx) => {
+            return (
+              <div
+                style={{ backgroundColor: project.colour }}
+                key={`pj_${idx}`}
+                className={styles.page}
+              >
+                {project.title}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );
