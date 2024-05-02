@@ -1,0 +1,9 @@
+.page {
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  border-bottom: 1px solid black;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+}

@@ -6,7 +6,7 @@ export interface TextHoverType {
   selectedWords: string[];
   images: Array<string[]>;
 }
-export interface Project {
+export interface ProjectType {
   title: string;
   link: string;
   colour: string;

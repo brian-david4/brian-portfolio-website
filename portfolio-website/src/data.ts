@@ -1,10 +1,10 @@
-import { Project } from "./types";
+import { ProjectType } from "./types";
 
-export const projects: Project[] = [
+export const projects: ProjectType[] = [
   {
     title: "Kurosawa's Story -",
     link: "https://kurosawa-gray.vercel.app",
-    colour: "#ffffff",
+    colour: "#ffffe6",
   },
   {
     title: "Furniture Shop /",
