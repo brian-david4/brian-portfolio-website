@@ -1,5 +1,6 @@
 import styles from "./prjIntro.module.css";
 import ProjectIntroSection from "../ProjectIntroSection/ProjectIntroSection";
+import { motion } from "framer-motion";
 
 interface ProjectIntroProps {
   title: string;
@@ -8,7 +9,12 @@ interface ProjectIntroProps {
 const ProjectIntro = ({ title }: ProjectIntroProps) => {
   return (
     <>
-      <div className={styles.introWrapper}>
+      <motion.div
+        initial={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 2.5, ease: [0.76, 0, 0.24, 1] }}
+        className={styles.introWrapper}
+      >
         <div className={styles.introSection}>
           <ProjectIntroSection title={title} />
         </div>
@@ -24,7 +30,7 @@ const ProjectIntro = ({ title }: ProjectIntroProps) => {
         <div className={styles.introSection}>
           <ProjectIntroSection bottom title={title} />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
