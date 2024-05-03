@@ -1,0 +1,13 @@
+.sectionInner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.projectFont {
+  font-family: "Acma Light";
+  font-size: 7.5vw;
+}
+.bottom {
+  bottom: 0;
+}
