@@ -12,7 +12,7 @@ const ProjectIntro = ({ title }: ProjectIntroProps) => {
       <motion.div
         initial={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 2.5, ease: [0.76, 0, 0.24, 1] }}
+        transition={{ duration: 3.5, ease: [0.76, 0, 0.24, 1], delay: 0.5 }}
         className={styles.introWrapper}
       >
         <div className={styles.introSection}>

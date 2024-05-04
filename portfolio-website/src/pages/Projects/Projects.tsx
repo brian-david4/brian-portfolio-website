@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 
 const Projects = () => {
   const [introPlaying, setIntroPlaying] = useState(true);
+
   useEffect(() => {
     setTimeout(() => setIntroPlaying(false), 3000);
   }, []);
@@ -14,14 +15,6 @@ const Projects = () => {
         <AnimatePresence mode="wait">
           {introPlaying && <ProjectIntro title="projects" />}
         </AnimatePresence>
-        {/* <motion.h1
-          className={styles.projectTitle}
-          variants={projTitle}
-          initial="initial"
-          animate="animate"
-        >
-          projects
-        </motion.h1> */}
       </div>
     </>
   );

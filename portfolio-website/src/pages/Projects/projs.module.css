@@ -7,7 +7,7 @@
   width: 100vw;
   height: 100vh;
   color: var(--bright-red);
-  background-color: bisque;
+  background-color: var(--main-theme);
 }
 .projectTitle {
   position: absolute;

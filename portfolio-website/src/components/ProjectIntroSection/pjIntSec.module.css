@@ -5,8 +5,19 @@
   position: absolute;
 }
 .projectFont {
+  position: relative;
   font-family: "Acma Light";
   font-size: 7.5vw;
+  color: var(--dark-green);
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  height: 2px;
+  background-color: var(--coffee);
+  left: 12.5%;
 }
 .bottom {
   bottom: 0;
