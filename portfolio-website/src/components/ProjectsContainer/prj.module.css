@@ -1,0 +1,27 @@
+.pageBackground {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background-color: var(--bright-red);
+  height: auto;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  padding: 2.5%;
+}
+.bubble {
+  width: 100%;
+  height: 200vh;
+  background-color: bisque;
+  border-radius: 40px;
+}
+.bubbleInner {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.divvie {
+  height: 200vh;
+  width: 100%;
+}

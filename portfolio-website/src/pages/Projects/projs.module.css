@@ -5,7 +5,7 @@
   z-index: -1;
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   color: var(--bright-red);
   background-color: var(--main-theme);
 }
