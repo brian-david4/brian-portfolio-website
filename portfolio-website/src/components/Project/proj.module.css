@@ -11,8 +11,24 @@
   left: 2.5vw;
   top: 1.75vh;
   font-size: 7vw;
+  font-family: "Telegraf Regular";
+}
+/* descriptions */
+.mainDesc {
+  position: absolute;
+  width: 65%;
+  height: 60%;
+  left: 2.5%;
+  top: 20%;
+  /* background-color: aqua; */
+  color: var(--dark-green);
+  font-size: 3vw;
+  letter-spacing: 0.05ch;
+  word-spacing: 0.2rem;
   font-family: "NikkeiMaru Light";
 }
+
+/* btn styles */
 .linkBtn {
   position: absolute;
   bottom: 2.5vh;
