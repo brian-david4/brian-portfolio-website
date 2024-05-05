@@ -19,7 +19,7 @@ const Project = ({ project }: ProjectProps) => {
           eaque commodi fugit?
         </div>
 
-        <Link to={project.link} className={styles.linkBtn}>
+        <Link target="_blank" to={project.link} className={styles.linkBtn}>
           <div className={styles.button}>
             <div className={styles.btnHeading}>Visit</div>
             <div className={styles.hoverFill} />
