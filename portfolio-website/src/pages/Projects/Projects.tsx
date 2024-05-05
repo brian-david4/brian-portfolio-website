@@ -5,6 +5,7 @@ import ProjectIntro from "../../components/ProjectIntro/ProjectIntro";
 import ProjectContainer from "../../components/ProjectsContainer/ProjectContainer";
 import styles from "./projs.module.css";
 import Project from "../../components/Project/Project";
+import { projects } from "../../data";
 
 const Projects = () => {
   const [introPlaying, setIntroPlaying] = useState(true);
@@ -22,7 +23,9 @@ const Projects = () => {
         </AnimatePresence>
 
         <ProjectContainer>
-          <Project title="hello" />
+          {projects.map((prj, idx) => {
+            return <Project project={prj} key={`prj_${idx}`} />;
+          })}
         </ProjectContainer>
       </div>
     </>

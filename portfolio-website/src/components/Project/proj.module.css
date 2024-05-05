@@ -1,7 +1,20 @@
 .projectWrapper {
+  position: relative;
   width: 95%;
   height: 95vh;
   background-color: var(--main-theme-darker);
   border-radius: 40px;
   margin-top: 5%;
+}
+.title {
+  position: absolute;
+  left: 2.5vw;
+  top: 1vh;
+  font-size: 5vw;
+  font-family: "NikkeiMaru Light";
+}
+.linkBtn {
+  position: absolute;
+  bottom: 2.5vh;
+  right: 4.5vw;
 }

@@ -1,13 +1,20 @@
+import { Link } from "react-router-dom";
+import { ProjectType } from "../../types";
 import styles from "./proj.module.css";
 
 interface ProjectProps {
-  title: string;
+  project: ProjectType;
 }
 
-const Project = ({ title }: ProjectProps) => {
+const Project = ({ project }: ProjectProps) => {
   return (
     <>
-      <div className={styles.projectWrapper}>{title}</div>
+      <div className={styles.projectWrapper}>
+        <div className={styles.title}>{project.title}</div>
+        <Link to={project.link} className={styles.linkBtn}>
+          <button>visit</button>
+        </Link>
+      </div>
     </>
   );
 };
