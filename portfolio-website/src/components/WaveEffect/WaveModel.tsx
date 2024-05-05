@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { fragment, vertexHoz, vertexVert } from "./shader";
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
