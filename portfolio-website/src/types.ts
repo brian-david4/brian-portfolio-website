@@ -10,4 +10,5 @@ export interface ProjectType {
   title: string;
   link: string;
   colour: string;
+  images?: string[];
 }
