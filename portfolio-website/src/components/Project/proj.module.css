@@ -38,7 +38,7 @@
   position: absolute;
   right: 20px;
   top: 10%;
-  background-color: aqua;
+  /* background-color: aqua; */
   height: fit-content;
   width: fit-content;
   flex-direction: column;
@@ -51,18 +51,22 @@
   width: fit-content;
   height: fit-content;
   gap: 4vw;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .img {
   height: 25vh;
   width: 25vw;
-  background-color: bisque;
+}
+.img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 /* btn styles */
 .linkBtn {
   position: absolute;
-  bottom: 2.5vh;
-  right: 4.5vw;
+  bottom: 10vh;
+  right: 2.5vw;
   text-decoration: none;
   font-family: "Neue Montreal Book";
   font-size: 2.5vw;
