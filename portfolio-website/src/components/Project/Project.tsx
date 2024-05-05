@@ -11,8 +11,12 @@ const Project = ({ project }: ProjectProps) => {
     <>
       <div className={styles.projectWrapper}>
         <div className={styles.title}>{project.title}</div>
+
         <Link to={project.link} className={styles.linkBtn}>
-          <button>visit</button>
+          <div className={styles.button}>
+            <div className={styles.btnHeading}>Visit</div>
+            <div className={styles.hoverFill} />
+          </div>
         </Link>
       </div>
     </>

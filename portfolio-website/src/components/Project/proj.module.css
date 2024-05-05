@@ -9,12 +9,47 @@
 .title {
   position: absolute;
   left: 2.5vw;
-  top: 1vh;
-  font-size: 5vw;
+  top: 1.75vh;
+  font-size: 7vw;
   font-family: "NikkeiMaru Light";
 }
 .linkBtn {
   position: absolute;
   bottom: 2.5vh;
   right: 4.5vw;
+  text-decoration: none;
+  font-family: "Neue Montreal Book";
+  font-size: 2.5vw;
+}
+.button {
+  position: relative;
+  padding: 15px;
+  min-width: 175px;
+  width: 25vw;
+  min-height: 30px;
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+.hoverFill {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  pointer-events: none;
+  transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.button:hover > .hoverFill {
+  transform: translateX(0);
+}
+.btnHeading {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
+  color: whitesmoke;
+  letter-spacing: 0.2ch;
 }
