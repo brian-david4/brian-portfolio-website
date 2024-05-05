@@ -15,6 +15,24 @@ import { TextHoverType } from "../../types";
 import styles from "./home.module.css";
 
 const Home = () => {
+  // smooth scroll
+  useEffect(() => {
+    const lenis = new Lenis({ lerp: 0.035, wheelMultiplier: 0.65 });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    window.scrollTo(0, 0);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   const [isEmailHovered, setIsEmailHovered] = useState(false);
 
   const title =
@@ -80,16 +98,6 @@ const Home = () => {
     ],
   };
 
-  useEffect(() => {
-    const lenis = new Lenis({ lerp: 0.035, wheelMultiplier: 0.65 });
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
   return (
     <>
       <div className={styles.homepage}>

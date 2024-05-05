@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Lenis from "@studio-freight/lenis";
 
 // components
 import Header from "./components/Header/Header";
@@ -17,18 +16,6 @@ function App() {
 
   const { pathname } = location;
   const [on404Page, setOn404Page] = useState(false);
-
-  // smooth scroll
-  useEffect(() => {
-    const lenis = new Lenis({ lerp: 0.035, wheelMultiplier: 0.65 });
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
 
   const paths = ["/", "/contact", "/about", "/projects"];
 

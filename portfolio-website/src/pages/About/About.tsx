@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
+import Lenis from "@studio-freight/lenis";
 import { motion } from "framer-motion";
-import styles from "./about.module.css";
 import { useInView } from "react-intersection-observer";
+
 import ContactMouseEffect from "../../components/ContactMouseEffect/ContactMouseEffect";
-import { useState } from "react";
 import AboutFooter from "../../components/AboutFooter/AboutFooter";
 import AboutPageSection from "../../components/AboutPageSection/AboutPageSection";
 import Magnetic from "../../components/Magnetic/Magnetic";
@@ -10,11 +11,30 @@ import AboutImage from "../../components/AboutImage/AboutImage";
 import AboutPosition from "../../components/AboutPosition/AboutPosition";
 import WaveScene from "../../components/WaveEffect/WaveScene";
 
+import styles from "./about.module.css";
+
 const About = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.9,
   });
+
+  useEffect(() => {
+    const lenis = new Lenis({ lerp: 0.035, wheelMultiplier: 0.65 });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    window.scrollTo(0, 0);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   const color2 = "#ffe600";
 
