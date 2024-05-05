@@ -2,8 +2,9 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import ProjectIntro from "../../components/ProjectIntro/ProjectIntro";
-import Project from "../../components/ProjectsContainer/ProjectContainer";
+import ProjectContainer from "../../components/ProjectsContainer/ProjectContainer";
 import styles from "./projs.module.css";
+import Project from "../../components/Project/Project";
 
 const Projects = () => {
   const [introPlaying, setIntroPlaying] = useState(true);
@@ -20,7 +21,9 @@ const Projects = () => {
           {introPlaying && <ProjectIntro title="projects" />}
         </AnimatePresence>
 
-        <Project />
+        <ProjectContainer>
+          <Project title="hello" />
+        </ProjectContainer>
       </div>
     </>
   );

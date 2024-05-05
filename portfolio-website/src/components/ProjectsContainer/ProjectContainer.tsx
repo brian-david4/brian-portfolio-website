@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { ProjectType } from "../../types";
-import styles from "./prj.module.css";
+import styles from "./projCont.module.css";
 
 interface ProjectProps {
   project?: ProjectType;
+  children: React.ReactNode;
 }
 
-const Project = ({}: ProjectProps) => {
+const ProjectContainer = ({ children }: ProjectProps) => {
   return (
     <>
       <motion.div
@@ -17,14 +18,10 @@ const Project = ({}: ProjectProps) => {
         }}
         className={styles.pageBackground}
       >
-        <div className={styles.bubble}>
-          <div className={styles.divvie}>
-            <h1>heloooo</h1>
-          </div>
-        </div>
+        <div className={styles.bubble}>{children}</div>
       </motion.div>
     </>
   );
 };
 
-export default Project;
+export default ProjectContainer;
