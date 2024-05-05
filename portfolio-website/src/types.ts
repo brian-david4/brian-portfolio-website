@@ -11,4 +11,5 @@ export interface ProjectType {
   link: string;
   colour: string;
   images?: string[];
+  desc: string;
 }

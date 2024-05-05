@@ -18,7 +18,7 @@ const Home = () => {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
 
   const title =
-    "React developer fashioning creative web enviroments that are candid yet elegant.";
+    "React developer fashioning creative web enviroments that are simple yet elegant.";
   const titleWords = title.split(" ");
 
   useEffect(() => {
@@ -106,7 +106,7 @@ const Home = () => {
                     custom={idx}
                   >
                     {word === "creative" ||
-                    word === "candid" ||
+                    word === "simple" ||
                     word === "elegant." ? (
                       <span className={styles.emphasis}>
                         <i>{word}</i>

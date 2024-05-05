@@ -25,7 +25,7 @@
   font-size: 3vw;
   letter-spacing: 0.05ch;
   word-spacing: 0.2rem;
-  font-family: "NikkeiMaru Light";
+  font-family: "Neue Montreal Book";
 }
 /* imgs */
 .imagesSide,
@@ -38,7 +38,6 @@
   position: absolute;
   right: 20px;
   top: 10%;
-  /* background-color: aqua; */
   height: fit-content;
   width: fit-content;
   flex-direction: column;
@@ -51,7 +50,6 @@
   width: fit-content;
   height: fit-content;
   gap: 4vw;
-  /* background-color: aqua; */
 }
 .img {
   height: 25vh;
@@ -60,7 +58,7 @@
 .img > img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 5px;
 }
 /* btn styles */
@@ -92,7 +90,7 @@
   left: 0;
   transform: translateX(-100%);
   pointer-events: none;
-  transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
 }
 .button:hover > .hoverFill {
   transform: translateX(0);
@@ -104,7 +102,7 @@
   color: whitesmoke;
   letter-spacing: 0.2ch;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .mainDesc {
     top: 10%;
     left: 10%;
@@ -115,10 +113,13 @@
   /* images */
   .imagesBoth {
     position: absolute;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    bottom: 0;
-    left: 10%;
+    align-items: center;
+    justify-content: center;
+    bottom: 1%;
+    gap: 1vh;
   }
   .imagesBttm,
   .imagesSide {
@@ -133,7 +134,10 @@
     width: 250px;
   }
 }
-@media (max-width: 412px) {
+@media (max-width: 612px) {
+  .mainDesc {
+    font-size: 4.6vw;
+  }
   .imagesBoth {
     position: absolute;
     /* background-color: cadetblue; */
@@ -141,7 +145,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    bottom: 10%;
+    bottom: 20px;
     width: 100%;
     height: 50%;
     gap: 1vh;
@@ -155,8 +159,12 @@
     gap: 1vh;
   }
   .img {
-    height: 33vw;
+    height: 12vh;
     width: 100%;
-    background-color: blanchedalmond;
+  }
+}
+@media (max-width: 512px) {
+  .mainDesc {
+    font-size: 5vw;
   }
 }
