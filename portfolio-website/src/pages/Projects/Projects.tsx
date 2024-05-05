@@ -9,7 +9,9 @@ const Projects = () => {
   const [introPlaying, setIntroPlaying] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setIntroPlaying(false), 3000);
+    const timer = setTimeout(() => setIntroPlaying(false), 3000);
+
+    return () => clearTimeout(timer);
   }, []);
   return (
     <>
