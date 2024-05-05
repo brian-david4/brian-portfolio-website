@@ -19,6 +19,16 @@ const Project = ({ project }: ProjectProps) => {
           eaque commodi fugit?
         </div>
 
+        <div className={styles.imagesSide}>
+          <div className={styles.img}></div>
+          <div className={styles.img}></div>
+        </div>
+
+        <div className={styles.imagesBttm}>
+          <div className={styles.img}></div>
+          <div className={styles.img}></div>
+        </div>
+
         <Link target="_blank" to={project.link} className={styles.linkBtn}>
           <div className={styles.button}>
             <div className={styles.btnHeading}>Visit</div>

@@ -27,7 +27,37 @@
   word-spacing: 0.2rem;
   font-family: "NikkeiMaru Light";
 }
-
+/* imgs */
+.imagesSide,
+.imagesBttm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagesSide {
+  position: absolute;
+  right: 20px;
+  top: 10%;
+  background-color: aqua;
+  height: fit-content;
+  width: fit-content;
+  flex-direction: column;
+  gap: 4vh;
+}
+.imagesBttm {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  width: fit-content;
+  height: fit-content;
+  gap: 4vw;
+  background-color: aqua;
+}
+.img {
+  height: 25vh;
+  width: 25vw;
+  background-color: bisque;
+}
 /* btn styles */
 .linkBtn {
   position: absolute;
