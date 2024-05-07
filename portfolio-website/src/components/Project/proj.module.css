@@ -22,11 +22,12 @@
   left: 2.5%;
   top: 20%;
   /* background-color: aqua; */
-  color: var(--dark-green);
+  color: aliceblue;
   font-size: 3vw;
   letter-spacing: 0.05ch;
   word-spacing: 0.2rem;
   font-family: "Neue Montreal Book";
+  mix-blend-mode: difference;
 }
 /* imgs */
 .imagesSide,
