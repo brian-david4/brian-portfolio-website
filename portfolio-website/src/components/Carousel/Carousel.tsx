@@ -1,6 +1,6 @@
 import useMeasure from "react-use-measure";
 import styles from "./carousel.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { animate, motion, useMotionValue } from "framer-motion";
 
 interface CarouselProps {
@@ -9,6 +9,7 @@ interface CarouselProps {
 
 const Carousel = ({ items }: CarouselProps) => {
   const [ref, { width }] = useMeasure();
+  const [itemHovered, setItemHovered] = useState({ index: 0, isActive: false });
   const xTranslation = useMotionValue(0);
 
   useEffect(() => {
@@ -33,9 +34,22 @@ const Carousel = ({ items }: CarouselProps) => {
         ref={ref}
       >
         {[...items, ...items].map((itm, idx) => (
-          <div key={`c_itm_${idx}`} className={styles.carouselItem}>
+          <motion.div
+            key={`c_itm_${idx}`}
+            animate={{
+              y: itemHovered.index === idx && itemHovered.isActive ? -10 : 0,
+              color:
+                itemHovered.index === idx && itemHovered.isActive
+                  ? "#3f81fc"
+                  : "#312809",
+            }}
+            transition={{ y: { duration: 0.2, ease: [0.16, 1, 0.3, 1] } }}
+            className={styles.carouselItem}
+            onMouseEnter={() => setItemHovered({ index: idx, isActive: true })}
+            onMouseLeave={() => setItemHovered({ index: idx, isActive: false })}
+          >
             {itm}
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </>

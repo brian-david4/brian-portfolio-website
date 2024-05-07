@@ -12,4 +12,5 @@
   white-space: nowrap;
   position: relative;
   user-select: none;
+  letter-spacing: 0.1ch;
 }

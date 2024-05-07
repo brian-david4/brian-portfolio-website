@@ -12,9 +12,6 @@ const Project = ({ project }: ProjectProps) => {
   return (
     <>
       <div className={styles.projectWrapper}>
-        {/* <div className={styles.title}>
-          <b>{project.title}</b>
-        </div> */}
         <Carousel items={[project.title, project.title, project.title]} />
 
         <div className={styles.mainDesc}>{project.desc}</div>
