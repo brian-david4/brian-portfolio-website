@@ -25,7 +25,10 @@ const Project = ({ project }: ProjectProps) => {
         ref={projectRef}
         className={styles.projectWrapper}
       >
-        <Carousel items={[project.title, project.title, project.title]} />
+        <Carousel
+          inView={inView}
+          items={[project.title, project.title, project.title]}
+        />
 
         <div className={styles.mainDesc}>{project.desc}</div>
 

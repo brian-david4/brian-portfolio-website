@@ -5,12 +5,14 @@ import { animate, motion, useMotionValue } from "framer-motion";
 
 interface CarouselProps {
   items: string[];
+  inView: boolean;
 }
 
-const Carousel = ({ items }: CarouselProps) => {
+const Carousel = ({ items, inView }: CarouselProps) => {
   const [ref, { width }] = useMeasure();
   const [itemHovered, setItemHovered] = useState({ index: 0, isActive: false });
   const xTranslation = useMotionValue(0);
+  const hoverColor = inView ? "#b4bcfa" : "#e8a2a9";
 
   useEffect(() => {
     let controls;
@@ -40,7 +42,7 @@ const Carousel = ({ items }: CarouselProps) => {
               y: itemHovered.index === idx && itemHovered.isActive ? -10 : 0,
               color:
                 itemHovered.index === idx && itemHovered.isActive
-                  ? "#3f81fc"
+                  ? hoverColor
                   : "#312809",
             }}
             transition={{ y: { duration: 0.2, ease: [0.16, 1, 0.3, 1] } }}
