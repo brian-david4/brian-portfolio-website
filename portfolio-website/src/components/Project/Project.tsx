@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ProjectType } from "../../types";
 import styles from "./proj.module.css";
+import Carousel from "../Carousel/Carousel";
 
 interface ProjectProps {
   project: ProjectType;
@@ -11,9 +12,10 @@ const Project = ({ project }: ProjectProps) => {
   return (
     <>
       <div className={styles.projectWrapper}>
-        <div className={styles.title}>
+        {/* <div className={styles.title}>
           <b>{project.title}</b>
-        </div>
+        </div> */}
+        <Carousel items={[project.title, project.title, project.title]} />
 
         <div className={styles.mainDesc}>{project.desc}</div>
 

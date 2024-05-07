@@ -1,0 +1,15 @@
+.carouselWrapper {
+  position: absolute;
+  top: 1vh;
+  left: 0;
+  display: flex;
+  gap: 1rem;
+}
+.carouselItem {
+  font-family: "Neue Montreal Book";
+  font-weight: bold;
+  font-size: 7vw;
+  white-space: nowrap;
+  position: relative;
+  user-select: none;
+}
