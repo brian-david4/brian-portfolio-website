@@ -12,7 +12,7 @@ const Carousel = ({ items, inView }: CarouselProps) => {
   const [ref, { width }] = useMeasure();
   const [itemHovered, setItemHovered] = useState({ index: 0, isActive: false });
   const xTranslation = useMotionValue(0);
-  const hoverColor = inView ? "#b4bcfa" : "#e8a2a9";
+  const hoverColor = inView ? "#ff723a" : "#e8a2a9";
 
   useEffect(() => {
     let controls;
@@ -24,7 +24,6 @@ const Carousel = ({ items, inView }: CarouselProps) => {
       repeatType: "loop",
       repeatDelay: 0,
     });
-    console.log(xTranslation);
 
     return () => controls.stop();
   }, [xTranslation, width]);

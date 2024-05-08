@@ -29,6 +29,7 @@ export const projects: ProjectType[] = [
     title: "Game Hub Search *",
     link: "https://game-hub-eosin-chi.vercel.app",
     colour: "#aaaaaa",
-    desc: "A way to browse a database of video-games, allowing the user ability to sort and filter by many fields. I worked with an API to retrieve data from the backend.",
+    desc: "A way to browse a database of video-games via a SPA, allowing the user ability to sort and filter by many fields. I worked with an API to retrieve data from the backend.",
+    images: ["/projectSC/pj_game_01.png"],
   },
 ];
