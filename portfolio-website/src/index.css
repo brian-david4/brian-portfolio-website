@@ -77,6 +77,10 @@
   font-family: "NikkeiMaru Light";
   src: url("../fonts/PPNikkeiMaru-Light.otf");
 }
+@font-face {
+  font-family: "Jubilee Diamond";
+  src: url(../fonts/OTJubilee-Diamond.otf);
+}
 body {
   margin: 0;
   padding: 0;
