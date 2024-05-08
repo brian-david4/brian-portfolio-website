@@ -14,13 +14,15 @@
   height: 60%;
   left: 2.5%;
   top: 20%;
-  /* background-color: aqua; */
   color: aliceblue;
   font-size: 3vw;
   letter-spacing: 0.05ch;
   word-spacing: 0.2rem;
   font-family: "Neue Montreal Book";
   mix-blend-mode: difference;
+}
+.outOfView {
+  color: var(--dark-green) !important;
 }
 /* imgs */
 .imagesSide,
@@ -55,6 +57,8 @@
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 /* btn styles */
 .linkBtn {
@@ -131,7 +135,7 @@
 }
 @media (max-width: 612px) {
   .mainDesc {
-    font-size: 4.6vw;
+    font-size: 6.5vw;
   }
   .imagesBoth {
     position: absolute;
@@ -148,18 +152,17 @@
   .imagesBttm,
   .imagesSide {
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
     left: 0;
     top: 0;
     gap: 1vh;
   }
   .img {
-    height: 12vh;
-    width: 100%;
+    height: 15vh;
+    width: 42vw;
   }
-}
-@media (max-width: 512px) {
-  .mainDesc {
-    font-size: 5vw;
+  .linkBtn {
+    bottom: 10px;
+    left: 35%;
   }
 }

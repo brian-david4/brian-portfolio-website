@@ -11,7 +11,7 @@ export const projects: ProjectType[] = [
       "/projectSC/pj_kuro_03.png",
       "/projectSC/pj_kuro_04.png",
     ],
-    desc: "I aimed to tell the story of acclaimed director Akira Kurosawa's career. It journeys from the foundations of his career as a assistant director - to becoming one of the greatest auters of the industry.",
+    desc: "I aimed to tell the story of acclaimed director Akira Kurosawa's career. It journeys from the foundations of his career as a painter - to becoming one of the most influential directors.",
   },
   {
     title: "Furniture Shop /",

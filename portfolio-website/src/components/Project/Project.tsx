@@ -30,7 +30,11 @@ const Project = ({ project }: ProjectProps) => {
           items={[project.title, project.title, project.title]}
         />
 
-        <div className={styles.mainDesc}>{project.desc}</div>
+        <div
+          className={`${styles.mainDesc} ${!inView ? styles.outOfView : ""}`}
+        >
+          {project.desc}
+        </div>
 
         <div className={styles.imagesBoth}>
           <div className={styles.imagesSide}>
