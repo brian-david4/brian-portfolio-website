@@ -15,9 +15,8 @@ const Carousel = ({ items, inView }: CarouselProps) => {
   const hoverColor = inView ? "#ff723a" : "#e8a2a9";
 
   useEffect(() => {
-    let controls;
     let finalPosition = -width / 2 - 8;
-    controls = animate(xTranslation, [0, finalPosition], {
+    const controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
       duration: 45,
       repeat: Infinity,
