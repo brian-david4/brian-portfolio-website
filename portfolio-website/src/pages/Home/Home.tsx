@@ -13,6 +13,7 @@ import TextPosition from "../../components/TextPosition/TextPosition";
 import { projects } from "../../data";
 import { TextHoverType } from "../../types";
 import styles from "./home.module.css";
+import HomeFooter from "../../components/HomeFooter/HomeFooter";
 
 const Home = () => {
   // smooth scroll
@@ -179,6 +180,8 @@ const Home = () => {
               />
             ))}
           </div>
+
+          <HomeFooter />
         </div>
       </div>
     </>

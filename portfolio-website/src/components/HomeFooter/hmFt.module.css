@@ -1,0 +1,37 @@
+.footer {
+  height: 65vh;
+  width: 100vw;
+  background-color: rgb(21, 21, 21);
+  position: relative;
+}
+.title {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-size: 10vw;
+  color: aliceblue;
+  font-family: "Jubilee Diamond";
+  letter-spacing: 0.1ch;
+  user-select: none;
+}
+.desc {
+  position: absolute;
+  left: 10vw;
+  bottom: 10vh;
+  width: 60vw;
+  color: var(--main-theme);
+  font-size: 1.75rem;
+  font-family: "NikkeiMaru Light";
+}
+.contact {
+  position: absolute;
+  right: 20%;
+  bottom: 5vh;
+}
+.contact > a {
+  color: var(--orange);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "NikkeiMaru Light";
+  letter-spacing: 0.05ch;
+}
