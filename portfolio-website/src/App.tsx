@@ -6,7 +6,6 @@ import Header from "./components/Header/Header";
 import MouseTrail from "./components/MouseTrail/MouseTrail";
 // pages
 import Home from "./pages/Home/Home";
-import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 import Projects from "./pages/Projects/Projects";
@@ -34,7 +33,6 @@ function App() {
       <Header on404Page={on404Page} />
       <Routes location={location} key={location.pathname}>
         <Route index element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<NotFound />} />

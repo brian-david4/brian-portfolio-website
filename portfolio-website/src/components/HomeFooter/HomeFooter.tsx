@@ -1,24 +1,53 @@
 import { useState } from "react";
 import ContactMouseEffect from "../ContactMouseEffect/ContactMouseEffect";
 import styles from "./hmFt.module.css";
+import { motion } from "framer-motion";
+import { wordEnter } from "./contactAnims";
 
 const HomeFooter = () => {
+  const text1 = "I want to work with you!";
+  const text2 = "bdavid1530@gmail.com";
   const [contactHovered, setMouseHovered] = useState(false);
   return (
-    <div className={styles.footer}>
-      <ContactMouseEffect isTitleHovered={contactHovered} />
-      <h1 className={styles.title}>{`Get in Touch ...`}</h1>
-      <div className={styles.desc}>
-        Talk to me to get to know more about me!
+    <footer
+      onMouseEnter={() => setMouseHovered(true)}
+      onMouseLeave={() => setMouseHovered(false)}
+      className={styles.footer}
+    >
+      <div className={styles.textFlex}>
+        <ContactMouseEffect isTitleHovered={contactHovered} />
+
+        <div className={`${styles.text1Wrapper} ${styles.textWrapper}`}>
+          <p className={styles.textInner}>
+            {text1.split(" ").map((ltr, idx) => (
+              <motion.span
+                variants={wordEnter}
+                custom={idx}
+                initial="initial"
+                animate="enter"
+                key={`t_word_${idx}`}
+                className={styles.word}
+              >
+                {ltr}
+              </motion.span>
+            ))}
+          </p>
+        </div>
+        <div className={`${styles.text2Wrapper} ${styles.textWrapper}`}>
+          <motion.a
+            className={`${styles.textInner} ${styles.email}`}
+            href="mailto:bdavid1530@gmail.com"
+            variants={wordEnter}
+            custom={0}
+            initial="initial"
+            animate="enter"
+            transition={{ delay: 0.75, duration: 1.4 }}
+          >
+            {text2}
+          </motion.a>
+        </div>
       </div>
-      <div
-        onMouseEnter={() => setMouseHovered(true)}
-        onMouseLeave={() => setMouseHovered(false)}
-        className={styles.contact}
-      >
-        <a href="mailto:bdavid1530@gmail.com">bdavid1530@gmail</a>
-      </div>
-    </div>
+    </footer>
   );
 };
 
