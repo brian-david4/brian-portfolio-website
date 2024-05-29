@@ -2,6 +2,7 @@ import ContactMouseEffect from "../ContactMouseEffect/ContactMouseEffect";
 import styles from "./hmFt.module.css";
 import { motion } from "framer-motion";
 import { wordEnter } from "./contactAnims";
+import HomeFooterFooter from "../HomeFooterFooter/HomeFooterFooter";
 
 interface HomeFooterProps {
   handleMouseEnter: () => void;
@@ -42,6 +43,7 @@ const HomeFooter = ({
             ))}
           </p>
         </div>
+
         <div className={`${styles.text2Wrapper} ${styles.textWrapper}`}>
           <motion.a
             className={`${styles.textInner} ${styles.email}`}
@@ -56,6 +58,7 @@ const HomeFooter = ({
           </motion.a>
         </div>
       </div>
+      <HomeFooterFooter />
     </footer>
   );
 };
