@@ -15,7 +15,17 @@ import { TextHoverType } from "../../types";
 import styles from "./home.module.css";
 import HomeFooter from "../../components/HomeFooter/HomeFooter";
 
-const Home = () => {
+interface HomeProps {
+  handleMouseEnter: () => void;
+  handleMouseLeave: () => void;
+  footerHovered: boolean;
+}
+
+const Home = ({
+  handleMouseEnter,
+  handleMouseLeave,
+  footerHovered,
+}: HomeProps) => {
   // smooth scroll
   useEffect(() => {
     const lenis = new Lenis({ lerp: 0.035, wheelMultiplier: 0.65 });
@@ -181,7 +191,11 @@ const Home = () => {
             ))}
           </div>
 
-          <HomeFooter />
+          <HomeFooter
+            footerHovered={footerHovered}
+            handleMouseEnter={handleMouseEnter}
+            handleMouseLeave={handleMouseLeave}
+          />
         </div>
       </div>
     </>

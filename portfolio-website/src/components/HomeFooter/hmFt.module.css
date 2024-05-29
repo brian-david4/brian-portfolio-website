@@ -39,10 +39,6 @@
 }
 
 /* contact */
-.phrasesPosition {
-  position: absolute;
-  bottom: 5vmin;
-}
 .textFlex {
   height: 100vh;
   width: 100vw;
@@ -74,7 +70,7 @@
   letter-spacing: -0.1rem;
 }
 .text2Wrapper {
-  top: 5vh;
+  bottom: 2.5vh;
   right: 12vw;
 }
 .email {

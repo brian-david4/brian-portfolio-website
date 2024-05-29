@@ -6,9 +6,10 @@ import { useEffect, useState } from "react";
 
 interface MouseTrailProps {
   on404Page: boolean;
+  footerHovered: boolean;
 }
 
-const MouseTrail = ({ on404Page }: MouseTrailProps) => {
+const MouseTrail = ({ on404Page, footerHovered }: MouseTrailProps) => {
   const { pathname } = useLocation();
   const [onContactPage, setOnContactPage] = useState(false);
 
@@ -25,9 +26,9 @@ const MouseTrail = ({ on404Page }: MouseTrailProps) => {
   return (
     <motion.div
       className={`${styles.mouseTrail} 
-        ${onContactPage ? styles.contactPage : ""} 
-        ${on404Page ? styles.contactPage : ""}
-        `}
+        ${
+          onContactPage || on404Page || footerHovered ? styles.contactPage : ""
+        } `}
       animate={{ left: x - 10 / 2, top: y - 10 / 2 }}
       transition={{ type: "tween", ease: "easeOut" }}
     >

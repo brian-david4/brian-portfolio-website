@@ -1,21 +1,30 @@
-import { useState } from "react";
 import ContactMouseEffect from "../ContactMouseEffect/ContactMouseEffect";
 import styles from "./hmFt.module.css";
 import { motion } from "framer-motion";
 import { wordEnter } from "./contactAnims";
 
-const HomeFooter = () => {
+interface HomeFooterProps {
+  handleMouseEnter: () => void;
+  handleMouseLeave: () => void;
+  footerHovered: boolean;
+}
+
+const HomeFooter = ({
+  handleMouseLeave,
+  handleMouseEnter,
+  footerHovered,
+}: HomeFooterProps) => {
   const text1 = "I want to work with you!";
   const text2 = "bdavid1530@gmail.com";
-  const [contactHovered, setMouseHovered] = useState(false);
+  // const [contactHovered, setMouseHovered] = useState(false);
   return (
     <footer
-      onMouseEnter={() => setMouseHovered(true)}
-      onMouseLeave={() => setMouseHovered(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       className={styles.footer}
     >
       <div className={styles.textFlex}>
-        <ContactMouseEffect isTitleHovered={contactHovered} />
+        <ContactMouseEffect isTitleHovered={footerHovered} />
 
         <div className={`${styles.text1Wrapper} ${styles.textWrapper}`}>
           <p className={styles.textInner}>

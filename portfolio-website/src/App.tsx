@@ -27,12 +27,24 @@ function App() {
     }
   }, [pathname]);
 
+  // check footer hover on homepage
+  const [footerHovered, setFooterHovered] = useState(false);
+
   return (
     <>
-      <MouseTrail on404Page={on404Page} />
+      <MouseTrail footerHovered={footerHovered} on404Page={on404Page} />
       <Header on404Page={on404Page} />
       <Routes location={location} key={location.pathname}>
-        <Route index element={<Home />} />
+        <Route
+          index
+          element={
+            <Home
+              footerHovered={footerHovered}
+              handleMouseEnter={() => setFooterHovered(true)}
+              handleMouseLeave={() => setFooterHovered(false)}
+            />
+          }
+        />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
