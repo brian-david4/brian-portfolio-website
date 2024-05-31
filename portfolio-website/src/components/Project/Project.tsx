@@ -37,7 +37,9 @@ const Project = ({ project }: ProjectProps) => {
         </div>
 
         <Link target="_blank" to={project.link} className={styles.linkBtn}>
-          <div className={styles.button}>
+          <div
+            className={`${styles.button} ${!inView ? styles.outOfView : ""}`}
+          >
             <div className={styles.btnHeading}>Visit</div>
             <div className={styles.hoverFill} />
           </div>
