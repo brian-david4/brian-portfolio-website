@@ -66,7 +66,7 @@
   top: var(--header-height);
   width: fit-content;
   left: 15vmin;
-  margin-top: 30vh;
+  margin-top: 20vh;
   display: flex;
   gap: 20vmin;
   user-select: none;
@@ -99,30 +99,26 @@
 
 /* page 2 */
 .pageTwo {
-  height: fit-content;
+  position: relative;
+  height: 50vh;
   width: 100vw;
   background-color: var(--main-theme);
 }
 .projHeadingPos {
-  width: 100%;
+  position: absolute;
+  width: fit-content;
+  top: 2.5%;
+  left: 15%;
   display: grid;
   place-items: center;
 }
-.projects {
-  width: fit-content;
-  height: fit-content;
+.projectSection {
+  height: 350vh;
+  position: relative;
   display: flex;
   flex-direction: column;
-  border-top: solid 3px black;
-}
-.toolsPosition {
-  width: 100%;
-  height: fit-content;
-  margin-top: 25vh;
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10vh;
 }
 .textPos {
   width: 100%;

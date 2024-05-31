@@ -1,17 +1,5 @@
-.pageBackground {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  background-color: #ff723a;
-  height: 400vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  padding: 2.5%;
-}
 .bubble {
-  width: 100%;
+  width: 97.5%;
   height: fit-content;
   padding-bottom: 5%;
   background-color: var(--orange);

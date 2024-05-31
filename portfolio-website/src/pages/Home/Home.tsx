@@ -4,16 +4,16 @@ import { useEffect, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 
 import { contactReveal, titleWordsAnim } from "./homeAnims";
-import HomeProjectScroll from "../../components/HomeProjectScroll/HomeProjectScroll";
 import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
-import SkillsComponent from "../../components/SkillsComponent/SkillsComponent";
 import TextComponent from "../../components/TextComponent/TextComponent";
 import TextPosition from "../../components/TextPosition/TextPosition";
 
-import { projects } from "../../data";
 import { TextHoverType } from "../../types";
 import styles from "./home.module.css";
 import HomeFooter from "../../components/HomeFooter/HomeFooter";
+import ProjectContainer from "../../components/ProjectsContainer/ProjectContainer";
+import Project from "../../components/Project/Project";
+import { projects } from "../../data";
 
 interface HomeProps {
   handleMouseEnter: () => void;
@@ -57,18 +57,6 @@ const Home = ({
       document.body.style.overflowY = "auto";
     };
   }, []);
-
-  // const projects = [
-  //   { title: "Kurosawa's Story -", link: "https://kurosawa-gray.vercel.app" },
-  //   {
-  //     title: "Furniture Store /",
-  //     link: "https://furniture-shop-drab.vercel.app",
-  //   },
-  //   {
-  //     title: "Game Hub Search *",
-  //     link: "https://game-hub-eosin-chi.vercel.app",
-  //   },
-  // ];
 
   const skills = [
     {
@@ -160,43 +148,30 @@ const Home = ({
           <div className={styles.projHeadingPos}>
             <ProjectHeading title="Projects" />
           </div>
-
-          <div className={styles.projects}>
-            {projects.map((project, idx) => (
-              <HomeProjectScroll
-                link={project.link}
-                title={project.title}
-                key={`pjt_${idx}`}
-              />
-            ))}
-          </div>
-
-          <div className={styles.textPos}>
-            <TextPosition right>
-              <TextComponent hoverWords={textEffectWords}>
-                I am always listening to music, if not i'm probably playing
-                some. Cinema is just as essential, spanning countries and
-                decades.
-              </TextComponent>
-            </TextPosition>
-          </div>
-
-          <div className={styles.toolsPosition}>
-            {skills.map((skill, idx) => (
-              <SkillsComponent
-                body={skill.body}
-                heading={skill.heading}
-                key={`sk_${idx}`}
-              />
-            ))}
-          </div>
-
-          <HomeFooter
-            footerHovered={footerHovered}
-            handleMouseEnter={handleMouseEnter}
-            handleMouseLeave={handleMouseLeave}
-          />
         </div>
+
+        <section className={styles.projectSection}>
+          <ProjectContainer>
+            {projects.map((prj, idx) => {
+              return <Project project={prj} key={`prj_${idx}`} />;
+            })}
+          </ProjectContainer>
+        </section>
+
+        {/* <div className={styles.textPos}>
+          <TextPosition right>
+            <TextComponent hoverWords={textEffectWords}>
+              I am always listening to music, if not i'm probably playing some.
+              Cinema is just as essential, spanning countries and decades.
+            </TextComponent>
+          </TextPosition>
+        </div> */}
+
+        <HomeFooter
+          footerHovered={footerHovered}
+          handleMouseEnter={handleMouseEnter}
+          handleMouseLeave={handleMouseLeave}
+        />
       </div>
     </>
   );
