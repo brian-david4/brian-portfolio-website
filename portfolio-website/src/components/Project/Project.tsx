@@ -13,7 +13,7 @@ interface ProjectProps {
 
 const Project = ({ project }: ProjectProps) => {
   const [projectRef, inView] = useInView({
-    threshold: 0.6,
+    threshold: 0.4,
     triggerOnce: false,
   });
   const imageArr = project.images ? project.images : [""];
@@ -34,6 +34,18 @@ const Project = ({ project }: ProjectProps) => {
           className={`${styles.mainDesc} ${!inView ? styles.outOfView : ""}`}
         >
           {project.desc}
+        </div>
+
+        <div className={styles.images}>
+          {imageArr.map((src, idx) =>
+            idx < 2 ? (
+              <div key={`pjIm_${idx}`} className={styles.img}>
+                <img src={src} />
+              </div>
+            ) : (
+              <></>
+            )
+          )}
         </div>
 
         <Link target="_blank" to={project.link} className={styles.linkBtn}>
