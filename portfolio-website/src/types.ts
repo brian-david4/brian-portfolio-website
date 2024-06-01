@@ -12,4 +12,6 @@ export interface ProjectType {
   colour: string;
   images?: string[];
   desc: string;
+  techstack: string[];
+  codeLink: string;
 }
