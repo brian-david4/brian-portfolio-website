@@ -44,6 +44,25 @@ const Project = ({ project }: ProjectProps) => {
           ))}
         </div>
 
+        <div className={styles.sideSection}>
+          <div className={styles.techStack}>
+            <div className={styles.heading}>
+              Tech stack
+              <img className={styles.arrow} src="/arrow-svg.svg" alt="arrow" />
+            </div>
+            <div className={styles.content}>
+              {project.techstack.map((tech, idx) => (
+                <span className={styles.listItem} key={`t_${idx}`}>
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+          <a className={styles.sourceCode} href={project.codeLink}>
+            View code
+          </a>
+        </div>
+
         <Link target="_blank" to={project.link} className={styles.linkBtn}>
           <div
             className={`${styles.button} ${!inView ? styles.outOfView : ""}`}

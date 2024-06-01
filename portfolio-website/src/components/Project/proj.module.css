@@ -57,7 +57,7 @@
   right: 2.5vw;
   text-decoration: none;
   font-family: "Neue Montreal Book";
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 .button {
   opacity: 1;
@@ -96,6 +96,62 @@
   color: whitesmoke;
   letter-spacing: 0.2ch;
 }
+
+/* side section */
+.sideSection {
+  position: absolute;
+  right: 0;
+  top: 17%;
+  height: 70%;
+  max-height: 350px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+}
+.heading {
+  font-size: 4vw;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: "Acma Light";
+}
+.arrow {
+  height: 10px;
+  aspect-ratio: 1/1;
+  margin-left: 2vw;
+  transform: translateY(-30%);
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  font-family: "NikkeiMaru Light";
+}
+.listItem {
+  font-size: 1.5rem;
+  color: #ff723a;
+}
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sourceCode {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  font-size: 3vw;
+  padding: 5%;
+  margin-top: 10%;
+  font-family: "NikkeiMaru Light";
+  color: black;
+  text-decoration: none;
+  background-color: #ff723a;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+
 @media (max-width: 868px) {
   .mainDesc {
     top: 12%;
@@ -126,6 +182,14 @@
     height: 20vh;
     width: 30vw;
   }
+
+  /* side content */
+  .heading {
+    font-size: 5vw;
+  }
+  .listItem {
+    font-size: 3vw;
+  }
 }
 @media (max-width: 612px) {
   .mainDesc {
@@ -142,5 +206,13 @@
   .linkBtn {
     bottom: 10px;
     left: 35%;
+  }
+
+  /* side */
+  .heading {
+    font-size: 7vw;
+  }
+  .listItem {
+    font-size: 4vw;
   }
 }
