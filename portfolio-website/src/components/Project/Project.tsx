@@ -21,7 +21,7 @@ const Project = ({ project }: ProjectProps) => {
     <>
       <motion.div
         animate={{ backgroundColor: inView ? "#ebe4d8" : "#00000" }}
-        transition={{ duration: 1.2, ease: [0.5, 1, 0.89, 1] }}
+        transition={{ duration: 1, ease: "linear" }}
         ref={projectRef}
         className={styles.projectWrapper}
       >
@@ -36,16 +36,12 @@ const Project = ({ project }: ProjectProps) => {
           {project.desc}
         </div>
 
-        <div className={styles.images}>
-          {imageArr.map((src, idx) =>
-            idx < 2 ? (
-              <div key={`pjIm_${idx}`} className={styles.img}>
-                <img src={src} />
-              </div>
-            ) : (
-              <></>
-            )
-          )}
+        <div className={`${styles.images} ${!inView ? styles.outOfView : ""}`}>
+          {imageArr.map((src, idx) => (
+            <div key={`pjIm_${idx}`} className={styles.img}>
+              <img src={src} />
+            </div>
+          ))}
         </div>
 
         <Link target="_blank" to={project.link} className={styles.linkBtn}>

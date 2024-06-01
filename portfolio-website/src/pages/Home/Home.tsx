@@ -5,10 +5,10 @@ import Lenis from "@studio-freight/lenis";
 
 import { contactReveal, titleWordsAnim } from "./homeAnims";
 import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
-import TextComponent from "../../components/TextComponent/TextComponent";
-import TextPosition from "../../components/TextPosition/TextPosition";
+// import TextComponent from "../../components/TextComponent/TextComponent";
+// import TextPosition from "../../components/TextPosition/TextPosition";
 
-import { TextHoverType } from "../../types";
+// import { TextHoverType } from "../../types";
 import styles from "./home.module.css";
 import HomeFooter from "../../components/HomeFooter/HomeFooter";
 import ProjectContainer from "../../components/ProjectsContainer/ProjectContainer";
@@ -58,24 +58,24 @@ const Home = ({
     };
   }, []);
 
-  const skills = [
-    {
-      body: ["React", "CSS modules", "TypeScript", "JavaScript"],
-      heading: "Tools",
-    },
-    {
-      body: ["GSAP", "Framer Motion", "React Router", "Axios"],
-      heading: "Libraries",
-    },
-    {
-      body: ["Vite", "Figma", "Evernote", "Git"],
-      heading: "Skills",
-    },
-    {
-      body: ["Photoshop", "CodePen", "Chrome DevTools"],
-      heading: "Extra",
-    },
-  ];
+  // const skills = [
+  //   {
+  //     body: ["React", "CSS modules", "TypeScript", "JavaScript"],
+  //     heading: "Tools",
+  //   },
+  //   {
+  //     body: ["GSAP", "Framer Motion", "React Router", "Axios"],
+  //     heading: "Libraries",
+  //   },
+  //   {
+  //     body: ["Vite", "Figma", "Evernote", "Git"],
+  //     heading: "Skills",
+  //   },
+  //   {
+  //     body: ["Photoshop", "CodePen", "Chrome DevTools"],
+  //     heading: "Extra",
+  //   },
+  // ];
 
   // for project animation
   const { ref, inView } = useInView({
@@ -85,17 +85,17 @@ const Home = ({
 
   // for text comp
 
-  const textEffectWords: TextHoverType = {
-    selectedWords: ["music,", "Cinema"],
-    images: [
-      ["/album/slowthai.jpg", "/album/manAlive.jpg", "/album/skepta.webp"],
-      [
-        "/cinema/goodfellas.jpg",
-        "/cinema/kurosawa.jpg",
-        "/cinema/bandBrothers.jpg",
-      ],
-    ],
-  };
+  // const textEffectWords: TextHoverType = {
+  //   selectedWords: ["music,", "Cinema"],
+  //   images: [
+  //     ["/album/slowthai.jpg", "/album/manAlive.jpg", "/album/skepta.webp"],
+  //     [
+  //       "/cinema/goodfellas.jpg",
+  //       "/cinema/kurosawa.jpg",
+  //       "/cinema/bandBrothers.jpg",
+  //     ],
+  //   ],
+  // };
 
   return (
     <>

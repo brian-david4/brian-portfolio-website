@@ -14,7 +14,7 @@
   height: 60%;
   left: 1vw;
   top: 20%;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   opacity: 1;
   font-size: 3.5vw;
   letter-spacing: 0.05ch;
@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   gap: 1vw;
+  transition: 100ms opacity ease-out;
 }
 .img {
   height: 25vh;
