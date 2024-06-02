@@ -9,7 +9,6 @@ interface AboutFooterProps {
 const AboutFooter = ({ inView }: AboutFooterProps) => {
   const links = [
     { title: "home", href: "/" },
-    { title: "projects", href: "/projects" },
     { title: "contact", href: "/contact" },
   ];
 

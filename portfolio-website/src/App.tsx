@@ -8,7 +8,6 @@ import MouseTrail from "./components/MouseTrail/MouseTrail";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
-import Projects from "./pages/Projects/Projects";
 
 function App() {
   const location = useLocation();
@@ -46,7 +45,6 @@ function App() {
           }
         />
         <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

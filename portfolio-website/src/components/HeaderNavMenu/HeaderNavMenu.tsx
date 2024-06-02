@@ -11,10 +11,8 @@ interface HeaderNavMenuProps {
 const HeaderNavMenu = ({ setMenuFalse }: HeaderNavMenuProps) => {
   const links: NavLink[] = [
     { title: "Home", to: "/" },
-    { title: "Projects", to: "/projects" },
-    { title: "Contact", to: "/contact" },
+
     { title: "About Me", to: "/about" },
-    { title: "Link", to: "/link" },
   ];
   return (
     <>
