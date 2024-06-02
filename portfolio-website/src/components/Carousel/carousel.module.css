@@ -7,9 +7,19 @@
 }
 .carouselItem {
   font-family: "Jubilee Diamond";
-  font-size: 7.2vw;
+  font-size: 8vw;
   white-space: nowrap;
   position: relative;
   user-select: none;
   letter-spacing: 0.1ch;
+}
+@media (max-width: 868px) {
+  .carouselItem {
+    font-size: 11vw;
+  }
+}
+@media (max-width: 612px) {
+  .carouselItem {
+    font-size: 15vw;
+  }
 }
