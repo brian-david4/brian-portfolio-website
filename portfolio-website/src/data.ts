@@ -17,7 +17,7 @@ export const projects: ProjectType[] = [
     images: ["/projectSC/pj_furn_01.png", "/projectSC/pj_furn_02.png"],
     techstack: ["HTML", "CSS", "React", "Typescript"],
     codeLink: "https://github.com/brian-david4/furniture-shop",
-    desc: "An e-commerce store built to sell modern, designer furniture. I wanted the website to mirror the style of the furniture: modern yet sleek.",
+    desc: "An e-commerce store built to sell modern, designer furniture. I wanted the website to mirror the style of the furniture: modern and simplistic.",
   },
   {
     title: "Game Hub Search *",

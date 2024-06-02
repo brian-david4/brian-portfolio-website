@@ -125,8 +125,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15vh;
   gap: 10vh;
+  margin-bottom: 10vh;
 }
 @media (max-width: 768px) {
   .title {

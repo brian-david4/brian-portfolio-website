@@ -5,7 +5,11 @@ const HomeFooterFooter = () => {
   return (
     <>
       <footer className={styles.footer}>
-        <a className={styles.link} href="https://github.com/brian-david4/">
+        <a
+          target="_blank"
+          className={styles.link}
+          href="https://github.com/brian-david4/"
+        >
           <div className={styles.image}>
             <img src={svgSrc} alt="GitHub svg" />
           </div>

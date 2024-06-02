@@ -5,8 +5,8 @@ import Lenis from "@studio-freight/lenis";
 
 import { contactReveal, titleWordsAnim } from "./homeAnims";
 import ProjectHeading from "../../components/ProjectHeading/ProjectHeading";
-// import TextComponent from "../../components/TextComponent/TextComponent";
-// import TextPosition from "../../components/TextPosition/TextPosition";
+import TextComponent from "../../components/TextComponent/TextComponent";
+import TextPosition from "../../components/TextPosition/TextPosition";
 
 // import { TextHoverType } from "../../types";
 import styles from "./home.module.css";
@@ -14,6 +14,7 @@ import HomeFooter from "../../components/HomeFooter/HomeFooter";
 import ProjectContainer from "../../components/ProjectsContainer/ProjectContainer";
 import Project from "../../components/Project/Project";
 import { projects } from "../../data";
+import { TextHoverType } from "../../types";
 
 interface HomeProps {
   handleMouseEnter: () => void;
@@ -58,25 +59,6 @@ const Home = ({
     };
   }, []);
 
-  // const skills = [
-  //   {
-  //     body: ["React", "CSS modules", "TypeScript", "JavaScript"],
-  //     heading: "Tools",
-  //   },
-  //   {
-  //     body: ["GSAP", "Framer Motion", "React Router", "Axios"],
-  //     heading: "Libraries",
-  //   },
-  //   {
-  //     body: ["Vite", "Figma", "Evernote", "Git"],
-  //     heading: "Skills",
-  //   },
-  //   {
-  //     body: ["Photoshop", "CodePen", "Chrome DevTools"],
-  //     heading: "Extra",
-  //   },
-  // ];
-
   // for project animation
   const { ref, inView } = useInView({
     threshold: 0.2,
@@ -85,17 +67,17 @@ const Home = ({
 
   // for text comp
 
-  // const textEffectWords: TextHoverType = {
-  //   selectedWords: ["music,", "Cinema"],
-  //   images: [
-  //     ["/album/slowthai.jpg", "/album/manAlive.jpg", "/album/skepta.webp"],
-  //     [
-  //       "/cinema/goodfellas.jpg",
-  //       "/cinema/kurosawa.jpg",
-  //       "/cinema/bandBrothers.jpg",
-  //     ],
-  //   ],
-  // };
+  const textEffectWords: TextHoverType = {
+    selectedWords: ["music,", "Cinema."],
+    images: [
+      ["/album/slowthai.jpg", "/album/manAlive.jpg", "/album/skepta.webp"],
+      [
+        "/cinema/goodfellas.jpg",
+        "/cinema/kurosawa.jpg",
+        "/cinema/bandBrothers.jpg",
+      ],
+    ],
+  };
 
   return (
     <>
@@ -144,6 +126,14 @@ const Home = ({
             </a>
           </div>
         </div>
+        <div className={styles.textPos}>
+          <TextPosition right>
+            <TextComponent hoverWords={textEffectWords}>
+              I am always listening to music, or playing it. Also love Football
+              and Cinema.
+            </TextComponent>
+          </TextPosition>
+        </div>
         <div className={styles.pageTwo}>
           <div className={styles.projHeadingPos}>
             <ProjectHeading title="Projects" />
@@ -157,15 +147,6 @@ const Home = ({
             })}
           </ProjectContainer>
         </section>
-
-        {/* <div className={styles.textPos}>
-          <TextPosition right>
-            <TextComponent hoverWords={textEffectWords}>
-              I am always listening to music, if not i'm probably playing some.
-              Cinema is just as essential, spanning countries and decades.
-            </TextComponent>
-          </TextPosition>
-        </div> */}
 
         <HomeFooter
           footerHovered={footerHovered}
