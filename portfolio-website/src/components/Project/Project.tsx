@@ -44,7 +44,9 @@ const Project = ({ project }: ProjectProps) => {
           ))}
         </div>
 
-        <div className={styles.sideSection}>
+        <div
+          className={`${styles.sideSection} ${!inView ? styles.outOfView : ""}`}
+        >
           <div className={styles.techStack}>
             <div className={styles.heading}>
               Tech stack
@@ -58,7 +60,11 @@ const Project = ({ project }: ProjectProps) => {
               ))}
             </div>
           </div>
-          <a className={styles.sourceCode} href={project.codeLink}>
+          <a
+            target="_blank"
+            className={styles.sourceCode}
+            href={project.codeLink}
+          >
             View code
           </a>
         </div>
