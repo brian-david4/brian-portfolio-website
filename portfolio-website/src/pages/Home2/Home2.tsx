@@ -1,5 +1,6 @@
 import HomeProject from "../../components/HomeProject/HomeProject";
 import styles from "./home.module.css";
+import { projects } from "../../data";
 
 const Home2 = () => {
   return (
@@ -27,7 +28,9 @@ const Home2 = () => {
             <div className={styles.projectTitle}>
               <div>selected works</div>
             </div>
-            <HomeProject />
+            {projects.map((proj, idx) => (
+              <HomeProject key={`hPj_${idx}`} project={proj} />
+            ))}
           </section>
         </section>
       </div>

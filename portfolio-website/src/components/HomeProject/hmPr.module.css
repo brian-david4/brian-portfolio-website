@@ -1,14 +1,15 @@
 .project {
   position: relative;
-  height: 25%;
+  height: 30%;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .projectTitle {
   position: relative;
   height: 20px;
-  position: absolute;
   top: 0;
   display: flex;
   align-items: center;
@@ -22,7 +23,7 @@
 }
 .titleText {
   mix-blend-mode: difference;
-  color: white;
+  color: rgb(255, 246, 216);
   z-index: 1;
   font-family: "Neue Montreal Book";
 }
@@ -33,9 +34,86 @@
   height: 110%;
   transform: translateX(-100%);
   background-color: black;
-  transition: transform 500ms ease-out;
-  border-radius: 50px;
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  border-radius: 10px;
 }
 .hovered {
   transform: translateX(0%) !important;
+}
+/* project body */
+.projectBody {
+  height: calc(100% - 20px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Neue Montreal Book";
+}
+.heading {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: last baseline;
+  justify-content: right;
+  flex-shrink: 0;
+  border-right: 1px solid black;
+  font-size: 0.8rem;
+}
+.headingTxt {
+  margin-right: 1vw;
+  margin-bottom: 1vh;
+  font-family: "Neue Montreal Italic";
+}
+.description {
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+.descBox {
+  width: auto;
+  height: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-size: 0.9rem;
+  display: grid;
+  place-items: center;
+  border-bottom: 1px solid black;
+}
+.techStack {
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+.techBox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+.span {
+  margin-right: 0.75vw;
+}
+.source {
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+.visitCode {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.visitCode > a {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: black;
+}
+.code {
+  border-right: 1px solid black;
 }
