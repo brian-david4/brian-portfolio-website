@@ -1,3 +1,4 @@
+import HomeProject from "../../components/HomeProject/HomeProject";
 import styles from "./home.module.css";
 
 const Home2 = () => {
@@ -21,7 +22,14 @@ const Home2 = () => {
             nemo repellat?
           </p>
         </section>
-        <section className={styles.sectionRight}></section>
+        <section className={styles.sectionRight}>
+          <section className={styles.projects}>
+            <div className={styles.projectTitle}>
+              <div>selected works</div>
+            </div>
+            <HomeProject />
+          </section>
+        </section>
       </div>
     </main>
   );

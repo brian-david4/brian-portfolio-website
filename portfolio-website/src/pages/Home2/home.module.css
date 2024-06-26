@@ -18,6 +18,7 @@
   height: 100%;
   position: relative;
 }
+/* section 1 - about */
 .sectionLeft {
   border-right: 1px solid black;
   display: flex;
@@ -32,10 +33,32 @@
   font-family: "NikkeiMaru Light";
 }
 .about {
-  margin-top: 12.5%;
+  margin-top: 5vh;
   width: 60%;
   min-width: 100px;
-  font-size: 1.2vw;
-  letter-spacing: 0.04ch;
+  font-size: 1.3vw;
+  letter-spacing: 0.05vw;
   font-family: "Neue Montreal Book";
+}
+/* section 2 - projects */
+.projects {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 95%;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.projectTitle {
+  font-size: 2vw;
+  height: 20px;
+  font-family: "Neue Montreal Italic";
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

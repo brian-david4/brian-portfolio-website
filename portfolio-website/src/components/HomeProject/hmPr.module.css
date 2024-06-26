@@ -1,0 +1,41 @@
+.project {
+  position: relative;
+  height: 25%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.projectTitle {
+  position: relative;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+  color: black;
+  background-color: var(--main-theme);
+  z-index: 10;
+  overflow: hidden;
+}
+.titleText {
+  mix-blend-mode: difference;
+  color: white;
+  z-index: 1;
+  font-family: "Neue Montreal Book";
+}
+.hoverFill {
+  position: absolute;
+  top: 0;
+  width: 120%;
+  height: 110%;
+  transform: translateX(-100%);
+  background-color: black;
+  transition: transform 500ms ease-out;
+  border-radius: 50px;
+}
+.hovered {
+  transform: translateX(0%) !important;
+}
