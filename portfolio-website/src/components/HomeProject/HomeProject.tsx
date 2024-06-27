@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./hmPr.module.css";
 import { ProjectType } from "../../types";
+import Carousel from "../Carousel/Carousel";
 
 interface HomeProjectProps {
   project: ProjectType;
@@ -21,7 +22,16 @@ const HomeProject = ({ project }: HomeProjectProps) => {
         className={styles.project}
       >
         <div className={styles.projectTitle}>
-          <div className={styles.titleText}>{project.title}</div>
+          <Carousel
+            items={[
+              project.title,
+              project.title,
+              project.title,
+              project.title,
+              project.title,
+              project.title,
+            ]}
+          />
           <div
             className={`${styles.hoverFill} ${hovered ? styles.hovered : ""}`}
           />

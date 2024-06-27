@@ -5,7 +5,7 @@ import { animate, motion, useMotionValue } from "framer-motion";
 
 interface CarouselProps {
   items: string[];
-  inView: boolean;
+  inView?: boolean;
 }
 
 const Carousel = ({ items, inView }: CarouselProps) => {
@@ -18,7 +18,7 @@ const Carousel = ({ items, inView }: CarouselProps) => {
     let finalPosition = -width / 2 - 8;
     const controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
-      duration: 45,
+      duration: 15,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0,
@@ -37,13 +37,12 @@ const Carousel = ({ items, inView }: CarouselProps) => {
           <motion.div
             key={`c_itm_${idx}`}
             animate={{
-              y: itemHovered.index === idx && itemHovered.isActive ? -10 : 0,
               color:
                 itemHovered.index === idx && itemHovered.isActive
                   ? hoverColor
                   : "#312809",
             }}
-            transition={{ y: { duration: 0.2, ease: [0.16, 1, 0.3, 1] } }}
+            transition={{ ease: [0.16, 1, 0.3, 1] }}
             className={styles.carouselItem}
             onMouseEnter={() => setItemHovered({ index: idx, isActive: true })}
             onMouseLeave={() => setItemHovered({ index: idx, isActive: false })}
