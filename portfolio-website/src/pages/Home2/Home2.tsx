@@ -1,10 +1,30 @@
 import HomeProject from "../../components/HomeProject/HomeProject";
 import styles from "./home.module.css";
 import { projects } from "../../data";
+import { useSpring } from "framer-motion";
+import ProjectVisitTrail from "../../components/ProjectVisitTrail/ProjectVisitTrail";
 
 const Home2 = () => {
+  const springSettings = {
+    stiffness: 150,
+    damping: 40,
+    mass: 0.5,
+  };
+  const mouse = {
+    x: useSpring(0, springSettings),
+    y: useSpring(0, springSettings),
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    const { clientX, clientY } = e;
+    const targetX = clientX - 25;
+    const targetY = clientY - 25;
+    mouse.x.set(targetX);
+    mouse.y.set(targetY);
+  };
   return (
-    <main className={styles.page}>
+    <main onMouseMove={handleMouseMove} className={styles.page}>
+      <ProjectVisitTrail mouse={mouse} />
       <div className={styles.pageOne}>
         <section className={styles.sectionLeft}>
           <h2 className={styles.nameTitle}>BRIAN DAVID</h2>
