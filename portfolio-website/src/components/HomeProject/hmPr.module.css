@@ -33,7 +33,7 @@
   width: 120%;
   height: 110%;
   transform: translateX(-100%);
-  background-color: rgb(255, 216, 191);
+  background-color: var(--peach);
   transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .hovered {
