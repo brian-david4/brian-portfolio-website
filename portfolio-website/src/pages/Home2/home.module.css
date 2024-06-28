@@ -29,7 +29,7 @@
   position: absolute;
   bottom: 0;
   left: 2%;
-  font-size: 7vw;
+  font-size: 8vw;
   font-family: "NikkeiMaru Light";
 }
 .about {
@@ -61,4 +61,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 412px) {
+  .nameTitle {
+    font-size: 15vw;
+  }
+}
+@media (max-width: 1280px) {
+  .nameTitle {
+    font-size: 10vw;
+    left: 20%;
+  }
 }
