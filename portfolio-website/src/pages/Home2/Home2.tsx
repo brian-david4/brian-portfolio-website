@@ -3,8 +3,10 @@ import styles from "./home.module.css";
 import { projects } from "../../data";
 import { useSpring } from "framer-motion";
 import ProjectVisitTrail from "../../components/ProjectVisitTrail/ProjectVisitTrail";
+import { useState } from "react";
 
 const Home2 = () => {
+  const [hovered, setHovered] = useState(false);
   const springSettings = {
     stiffness: 150,
     damping: 40,
@@ -24,7 +26,7 @@ const Home2 = () => {
   };
   return (
     <main onMouseMove={handleMouseMove} className={styles.page}>
-      <ProjectVisitTrail mouse={mouse} />
+      <ProjectVisitTrail hovered={hovered} mouse={mouse} />
       <div className={styles.pageOne}>
         <section className={styles.sectionLeft}>
           <h2 className={styles.nameTitle}>BRIAN DAVID</h2>
@@ -44,7 +46,11 @@ const Home2 = () => {
           </p>
         </section>
         <section className={styles.sectionRight}>
-          <section className={styles.projects}>
+          <section
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            className={styles.projects}
+          >
             <div className={styles.projectTitle}>
               <div>selected works</div>
             </div>
