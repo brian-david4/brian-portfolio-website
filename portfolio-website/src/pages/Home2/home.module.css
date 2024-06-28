@@ -36,9 +36,10 @@
   margin-top: 5vh;
   width: 60%;
   min-width: 100px;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   letter-spacing: 0.05vw;
   font-family: "Neue Montreal Book";
+  transition: font-size 750ms ease-out;
 }
 /* section 2 - projects */
 .projects {
@@ -57,6 +58,7 @@
   height: 3vh;
   font-family: "Neue Montreal Italic";
   border-bottom: 2px solid black;
+  border-top: 2px solid black;
   width: 100%;
   display: flex;
   align-items: center;
@@ -77,6 +79,9 @@
     height: 100%;
     flex-shrink: 0;
   }
+  .sectionLeft {
+    height: 80vh !important;
+  }
   .sectionRight {
     height: fit-content !important;
     display: flex;
@@ -91,5 +96,26 @@
   .nameTitle {
     font-size: 10vw;
     left: 20%;
+  }
+  .projectTitle {
+    font-size: 5vw;
+    height: fit-content;
+  }
+}
+
+/* about font responsiveness */
+@media (max-width: 1200px) {
+  .about {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 820px) {
+  .about {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 640px) {
+  .about {
+    font-size: 3vw;
   }
 }

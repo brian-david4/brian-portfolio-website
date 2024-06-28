@@ -15,3 +15,8 @@
   letter-spacing: 0.1ch;
   mix-blend-mode: difference;
 }
+@media (max-width: 820px) {
+  .carouselItem {
+    font-size: 150%;
+  }
+}
