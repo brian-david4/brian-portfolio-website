@@ -34,6 +34,7 @@ const HomeProject = ({ project }: HomeProjectProps) => {
           />
           <div
             className={`${styles.hoverFill} ${hovered ? styles.hovered : ""}`}
+            style={{ backgroundColor: project.colour }}
           />
         </div>
 
