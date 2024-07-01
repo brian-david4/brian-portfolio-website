@@ -4,9 +4,19 @@ import { projects } from "../../data";
 import { useSpring } from "framer-motion";
 import ProjectVisitTrail from "../../components/ProjectVisitTrail/ProjectVisitTrail";
 import { useState } from "react";
+import HomeFooter from "../../components/HomeFooter/HomeFooter";
 
 const Home2 = () => {
   const [hovered, setHovered] = useState(false);
+  const [footerHovered, setFooterHovered] = useState(false);
+
+  const handleFooterEnter = () => {
+    setFooterHovered(true);
+  };
+
+  const handleFooterLeave = () => {
+    setFooterHovered(false);
+  };
   const springSettings = {
     stiffness: 150,
     damping: 40,
@@ -60,6 +70,11 @@ const Home2 = () => {
           </section>
         </section>
       </div>
+      <HomeFooter
+        handleMouseEnter={handleFooterEnter}
+        handleMouseLeave={handleFooterLeave}
+        footerHovered={footerHovered}
+      />
     </main>
   );
 };
