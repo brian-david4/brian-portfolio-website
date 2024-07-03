@@ -16,7 +16,9 @@ const ProjectVisitTrail = ({ mouse, hovered }: ProjectVisitTrailProps) => {
         transition={{ duration: 0.75, ease: [0.25, 1, 0.5, 1] }}
         style={{ x: mouse.x, y: mouse.y }}
         className={styles.trail}
-      />
+      >
+        visit
+      </motion.div>
     </>
   );
 };
