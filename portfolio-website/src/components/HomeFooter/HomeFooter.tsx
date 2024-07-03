@@ -2,7 +2,6 @@ import ContactMouseEffect from "../ContactMouseEffect/ContactMouseEffect";
 import styles from "./hmFt.module.css";
 import { motion } from "framer-motion";
 import { wordEnter } from "./contactAnims";
-import HomeFooterFooter from "../HomeFooterFooter/HomeFooterFooter";
 
 interface HomeFooterProps {
   handleMouseEnter: () => void;
@@ -58,7 +57,6 @@ const HomeFooter = ({
           </motion.a>
         </div>
       </div>
-      <HomeFooterFooter />
     </footer>
   );
 };
