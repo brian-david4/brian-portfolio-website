@@ -70,11 +70,13 @@ const Home2 = () => {
           </section>
         </section>
       </div>
-      <HomeFooter
-        handleMouseEnter={handleFooterEnter}
-        handleMouseLeave={handleFooterLeave}
-        footerHovered={footerHovered}
-      />
+      <div className={styles.pageTwo}>
+        <HomeFooter
+          handleMouseEnter={handleFooterEnter}
+          handleMouseLeave={handleFooterLeave}
+          footerHovered={footerHovered}
+        />
+      </div>
     </main>
   );
 };
