@@ -37,7 +37,7 @@
   margin-top: 5vh;
   width: 60%;
   min-width: 100px;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   letter-spacing: 0.05vw;
   font-family: "Neue Montreal Book";
   transition: font-size 750ms ease-out;
@@ -114,16 +114,16 @@
 /* about font responsiveness */
 @media (max-width: 1200px) {
   .about {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 }
 @media (max-width: 820px) {
   .about {
-    font-size: 2.5vw;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 640px) {
   .about {
-    font-size: 3vw;
+    font-size: 1.3rem;
   }
 }
