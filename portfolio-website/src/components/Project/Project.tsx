@@ -25,10 +25,7 @@ const Project = ({ project }: ProjectProps) => {
         ref={projectRef}
         className={styles.projectWrapper}
       >
-        <Carousel
-          inView={inView}
-          items={[project.title, project.title, project.title]}
-        />
+        <Carousel items={[project.title, project.title, project.title]} />
 
         <div
           className={`${styles.mainDesc} ${!inView ? styles.outOfView : ""}`}
