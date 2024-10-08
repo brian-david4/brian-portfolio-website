@@ -16,7 +16,6 @@ const Project = ({ project }: ProjectProps) => {
     threshold: 0.4,
     triggerOnce: false,
   });
-  const imageArr = project.images ? project.images : [""];
   return (
     <>
       <motion.div
@@ -33,13 +32,9 @@ const Project = ({ project }: ProjectProps) => {
           {project.desc}
         </div>
 
-        <div className={`${styles.images} ${!inView ? styles.outOfView : ""}`}>
-          {imageArr.map((src, idx) => (
-            <div key={`pjIm_${idx}`} className={styles.img}>
-              <img src={src} />
-            </div>
-          ))}
-        </div>
+        <div
+          className={`${styles.images} ${!inView ? styles.outOfView : ""}`}
+        ></div>
 
         <div
           className={`${styles.sideSection} ${!inView ? styles.outOfView : ""}`}

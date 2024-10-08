@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./hmPr.module.css";
 import { ProjectType } from "../../types";
 import Carousel from "../Carousel/Carousel";
@@ -9,10 +9,6 @@ interface HomeProjectProps {
 
 const HomeProject = ({ project }: HomeProjectProps) => {
   const [hovered, setHovered] = useState(false);
-
-  useEffect(() => {
-    console.log(hovered);
-  }, [hovered]);
 
   return (
     <>
