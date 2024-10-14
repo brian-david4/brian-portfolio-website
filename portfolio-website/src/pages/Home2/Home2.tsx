@@ -39,17 +39,18 @@ const Home2 = () => {
       <ProjectVisitTrail hovered={hovered} mouse={mouse} />
       <div className={styles.pageOne}>
         <section className={styles.sectionLeft}>
-          <h2 className={styles.nameTitle}>BRIAN DAVID</h2>
+          <h2 className={styles.nameTitle}>
+            <span>Brian</span>
+            <span>David</span>
+          </h2>
           <p className={styles.about}>
             Front end <b>React Developer</b> with a focus on creating modern
             designs. I love the challenge of taking an idea and forming into an
-            interactive experience. I take inspiration from everywhere, and aim
-            to create something new from it.
+            interactive experience and experimenting with effects.
             <br />
             <br />
-            <br />
-            During other hours of life I like watching/playing football or
-            music, reading, or just creating.
+            During other hours of life I like watching and playing football or
+            my guitar, reading, or just creating.
           </p>
         </section>
         <section className={styles.sectionRight}>
