@@ -1,9 +1,10 @@
-import HomeProject from "../../components/HomeProject/HomeProject";
+import { useState } from "react";
+import { useSpring } from "framer-motion";
+
 import styles from "./home.module.css";
 import { projects } from "../../data";
-import { useSpring } from "framer-motion";
+import HomeProject from "../../components/HomeProject/HomeProject";
 import ProjectVisitTrail from "../../components/ProjectVisitTrail/ProjectVisitTrail";
-import { useState } from "react";
 import HomeFooter from "../../components/HomeFooter/HomeFooter";
 
 const Home2 = () => {
