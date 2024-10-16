@@ -13,4 +13,5 @@ export interface ProjectType {
   desc: string;
   techstack: string[];
   codeLink: string;
+  contrib?: string;
 }

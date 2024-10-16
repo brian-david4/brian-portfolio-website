@@ -52,6 +52,8 @@ const Home2 = () => {
             <br />
             During other hours of life I like watching and playing football or
             my guitar, reading, or just creating.
+            <br />
+            <br />
           </p>
         </section>
         <section className={styles.sectionRight}>

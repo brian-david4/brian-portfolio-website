@@ -96,7 +96,7 @@
     flex-shrink: 0;
   }
   .sectionLeft {
-    height: 100vh !important;
+    height: 80vh !important;
   }
   .sectionRight {
     height: fit-content !important;
@@ -112,7 +112,7 @@
   .nameTitle {
     font-size: 20vw;
     left: 20%;
-    bottom: 10vh;
+    bottom: 5vh;
   }
   .projectTitle {
     font-size: 5vw;

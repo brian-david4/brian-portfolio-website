@@ -67,6 +67,7 @@
   display: flex;
 }
 .descBox {
+  position: relative;
   width: auto;
   height: 100%;
   padding-left: 5vw;
@@ -75,6 +76,12 @@
   display: grid;
   place-items: center;
   border-bottom: 1px solid black;
+}
+.descBox > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.6rem;
 }
 .techStack {
   height: 20%;
