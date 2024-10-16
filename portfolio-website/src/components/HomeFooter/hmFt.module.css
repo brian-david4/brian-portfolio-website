@@ -95,7 +95,7 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 924px) {
+@media (max-width: 876px) {
   .text2Wrapper {
     bottom: 20vh;
   }
@@ -104,7 +104,7 @@
     bottom: 0px;
   }
   .text2Wrapper {
-    top: 0px;
+    top: -7vh;
     right: 0px;
   }
   .text1Wrapper > .textInner {
