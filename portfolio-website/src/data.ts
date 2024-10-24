@@ -3,7 +3,7 @@ import { ProjectType } from "./types";
 export const projects: ProjectType[] = [
   {
     title: "Premier League Results ~",
-    link: "https://vercel.com/briandavid4s-projects/premier-league-live/DusmtF6SaVvbLxuHmfxtpcrJsEoD",
+    link: "https://premier-league-live-mocha.vercel.app",
     colour: "#9bdb97",
     techstack: ["HTML", "CSS", "React", "Typescript", "R3F", "GLSL"],
     codeLink: "https://github.com/brian-david4/premier-league-live",
