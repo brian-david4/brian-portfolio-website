@@ -27,44 +27,8 @@
   background-color: black;
 }
 @font-face {
-  font-family: "Right Serif Mono Regular";
-  src: url("../fonts/PPRightSerifMono-Regular.otf");
-}
-@font-face {
-  font-family: "Right Serif Mono Dark";
-  src: url("../fonts/PPRightSerifMono-Dark.otf");
-}
-@font-face {
   font-family: "Telegraf Regular";
   src: url("../fonts/PPTelegraf-Regular.otf");
-}
-@font-face {
-  font-family: "Pangram Sans Medium";
-  src: url("../fonts/PPPangramSans-CompressedMediumReclined.otf");
-}
-@font-face {
-  font-family: "Editorial Old Regular";
-  src: url("../fonts/EditorialOld/PPEditorialOld-Regular.otf");
-}
-@font-face {
-  font-family: "Editorial Old Ultralight";
-  src: url("../fonts/EditorialOld/PPEditorialOld-Ultralight.otf");
-}
-@font-face {
-  font-family: "Editorial Old Italic";
-  src: url("../fonts/EditorialOld/PPEditorialOld-Italic.otf");
-}
-@font-face {
-  font-family: "Acma Light";
-  src: url("../fonts/PPAcma-Light.otf");
-}
-@font-face {
-  font-family: "Pangaia Medium";
-  src: url("../fonts/PPPangaia-Medium.otf");
-}
-@font-face {
-  font-family: "Fuji Bold";
-  src: url("../fonts/PPFuji-Bold.otf");
 }
 @font-face {
   font-family: "Neue Montreal Italic";
