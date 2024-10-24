@@ -5,19 +5,10 @@ import styles from "./home.module.css";
 import { projects } from "../../data";
 import HomeProject from "../../components/HomeProject/HomeProject";
 import ProjectVisitTrail from "../../components/ProjectVisitTrail/ProjectVisitTrail";
-import HomeFooter from "../../components/HomeFooter/HomeFooter";
 
 const Home2 = () => {
   const [hovered, setHovered] = useState(false);
-  const [footerHovered, setFooterHovered] = useState(false);
 
-  const handleFooterEnter = () => {
-    setFooterHovered(true);
-  };
-
-  const handleFooterLeave = () => {
-    setFooterHovered(false);
-  };
   const springSettings = {
     stiffness: 150,
     damping: 40,
@@ -55,6 +46,12 @@ const Home2 = () => {
             <br />
             <br />
           </p>
+          <div className={styles.contact}>
+            I want to work with you
+            <span>
+              <a href="mailto:bdavid1530@gmail.com">bdavid1530@gmail.com</a>
+            </span>
+          </div>
         </section>
         <section className={styles.sectionRight}>
           <section
@@ -70,13 +67,6 @@ const Home2 = () => {
             ))}
           </section>
         </section>
-      </div>
-      <div className={styles.pageTwo}>
-        <HomeFooter
-          handleMouseEnter={handleFooterEnter}
-          handleMouseLeave={handleFooterLeave}
-          footerHovered={footerHovered}
-        />
       </div>
     </main>
   );
