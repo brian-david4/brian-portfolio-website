@@ -4,6 +4,8 @@
   /* top: 1vh; */
   left: 0;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
 }
 .carouselItem {

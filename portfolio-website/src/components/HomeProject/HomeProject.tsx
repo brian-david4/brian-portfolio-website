@@ -26,6 +26,10 @@ const HomeProject = ({ project }: HomeProjectProps) => {
               project.title,
               project.title,
               project.title,
+              project.title,
+              project.title,
+              project.title,
+              project.title,
             ]}
           />
           <div
