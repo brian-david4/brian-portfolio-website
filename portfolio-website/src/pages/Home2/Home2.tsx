@@ -1,55 +1,27 @@
-import { useState } from "react";
-import { useSpring } from "framer-motion";
-
 import styles from "./home.module.css";
 import { projects } from "../../data";
 import HomeProject from "../../components/HomeProject/HomeProject";
-import ProjectVisitTrail from "../../components/ProjectVisitTrail/ProjectVisitTrail";
+import { motion } from "framer-motion";
 
 const Home2 = () => {
-  const [hovered, setHovered] = useState(false);
-
-  const springSettings = {
-    stiffness: 150,
-    damping: 40,
-    mass: 0.5,
-  };
-  const mouse = {
-    x: useSpring(0, springSettings),
-    y: useSpring(0, springSettings),
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    const { clientX, clientY } = e;
-    const targetX = clientX - 25;
-    const targetY = clientY - 25;
-    mouse.x.set(targetX);
-    mouse.y.set(targetY);
-  };
+  const isMobile = window.innerWidth < 820;
   return (
-    <main onMouseMove={handleMouseMove} className={styles.page}>
-      <ProjectVisitTrail hovered={hovered} mouse={mouse} />
+    <main className={styles.page}>
       <div className={styles.pageOne}>
         <section className={styles.sectionLeft}>
           <h2 className={styles.nameTitle}>
             <span>Brian</span>
             <span>David</span>
           </h2>
-          {/* <p className={styles.about}>I want to create.</p> */}
 
           <div className={styles.contact}>
-            {/* I want to work with you */}
             <span>
               <a href="mailto:bdavid1530@gmail.com">bdavid1530@gmail.com</a>
             </span>
           </div>
         </section>
         <section className={styles.sectionRight}>
-          <section
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            className={styles.projects}
-          >
+          <section className={styles.projects}>
             <div className={styles.projectTitle}>
               <div>selected works</div>
             </div>
@@ -59,6 +31,22 @@ const Home2 = () => {
           </section>
         </section>
       </div>
+
+      {isMobile && (
+        <motion.span
+          style={{
+            position: "absolute",
+            bottom: "10px",
+            left: "42.5%",
+            fontFamily: "Neue Montreal Book",
+            letterSpacing: "0.2ch",
+            opacity: 0,
+          }}
+          whileInView={{ opacity: 1 }}
+        >
+          scroll
+        </motion.span>
+      )}
     </main>
   );
 };

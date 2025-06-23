@@ -117,10 +117,12 @@
     flex-shrink: 0;
   }
   .sectionLeft {
-    height: 80vh !important;
+    height: 100vh !important;
+    border-right: none;
   }
   .sectionRight {
     height: fit-content !important;
+    min-height: 100vh !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,10 +136,15 @@
     font-size: 20vw;
     left: 20%;
     bottom: 12vh;
+    color: rgb(0, 21, 72);
+    mix-blend-mode: normal;
   }
   .contact {
     left: 21vw;
     bottom: 15vh;
+  }
+  .contact > span > a {
+    color: rgb(0, 21, 72);
   }
   .projectTitle {
     font-size: 5vw;

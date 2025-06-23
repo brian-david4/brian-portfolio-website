@@ -8,7 +8,6 @@ export const projects: ProjectType[] = [
     techstack: ["HTML5", "CSS", "Next.js", "Typescript"],
     codeLink: "https://github.com/brian-david4/think-quiz-app",
     desc: "A quiz app! Get a high score to be clever! Data fetched from a RESTful api. A focus on a fun and engaging UI.",
-    contrib: "coded and designed from scratch by me",
   },
   {
     title: "Kurosawa's Story -",
@@ -17,7 +16,6 @@ export const projects: ProjectType[] = [
     techstack: ["HTML5", "CSS", "React", "Typescript"],
     codeLink: "https://github.com/brian-david4/akira-kurosawa-portfolio",
     desc: "I aimed to tell the story of acclaimed director Akira Kurosawa's career. It journeys from the foundations - to becoming one of the most influential directors.",
-    contrib: "coded and designed from scratch by me",
   },
   {
     title: "Furniture Shop /",
@@ -26,7 +24,6 @@ export const projects: ProjectType[] = [
     techstack: ["HTML5", "CSS", "React", "Typescript"],
     codeLink: "https://github.com/brian-david4/furniture-shop",
     desc: "An e-commerce store built to sell modern, designer furniture. I wanted the website to mirror the style of the furniture: modern and simplistic.",
-    contrib: "coded and designed from scratch by me",
   },
   {
     title: "Ball Time Attack !",
@@ -35,7 +32,6 @@ export const projects: ProjectType[] = [
     techstack: ["HTML5", "CSS", "React", "Zustand", "react-three-fiber"],
     codeLink: "https://github.com/brian-david4/ball-game-time-trial/tree/main",
     desc: "3D game — get to the end as quickly as you can! Track your best time in a randomly generating level...",
-    contrib: "coded by me",
   },
   // {
   //   title: "Game Hub Search *",

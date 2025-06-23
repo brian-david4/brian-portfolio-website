@@ -47,10 +47,7 @@ const HomeProject = ({ project }: HomeProjectProps) => {
             <div className={styles.heading}>
               <div className={styles.headingTxt}>description</div>
             </div>
-            <div className={styles.descBox}>
-              {project.desc}
-              <span>* {project.contrib}</span>
-            </div>
+            <div className={styles.descBox}>{project.desc}</div>
           </div>
 
           <div className={styles.techStack}>

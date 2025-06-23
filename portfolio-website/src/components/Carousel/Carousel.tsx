@@ -15,7 +15,7 @@ const Carousel = ({ items }: CarouselProps) => {
     let finalPosition = -width / 2 - 8;
     const controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
-      duration: 15,
+      duration: 60,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0,

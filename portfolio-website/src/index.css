@@ -87,8 +87,9 @@ html.lenis {
 
 @media (max-width: 820px) {
   .garnishContainer {
-    width: calc(100vw * 0.95);
-    top: 2vh;
-    left: 2.5vw;
+    width: calc(100vw * 0.9);
+    height: 50%;
+    top: 5%;
+    left: 5vw;
   }
 }
