@@ -5,7 +5,6 @@ import styles from "./home.module.css";
 import { projects } from "../../data";
 import HomeProject from "../../components/HomeProject/HomeProject";
 import ProjectVisitTrail from "../../components/ProjectVisitTrail/ProjectVisitTrail";
-import Garnish3D from "../../components/Garnish3D/3DGarnish";
 
 const Home2 = () => {
   const [hovered, setHovered] = useState(false);

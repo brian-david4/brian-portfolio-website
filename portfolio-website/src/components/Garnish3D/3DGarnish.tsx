@@ -22,7 +22,8 @@ export const Model = () => {
   const meshRef = useRef<T.Mesh>(null!);
 
   useFrame((state) => {
-    meshRef.current.material.uniforms.uTime.value = state.clock.elapsedTime;
+    //@ts-expect-error
+    meshRef.current.material.uniforms.uTime.value = state.clock.elapsedTime; //error:
   });
   return (
     <>
