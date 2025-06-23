@@ -5,6 +5,7 @@ import styles from "./home.module.css";
 import { projects } from "../../data";
 import HomeProject from "../../components/HomeProject/HomeProject";
 import ProjectVisitTrail from "../../components/ProjectVisitTrail/ProjectVisitTrail";
+import Garnish3D from "../../components/Garnish3D/3DGarnish";
 
 const Home2 = () => {
   const [hovered, setHovered] = useState(false);
@@ -35,19 +36,10 @@ const Home2 = () => {
             <span>Brian</span>
             <span>David</span>
           </h2>
-          <p className={styles.about}>
-            Front end <b>React Developer</b> with a focus on creating modern
-            designs. I love the challenge of taking an idea and forming into an
-            interactive experience and experimenting with effects.
-            <br />
-            <br />
-            During other hours of life I like watching and playing football or
-            my guitar, reading, or just creating.
-            <br />
-            <br />
-          </p>
+          {/* <p className={styles.about}>I want to create.</p> */}
+
           <div className={styles.contact}>
-            I want to work with you
+            {/* I want to work with you */}
             <span>
               <a href="mailto:bdavid1530@gmail.com">bdavid1530@gmail.com</a>
             </span>

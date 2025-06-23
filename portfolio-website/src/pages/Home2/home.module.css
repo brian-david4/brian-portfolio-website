@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .pageOne {
   position: relative;
   left: 0;
@@ -28,14 +29,18 @@
 }
 .nameTitle {
   position: absolute;
-  bottom: 0vh;
+  bottom: 17vh;
   line-height: 0.77;
-  left: 2%;
+  left: 5%;
   font-size: 10vw;
   letter-spacing: 0.01ch;
   font-family: "NikkeiMaru Light";
   display: flex;
   flex-direction: column;
+  z-index: 102;
+  mix-blend-mode: difference;
+  color: rgb(252, 248, 186);
+  pointer-events: none;
 }
 .about {
   position: absolute;
@@ -50,17 +55,16 @@
   z-index: 100;
 }
 .contact {
-  position: absolute;
-  top: 1vh;
-  left: calc(50% - width / 2);
+  position: fixed;
+  bottom: 30vh;
+  left: 3%;
+  /* left: calc(50% - width / 2); */
   font-family: "Neue Montreal Book";
-}
-.contact > span {
-  margin-left: 5vw;
+  z-index: 102;
 }
 .contact > span > a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: "Telegraf Regular";
   font-weight: bold;
 }

@@ -10,6 +10,8 @@ interface HomeProjectProps {
 const HomeProject = ({ project }: HomeProjectProps) => {
   const [hovered, setHovered] = useState(false);
 
+  const isMobile = window.innerWidth < 768;
+
   return (
     <>
       <div
@@ -33,7 +35,9 @@ const HomeProject = ({ project }: HomeProjectProps) => {
             ]}
           />
           <div
-            className={`${styles.hoverFill} ${hovered ? styles.hovered : ""}`}
+            className={`${styles.hoverFill} ${hovered ? styles.hovered : ""} ${
+              isMobile ? styles.hovered : ""
+            }`}
             style={{ backgroundColor: project.colour }}
           />
         </div>
