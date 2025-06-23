@@ -10,7 +10,7 @@ interface HomeProjectProps {
 const HomeProject = ({ project }: HomeProjectProps) => {
   const [hovered, setHovered] = useState(false);
 
-  const isMobile = window.innerWidth < 768;
+  const isMobile = window.innerWidth <= 820;
 
   return (
     <>

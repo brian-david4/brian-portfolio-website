@@ -39,7 +39,7 @@
   flex-direction: column;
   z-index: 102;
   mix-blend-mode: difference;
-  color: rgb(252, 248, 186);
+  color: rgb(189, 252, 186);
   pointer-events: none;
 }
 .about {
@@ -55,9 +55,9 @@
   z-index: 100;
 }
 .contact {
-  position: fixed;
-  bottom: 30vh;
-  left: 3%;
+  position: absolute;
+  bottom: 29vh;
+  left: 5.75%;
   /* left: calc(50% - width / 2); */
   font-family: "Neue Montreal Book";
   z-index: 102;
@@ -95,9 +95,11 @@
   justify-content: center;
 }
 
+/* Responsiveness */
+
 @media (max-width: 418px) {
   .nameTitle {
-    font-size: 20vw !important;
+    font-size: 25vw !important;
     bottom: 10vh;
   }
 }
@@ -131,7 +133,11 @@
   .nameTitle {
     font-size: 20vw;
     left: 20%;
-    bottom: 5vh;
+    bottom: 12vh;
+  }
+  .contact {
+    left: 21vw;
+    bottom: 15vh;
   }
   .projectTitle {
     font-size: 5vw;

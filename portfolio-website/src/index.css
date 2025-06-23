@@ -84,3 +84,11 @@ html.lenis {
   bottom: 12.5%;
   z-index: 101;
 }
+
+@media (max-width: 820px) {
+  .garnishContainer {
+    width: calc(100vw * 0.95);
+    top: 2vh;
+    left: 2.5vw;
+  }
+}
