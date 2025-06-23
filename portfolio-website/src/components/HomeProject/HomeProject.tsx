@@ -71,10 +71,14 @@ const HomeProject = ({ project }: HomeProjectProps) => {
               <div className={styles.headingTxt}>source</div>
             </div>
             <div className={styles.visitCode}>
-              <a className={styles.code} href={project.codeLink}>
+              <a
+                target="_blank"
+                className={styles.code}
+                href={project.codeLink}
+              >
                 source code
               </a>
-              <a className={styles.demo} href={project.link}>
+              <a target="_blank" className={styles.demo} href={project.link}>
                 demo
               </a>
             </div>

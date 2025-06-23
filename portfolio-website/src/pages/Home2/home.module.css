@@ -39,7 +39,7 @@
   flex-direction: column;
   z-index: 102;
   mix-blend-mode: difference;
-  color: rgb(189, 252, 186);
+  color: rgb(255, 122, 5);
   pointer-events: none;
 }
 .about {
