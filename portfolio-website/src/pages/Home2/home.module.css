@@ -39,7 +39,7 @@
   flex-direction: column;
   z-index: 102;
   mix-blend-mode: difference;
-  color: rgb(255, 122, 5);
+  color: rgb(255, 225, 0);
   pointer-events: none;
 }
 .about {
@@ -56,7 +56,7 @@
 }
 .contact {
   position: absolute;
-  bottom: 29vh;
+  bottom: 22vh;
   left: 5.75%;
   /* left: calc(50% - width / 2); */
   font-family: "Neue Montreal Book";
@@ -64,7 +64,7 @@
 }
 .contact > span > a {
   text-decoration: none;
-  color: white;
+  color: rgb(232, 166, 0);
   font-family: "Telegraf Regular";
   font-weight: bold;
 }
